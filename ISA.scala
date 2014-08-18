@@ -119,7 +119,7 @@ object ISA {
         val mean_area = mean(area_values)
         val variance_threshold = 0.8*variance_values.max        
         
-        val retained_slices = for ((s,i)<-nuclei.slices.zipWithIndex if (variance_values(i)>variance_threshold & area_values(i)>mean_area*0.8)) yield s
+        val retained_slices = for ((s,i)<-nuclei.slices.zipWithIndex if (variance_values(i)>variance_threshold & area_values(i)>mean_area*0.7)) yield s
         
         return new Nuclei(retained_slices)
     	}
@@ -196,7 +196,7 @@ object ISA {
 		val edge_mask = blue.duplicate()
       	IJ.run(edge_mask, "Find Edges","stack")
       	nuclei = for (n<-nuclei if n.slices.length >9) yield n
-      	val focussed_nuclei = for (n<-nuclei) yield nucleiFocusser(n,edge_mask)
+      	val focussed_nuclei = (for (n<-nuclei) yield nucleiFocusser(n,edge_mask)).filter(x=> x.slices.length !=0)
       	println("Nuclei identified")
       	return focussed_nuclei.toList
 		}
@@ -317,7 +317,7 @@ object ISA {
 	def main(args: Array[String]){
 
 		val output_file = "Test.csv"
-		val csv_writer = CSVWriter.open(output_file,append=false)
+		val csv_writer = CSVWriter.open(output_file,append=true)
 		csv_writer.writeRow(Seq("Time","Green Intensity","Red Intensity","Green Red Pearson"))
 		// val top_directory = new ij.io.DirectoryChooser("Choose Directory").getDirectory().toString
 		val top_directory = "/Users/work/Documents/h2ax_time_series_2/"
