@@ -276,11 +276,34 @@ object ISA {
 		val intensities = nuclei map {x=> measureNucleusIntensity(channel,x)}
 		return intensities
 
-
-
-
 	}
 
+	//For the analysis of subnuclear objects.
+	def object_mask_analyzer(object_mask:ImagePlus):(Int,Float,Float)={
+		var roim= new RoiManager()
+		var results= new ResultsTable()
+		val pa = new ParticleAnalyzer(ParticleAnalyzer.ADD_TO_MANAGER,
+		ij.measure.Measurements.MEAN+ij.measure.Measurements.CENTROID+ij.measure.Measurements.AREA,
+		results,
+		15,5000000,
+		0,1.0)
+		for (i<-(0 until object_mask.getStackSize())){
+			object_mask.setSliceWithoutUpdate(i + 1)
+			pa.analyze(object_mask)
+			}
+		val areas = results.getColumn(results.getColumnIndex("Area")).toList
+		val object_count = areas.length
+		val mean_object_area = mean(areas).toFloat
+		val object_area_sd = standardDeviation(areas).toFloat
+		return (object_count,mean_object_area,object_area_sd)
+	}
+
+	//For the determination of mean nucleus slice area
+	def getNucleusMeanArea(nucleus:Nuclei):Float={
+		val areas = for (s<-nucleus.slices) yield s.area
+		return mean(areas).toFloat
+	}
+	
 	def processImageFile(filepath:String,csv_writer:CSVWriter,explanatory_value:String){
 		val opener = new ij.io.Opener()
 		val image:ImagePlus = opener.openImage(filepath)
@@ -290,21 +313,29 @@ object ISA {
 		val red = subtractBackground(channels(0),15)
 		val focussed_nuclei = maskNuclei(blue)
 		visualCheck(red,focussed_nuclei)
-		visualCheck(green,focussed_nuclei)
+		
 		println("Analysing...")
-		// val green_masks = makeObjectMasks(green,focussed_nuclei)
-		// val red_masks = makeObjectMasks(red,focussed_nuclei)
+		val green_masks = makeObjectMasks(green,focussed_nuclei)
+		val red_masks = makeObjectMasks(red,focussed_nuclei)
+		val green_objects = green_masks.map(x => object_mask_analyzer(x))
+		val (green_object_count,green_object_mean_area,green_object_sd_area)=green_objects.unzip3
+		val red_objects = red_masks.map(x => object_mask_analyzer(x))
+		val (red_object_count,red_object_mean_area,red_object_sd_area)=red_objects.unzip3
 		val blue_pixels = focussed_nuclei map (x=> getNucleiPixels(blue,x))
 		val green_pixels = focussed_nuclei map (x=> getNucleiPixels(green,x))
 		val red_pixels = focussed_nuclei map (x=> getNucleiPixels(red,x))
+		val nucleus_areas = focussed_nuclei.map(n=>getNucleusMeanArea(n))
 		// val boundaries = focussed_nuclei map(x=> getNucleiBoundaries(x))
-		val r_values = pearsonsWrapper(green_pixels,red_pixels) map (x=>x.toString)
+		val rg_r_values = pearsonsWrapper(green_pixels,red_pixels) map (x=>x.toString)
+		val bg_r_values = pearsonsWrapper(blue_pixels,green_pixels)
+		val rb_r_values = pearsonsWrapper(blue_pixels,red_pixels)
 		val green_intensities = measureNucleiIntensities(green,focussed_nuclei) map (x => x.toString)
 		val red_intensities = measureNucleiIntensities(red,focussed_nuclei) map (x => x.toString)
-		val rows = for (i <-r_values.indices) yield (List(explanatory_value,green_intensities(i),red_intensities(i),r_values(i)))
+		val rows = for (i <-nucleus_areas.indices) yield (List(explanatory_value,nucleus_areas(i),green_intensities(i),red_intensities(i),rg_r_values(i),bg_r_values(i),rb_r_values(i),green_object_count(i),green_object_mean_area(i),green_object_sd_area(i),red_object_count(i),red_object_mean_area(i),red_object_sd_area(i)))
 		for (r<-rows){
 			println(r)
 			csv_writer.writeRow(r)
+		WindowManager.closeAllWindows()
 		}
 		
 		
@@ -318,9 +349,9 @@ object ISA {
 
 		val output_file = "Test.csv"
 		val csv_writer = CSVWriter.open(output_file,append=true)
-		csv_writer.writeRow(Seq("Time","Green Intensity","Red Intensity","Green Red Pearson"))
-		// val top_directory = new ij.io.DirectoryChooser("Choose Directory").getDirectory().toString
-		val top_directory = "/Users/work/Documents/h2ax_time_series_2/"
+		csv_writer.writeRow(Seq("ExplanatoryValue","Nucleus Area","GreenIntensity","RedIntensity","GreenRedPearson","GreenBluePearson","RedBluePearson","GreenObjectCount","GreenObjectMeanArea","GreenObjectSD","RedObjectCount","RedObjectMeanArea","RedObjectSD"))
+		val top_directory = new ij.io.DirectoryChooser("Choose Directory").getDirectory().toString
+		// val top_directory = "/Users/work/Documents/h2ax_time_series_2/"
 		for (subdirectory_name <- getListOfSubDirectories(top_directory)){
 			
 			for (file<-getListOfFilesInSubDirectory(top_directory+subdirectory_name)){
