@@ -158,8 +158,12 @@ object ISA {
     def maskNuclei(blue:ImagePlus):List[Nuclei]={
     	val nuclei_mask=blue.duplicate()
 		nuclei_mask.getChannelProcessor().resetMinAndMax()
+		val calibration = blue.getCalibration()
+		calibration.setUnit("micron")
+		val v_radius = calibration.getRawX(0.32)
 		println("Identifying the nuclei...")
-		IJ.run(nuclei_mask,"Variance...", "radius=2 stack")
+		val v_radius_string = "radius="+v_radius+ " stack"
+		IJ.run(nuclei_mask,"Variance...", v_radius_string)
 		IJ.run(nuclei_mask,"Make Binary", "method=RenyiEntropy background=Default calculate")
 		IJ.run(nuclei_mask,"Fill Holes", "stack")
 		IJ.run(nuclei_mask,"Remove Outliers...", "radius=30 threshold=50 which=Dark stack");
@@ -195,7 +199,7 @@ object ISA {
 			}
 		val edge_mask = blue.duplicate()
       	IJ.run(edge_mask, "Find Edges","stack")
-      	nuclei = for (n<-nuclei if n.slices.length >9) yield n
+      	
       	val focussed_nuclei = (for (n<-nuclei) yield nucleiFocusser(n,edge_mask)).filter(x=> x.slices.length !=0)
       	println("Nuclei identified")
       	return focussed_nuclei.toList
@@ -307,6 +311,7 @@ object ISA {
 	def processImageFile(filepath:String,csv_writer:CSVWriter,explanatory_value:String){
 		val opener = new ij.io.Opener()
 		val image:ImagePlus = opener.openImage(filepath)
+		
 		val channels:Array[ImagePlus]=ChannelSplitter.split(image)
 		val blue = channels(2)
 		val green = subtractBackground(channels(1),15)
