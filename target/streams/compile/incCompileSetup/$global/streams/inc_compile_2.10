@@ -19,7 +19,7 @@ name hashing:
 1 items
 0 -> false
 products:
-58 items
+56 items
 /Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$1.class
 /Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$10.class
 /Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$11.class
@@ -60,8 +60,6 @@ products:
 /Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$main$1.class
 /Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$maskNuclei$1.class
 /Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$maskNuclei$2.class
-/Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$maskNuclei$3.class
-/Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$maskNuclei$4.class
 /Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$measureNucleusIntensity$1.class
 /Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$mergeNuclei$1.class
 /Users/work/DVAnalyzer/ISA.scala -> /Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$nucleiFocusser$1.class
@@ -101,7 +99,7 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-58 items
+56 items
 /Users/work/DVAnalyzer/ISA.scala -> ISA
 /Users/work/DVAnalyzer/ISA.scala -> ISA$
 /Users/work/DVAnalyzer/ISA.scala -> ISA$$anonfun$1
@@ -144,8 +142,6 @@ class names:
 /Users/work/DVAnalyzer/ISA.scala -> ISA$$anonfun$main$1$$anonfun$apply$2
 /Users/work/DVAnalyzer/ISA.scala -> ISA$$anonfun$maskNuclei$1
 /Users/work/DVAnalyzer/ISA.scala -> ISA$$anonfun$maskNuclei$2
-/Users/work/DVAnalyzer/ISA.scala -> ISA$$anonfun$maskNuclei$3
-/Users/work/DVAnalyzer/ISA.scala -> ISA$$anonfun$maskNuclei$4
 /Users/work/DVAnalyzer/ISA.scala -> ISA$$anonfun$measureNucleusIntensity$1
 /Users/work/DVAnalyzer/ISA.scala -> ISA$$anonfun$mergeNuclei$1
 /Users/work/DVAnalyzer/ISA.scala -> ISA$$anonfun$nucleiFocusser$1
@@ -163,68 +159,66 @@ class names:
 used names:
 0 items
 product stamps:
-58 items
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$10.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$11.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$12.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$13.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$14.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$15.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$16.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$17.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$18.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$19.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$2.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$20.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$21.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$22.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$23.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$24.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$25.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$26.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$27.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$28.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$29.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$3.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$30.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$31.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$4.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$5.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$6.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$7.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$8.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$9.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$getListOfFilesInSubDirectory$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$getListOfFilesInSubDirectory$2.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$getListOfSubDirectories$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$getListOfSubDirectories$2.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$getNucleiPixels$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$main$1$$anonfun$apply$2.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$main$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$maskNuclei$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$maskNuclei$2.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$maskNuclei$3.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$maskNuclei$4.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$measureNucleusIntensity$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$mergeNuclei$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$nucleiFocusser$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$object_mask_analyzer$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$processImageFile$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$subtractBackground$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$visualCheck$1$$anonfun$apply$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$visualCheck$1.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$Nuclei$.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$Nuclei.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$NucleiSlice$.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$NucleiSlice.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$ProcessedRoi$.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$ProcessedRoi.class -> lastModified(1412742491000)
-/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA.class -> lastModified(1412742491000)
+56 items
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$10.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$11.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$12.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$13.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$14.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$15.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$16.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$17.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$18.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$19.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$2.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$20.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$21.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$22.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$23.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$24.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$25.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$26.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$27.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$28.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$29.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$3.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$30.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$31.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$4.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$5.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$6.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$7.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$8.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$9.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$getListOfFilesInSubDirectory$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$getListOfFilesInSubDirectory$2.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$getListOfSubDirectories$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$getListOfSubDirectories$2.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$getNucleiPixels$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$main$1$$anonfun$apply$2.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$main$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$maskNuclei$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$maskNuclei$2.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$measureNucleusIntensity$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$mergeNuclei$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$nucleiFocusser$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$object_mask_analyzer$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$processImageFile$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$subtractBackground$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$visualCheck$1$$anonfun$apply$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$$anonfun$visualCheck$1.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$Nuclei$.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$Nuclei.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$NucleiSlice$.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$NucleiSlice.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$ProcessedRoi$.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA$ProcessedRoi.class -> lastModified(1412761286000)
+/Users/work/DVAnalyzer/target/scala-2.10/classes/ISA.class -> lastModified(1412761286000)
 source stamps:
 1 items
-/Users/work/DVAnalyzer/ISA.scala -> hash(50d42538bb1bf8b9b905f95904c5d06c4206f545)
+/Users/work/DVAnalyzer/ISA.scala -> hash(c6a02095bcc4b1883bb938b973e5ec08ef4f7182)
 binary stamps:
 4 items
 /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1395128855000)
@@ -234,13 +228,13 @@ binary stamps:
 class names:
 4 items
 /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
-/Users/work/.ivy2/cache/com.github.tototoshi/scala-csv_2.10/jars/scala-csv_2.10-1.0.0.jar -> com.github.tototoshi.csv.package$
-/Users/work/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> scala.Serializable
-/Users/work/DVAnalyzer/lib/ij-1.47u.jar -> ij.plugin.filter.Analyzer
+/Users/work/.ivy2/cache/com.github.tototoshi/scala-csv_2.10/jars/scala-csv_2.10-1.0.0.jar -> com.github.tototoshi.csv.CSVWriter$
+/Users/work/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> scala.runtime.AbstractFunction5
+/Users/work/DVAnalyzer/lib/ij-1.47u.jar -> ij.ImagePlus
 internal apis:
 1 items
 /Users/work/DVAnalyzer/ISA.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHD3dwMPAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAADSVNBdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgAWcQB+ACB1cQB+ACEAAAAAc3EAfgAjAHQABG1haW51cQB+ACYAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AFF1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgA9eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBFWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgA0c3EAfgBEdAAFQXJyYXlxAH4ASnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBEdAAGU3RyaW5nc3EAfgBIc3EAfgBLdXEAfgBOAAAAA3NxAH4AUHQABGphdmFzcQB+AFB0AARsYW5ncQB+AFVwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AaQAAAAJzcQB+AER0AAZPYmplY3RxAH4AbXNxAH4ARHQAA0FueXEAfgBKcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSO4Ddq51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAwL1VzZXJzL3dvcmsvRFZBbmFseXplci90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUUNQlOLsb+Lm5BflZBMXQbEIG9UU=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHD3dwMPAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAADSVNBdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgAWcQB+ACB1cQB+ACEAAAAAc3EAfgAjAHQABG1haW51cQB+ACYAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AFF1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgA9eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBFWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgA0c3EAfgBEdAAFQXJyYXlxAH4ASnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBEdAAGU3RyaW5nc3EAfgBIc3EAfgBLdXEAfgBOAAAAA3NxAH4AUHQABGphdmFzcQB+AFB0AARsYW5ncQB+AFVwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AaQAAAAJzcQB+AER0AAZPYmplY3RxAH4AbXNxAH4ARHQAA0FueXEAfgBKcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSO8iPmN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAwL1VzZXJzL3dvcmsvRFZBbmFseXplci90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUxqAglbzEsYg7uTi5c+XsCO9PcYI=
 external apis:
 0 items
 source infos:
@@ -248,7 +242,7 @@ source infos:
 /Users/work/DVAnalyzer/ISA.scala -> 
 AAAAAAAAAAA=
 compilations:
-330 items
+331 items
 000 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABR66lpSh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMC9Vc2Vycy93b3JrL0RWQW5hbHl6ZXIvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
 001 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABR66poh11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMC9Vc2Vycy93b3JrL0RWQW5hbHl6ZXIvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
 002 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABR66sRUZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMC9Vc2Vycy93b3JrL0RWQW5hbHl6ZXIvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
@@ -579,3 +573,4 @@ compilations:
 327 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSO34svR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMC9Vc2Vycy93b3JrL0RWQW5hbHl6ZXIvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
 328 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSO4A6tx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMC9Vc2Vycy93b3JrL0RWQW5hbHl6ZXIvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
 329 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSO4Ddq51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMC9Vc2Vycy93b3JrL0RWQW5hbHl6ZXIvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
+330 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSO8iPmN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAMC9Vc2Vycy93b3JrL0RWQW5hbHl6ZXIvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=

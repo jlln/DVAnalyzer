@@ -1,3 +1,13 @@
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+// INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+// IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+// ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+// This app is based around the ImageJ Java library. 
+// Schneider, C.A., Rasband, W.S., Eliceiri, K.W. "NIH Image to ImageJ: 25 years of image analysis". Nature Methods 9, 671-675, 2012.
+
 import ij._
 import ij.ImagePlus
 import ij.IJ
@@ -160,15 +170,11 @@ object ISA {
 		nuclei_mask.getChannelProcessor().resetMinAndMax()
 		val calibration = blue.getCalibration()
 		calibration.setUnit("micron")
-		val v_radius = calibration.getRawX(0.32)
-		println("Identifying the nuclei...")
-		val v_radius_string = "radius="+v_radius+ " stack"
-		IJ.run(nuclei_mask,"Variance...", v_radius_string)
+		val outlier_radius = calibration.getRawX(4.8)
+		val outlier_search_string = "radius="+outlier_radius+" threshold=50 which=Dark stack"
 		IJ.run(nuclei_mask,"Make Binary", "method=RenyiEntropy background=Default calculate")
 		IJ.run(nuclei_mask,"Fill Holes", "stack")
-		IJ.run(nuclei_mask,"Remove Outliers...", "radius=30 threshold=50 which=Dark stack");
-		IJ.run(nuclei_mask,"Mean...", "radius=15 stack")
-		IJ.run(nuclei_mask,"Make Binary", "method=Default background=Default calculate")
+		IJ.run(nuclei_mask,"Remove Outliers...", outlier_search_string);
 		IJ.run(nuclei_mask,"Dilate","stack")
 		IJ.run(nuclei_mask,"Watershed", "stack")
 
