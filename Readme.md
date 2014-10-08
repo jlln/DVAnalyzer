@@ -1,4 +1,4 @@
-This app will measure the correlation by Pearson's R for each nucleus in an image. It also measures the sizes and numbers of substructures in the red and green channels. It accepts tif images containing Z-stacks, and expects the channels to be in Red-Green-Blue order.
+This app will measure the correlation by Pearson's R for each nucleus in an image. It also measures the sizes and numbers of substructures in the red and green channels. It accepts tif images containing Z-stacks, and expects the channels to be in Red-Green-Blue order. It also requires that the images be spatially correlated.
 
 It first identifies the nuclei contained in each image (using the blue channel), and tracks the nuclei through the stack. It then identifies, for each nucleus, which slices are in focus.
 
