@@ -1,10 +1,10 @@
-This app will measure the correlation by Pearson's R for each nucleus in an image. It also measures the sizes and numbers of substructures in the red and green channels. It accepts tif images containing Z-stacks, and expects the channels to be in Red-Green-Blue order. It also requires that the images be spatially correlated.
+This app will measure the correlation by Pearson's R and the colocalization by Mander's overlap coefficients. Coste's method is used for thresholding. Results are calculated for each nucleus in an image. The app also measures the sizes and numbers of substructures in the red and green channels. It accepts tif images containing Z-stacks, and expects the channels to be in Red-Green-Blue order. It also requires that the images be spatially correlated.
 
 It first identifies the nuclei contained in each image (using the blue channel), and tracks the nuclei through the stack. It then identifies, for each nucleus, which slices are in focus.
 
 It then measures the intensity of each channel for each nucleus in in an image. It assumes the first channel is blue, the second green, and the third red. 
 
-It then calculates the intensity correlation quotient (ICQ) and the Pearson's R between Red and Green, for each nucleus in the image.
+It then calculates the colocalization metrics and performs particle analysis.
 
 The app returns the mean value for each nucleus.
 
@@ -12,7 +12,7 @@ The app also allows for a numeric explanatory variable to be recorded. The appli
 
 Data is written to a csv file in the working directory.
 
-
+This app is compiled with the Scala simple build tool. Build definitions are included in build.sbt
 
 
 This app is based around the ImageJ Java library. 
