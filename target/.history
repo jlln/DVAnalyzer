@@ -10,3 +10,7 @@ set libraryDependencies += "org.scalanlp" % "breeze_2.10" % "0.7"
 set resolvers += "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/"
 set scalaVersion := "2.10.3"
 console
+help
+about
+help
+about
