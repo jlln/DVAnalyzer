@@ -8,7 +8,7 @@
 // This app is based around the ImageJ Java library. 
 // Schneider, C.A., Rasband, W.S., Eliceiri, K.W. "NIH Image to ImageJ: 25 years of image analysis". Nature Methods 9, 671-675, 2012.
 
-// jlln.github.com
+// There are lots of functions that aren't currently used. Their definitions still exists but they are never called.
 
 import ij._
 import ij.ImagePlus
@@ -27,6 +27,7 @@ import java.io._
 import scala.collection.JavaConversions._
 import ij.gui.WaitForUserDialog
 import ij.process.ByteProcessor
+import scala.util.Random.nextInt
 
 
 
@@ -34,8 +35,8 @@ object ISA {
 
 
 	case class NucleiSlice(slice:Int,x_centre:Double,y_centre:Double,roi:ij.gui.Roi,area:Double)
-    case class Nuclei(slices:ListBuffer[NucleiSlice])
-    case class ProcessedRoi(slice:Int,x_centre:Double,y_centre:Double,roi:ij.gui.Roi,area:Double)
+  case class Nuclei(slices:ListBuffer[NucleiSlice])
+  case class ProcessedRoi(slice:Int,x_centre:Double,y_centre:Double,roi:ij.gui.Roi,area:Double)
 
 
 	def getListOfSubDirectories(directoryName: String): Array[String] = {
@@ -194,6 +195,19 @@ object ISA {
 
     // Costes implementation
     // Regression A=bX+C
+    def orthogonalRegression(pixels_a:Seq[Int],pixels_b:Seq[Int]):(Double,Double)={
+      val line_a = regression(pixels_a,pixels_b)
+      val line_b = regression(pixels_b,pixels_a)
+      val m_a = line_a._1
+      val c_a = line_a._2
+      val m_b = 1/line_b._1
+      val c_b = line_b._2/line_b._1
+      val m = (m_a+m_b)/2
+      val c = (c_a+c_b)/2
+      return (m,c)
+
+    }
+
     def regression(pixels_a:Seq[Int],pixels_b:Seq[Int]):(Double,Double)={
     	val m_A = mean(pixels_a)
     	val m_B = mean(pixels_b)
@@ -240,7 +254,7 @@ object ISA {
     def costesWrapper(pixels_a:Seq[Int],pixels_b:Seq[Int]):(Array[Int],Array[Int])={
     	val rankings_a = rankSort(pixels_a)
     	val rankings_b = rankSort(pixels_b)
-    	val lm = regression(pixels_b,pixels_a)
+    	val lm = orthogonalRegression(pixels_b,pixels_a)
     	val lm_gradient = lm._1
     	val lm_intercept = lm._2
     	val threshold = doCostes(pixels_a,pixels_b,rankings_a,0,lm_gradient,lm_intercept)
@@ -289,14 +303,52 @@ object ISA {
     }
 
 
+    // MeanThresholdedManders
+    def meanManders(pixels_a:Array[Int],pixels_b:Array[Int]):Double={
+      val mean_a = mean(pixels_a)
+      val mean_b = mean(pixels_b)
+      
+      val thresholded_pixels_a = for (p<-pixels_a)
+                    yield{
+                      if (p>mean_a)
+                      1
+                      else
+                      0
+                    }
+      val thresholded_pixels_b = for (p<-pixels_b)
+                    yield{
+                      if (p>mean_b)
+                      1
+                      else
+                      0
+                    }
+
+    val matches = thresholded_pixels_a.zip(thresholded_pixels_b) map {case (a,b)=>a+b}
+    val match_count = matches.filter(x=> x==2).length
+    val score_a_on_b = match_count.toDouble/thresholded_pixels_a.sum
+    return score_a_on_b
+    }
+
+    def meanMandersSliceWrapper(channel_a:List[Array[Int]],channel_b:List[Array[Int]]):Double={
+      val per_slice_results = channel_a.zip(channel_b) map {case (a,b) => meanManders(a,b)}
+      val nuclei_mean = mean(per_slice_results)
+      return nuclei_mean
+    }
+    
+    def meanMandersNuclearWrapper(channel_a:List[List[Array[Int]]],channel_b:List[List[Array[Int]]]):List[Double]={
+      val zipped_nuclei = channel_a.zip(channel_b)
+      val results = zipped_nuclei map {case (a,b)=>meanMandersSliceWrapper(a,b)}
+      return results
+    }
+    
+    
 
 
-
-    // Gets the pixel values for the passed channel within the passed nuclei. Returns list of short arrays.
-    def getNucleiPixels(image:ij.ImagePlus,nuclei:Nuclei):List[Array[Int]]={
-      var pixel_array_by_slice:ListBuffer[Array[Int]] = ListBuffer()
+    // Gets the pixel values for the passed channel within the passed nuclei. Returns list of Int arrays.
+    def getNucleiPixels(image:ij.ImagePlus,nuclei:Nuclei,mask:List[Array[Int]] = null):List[Array[Int]]={
+      
       val boundaries = getNucleiBoundaries(nuclei)
-      for (s<-nuclei.slices){
+      val pixel_array_by_slice = for (s<-nuclei.slices) yield {
         image.setSlice(s.slice)
         
         image.setRoi(boundaries)
@@ -305,13 +357,22 @@ object ISA {
         val pixels_array1:Array[Short] = cropped_image.getPixels().asInstanceOf[Array[Short]]
         val pixels_array = pixels_array1 map {x=>x.toInt}
 
-        pixel_array_by_slice.append(pixels_array)
+        pixels_array
         }
+      val masked_pixel_array = mask match {
+        case null => pixel_array_by_slice
+        case _ => pixel_array_by_slice zip (mask) map {case (p,m) => p zip(m) map {case (pp,mm) => (if (mm >0 ) pp else 0)}}
+      }
       return pixel_array_by_slice.toList
     	}
 
-    def maskNuclei(blue:ImagePlus):List[Nuclei]={
-    	val nuclei_mask=blue.duplicate()
+
+
+
+
+
+    def maskNuclei(blue:ImagePlus):(List[Nuclei],ImagePlus)={
+    val nuclei_mask=blue.duplicate()
 		nuclei_mask.getChannelProcessor().resetMinAndMax()
 		val calibration = blue.getCalibration()
 		calibration.setUnit("micron")
@@ -328,7 +389,7 @@ object ISA {
 		val pa = new ParticleAnalyzer(ParticleAnalyzer.ADD_TO_MANAGER,
 		ij.measure.Measurements.MEAN+ij.measure.Measurements.CENTROID+ij.measure.Measurements.AREA,
 		results,
-		3000,5000000,
+		300,5000000,
 		0,1.0)
 		for (i<-(0 until nuclei_mask.getStackSize())){
 			nuclei_mask.setSliceWithoutUpdate(i + 1)
@@ -353,7 +414,7 @@ object ISA {
       	
       	val focussed_nuclei = (for (n<-nuclei) yield nucleiFocusser(n,edge_mask)).filter(x=> x.slices.length !=0)
       	println("Nuclei identified")
-      	return focussed_nuclei.toList
+      	return (focussed_nuclei.toList,nuclei_mask)
 		}
 
 
@@ -367,7 +428,7 @@ object ISA {
 				image.setRoi(boundaries)
 				val cropped_image = image.getProcessor.crop()
 				val preview_image = new ij.ImagePlus("i",cropped_image)
-				// preview_image.getProcessor.resetMinAndMax()
+				preview_image.getChannelProcessor().resetMinAndMax()
 				preview_image.show()
 				Thread.sleep(100)
 				WindowManager.closeAllWindows()
@@ -375,9 +436,11 @@ object ISA {
       		}
     	}
 
-      // For now, due to troubles with trying to interface the imageJ API with scala, only the first slice of each nuclei is examined for object stats.
+      // For now, due to troubles with trying to interface the imageJ API with scala, only the middle slice of each nuclei is examined for object stats.
     def makeObjectMask(image:ij.ImagePlus,nuclei:Nuclei):ImagePlus = { 
     	val boundaries = getNucleiBoundaries(nuclei)
+      val middle_slice = math.floor(image.getStackSize()/2)
+      image.setSlice(middle_slice.toInt)
   		image.setRoi(boundaries)
   		val cropped_image = image.getProcessor.crop()
 		val object_mask=subtractBackground(new ImagePlus("",cropped_image),10)
@@ -401,6 +464,7 @@ object ISA {
 		return r_value
 		}
 
+// Process all the slices in the cell
 	def pearsonsIntermediateWrapper(a:List[Array[Int]],b:List[Array[Int]]):Double={
 		val zipped_slices = a.zip(b)
 		val r_values = zipped_slices map {case (a,b) => pearsonsCorrelationCoefficient(a,b)}
@@ -411,11 +475,91 @@ object ISA {
 		}
 		}
 
+
+  def pearsonsNonZeroIntermediateWrapper(a:List[Array[Int]],b:List[Array[Int]]):Double={
+    val zipped_slices = a.zip(b)
+    val r_values = zipped_slices map {case (a,b) => pearsonsNonZeroPixelCorrelation(a,b)}
+    val m = mean(r_values)
+    m match{
+      case x if x.isNaN => return 0
+      case y => return y
+    }
+    }
+
+  def pearsonsNonZeroPixelCorrelation(items_a:Array[Int],items_b:Array[Int]): Double = {
+    val a_threshold = 1
+    val b_threshold = 1
+    val items_a_nz = items_a.map (x=>(if (x > a_threshold) 1 else 0))
+    val items_b_nz = items_b.map (x=>(if (x > b_threshold) 1 else 0))
+    val intersections = items_a_nz.zip(items_b_nz) map {case (a,b)=>a+b}
+    val intersection_indices = intersections.zipWithIndex.filter(x => x._1 > 1) map {case (z,i) =>i}
+    val nz_items_a = intersection_indices.map (i=>items_a(i))
+    val nz_items_b = intersection_indices.map (i=>items_b(i))
+    val N = nz_items_a.size
+    val z_scores_a = standardScores(nz_items_a)
+    val z_scores_b = standardScores(nz_items_b)
+    val r_value = ( (z_scores_a.toList.zip(z_scores_b.toList) map {case (za,zb) => za*zb}).sum/(N) )
+    return r_value
+  }
+
+    // Process all the cells in the image
 	def pearsonsWrapper(channel_a:List[List[Array[Int]]],channel_b:List[List[Array[Int]]]):List[Double] = {
 		val zipped_nuclei = channel_a.zip(channel_b)
 		val r_values = zipped_nuclei map {case(a:List[Array[Int]],b:List[Array[Int]]) =>pearsonsIntermediateWrapper(a,b) }
 		return r_values
 		}
+
+
+
+
+
+
+  def random_image_translator(channel_a:List[Array[Int]],channel_b:List[Array[Int]],width:Int,height:Int,mask:List[Array[Int]]):Double={
+    
+    val slices_by_rows = for(s<-channel_a) yield s.toList.grouped(width).toList
+    val mask_slices_by_rows = for (s<-mask) yield s.toList.grouped(width).toList
+    
+
+    val dx=nextInt(width)
+    val dy=nextInt(height)
+    val x_translated_slices_by_rows = for (s<-slices_by_rows) yield s.map(r=>r.slice(dx,r.length)++r.slice(0,dx))
+    val x_translated_mask_slices_by_rows = for (s<-mask_slices_by_rows) yield s.map(r=>r.slice(dx,r.length)++r.slice(0,dx))
+    val flattened_xy_translated_slices = for (s<-x_translated_slices_by_rows) yield (s.slice(dy,s.length)++s.slice(0,dy)).flatten.toArray
+    val flattened_xy_translated_mask_slices:List[Array[Int]] = for (s<-x_translated_mask_slices_by_rows) yield (s.slice(dy,s.length)++s.slice(0,dy)).flatten.toArray
+    val zipped_mask_slices:List[Array[(Int,Int)]] = for ((ts,s)<-flattened_xy_translated_mask_slices.zip(mask)) yield ts.zip(s)
+    val intersections:List[Array[Int]] = for (s<-zipped_mask_slices) yield s.map {case (a,b) => a+b}
+    
+    val intersection_indices = for (s<-intersections) yield s.zipWithIndex filter {case (v,i) => v== 510} map {case (value,index) => index }
+    val retained_a = for ((s_a,s_m)<-channel_a.zip(intersection_indices)) yield s_m.map (i=>s_a(i))
+    val retained_b = for ((s_b,s_m)<-channel_b.zip(intersection_indices)) yield (s_m).map (i=>s_b(i))
+    val pcc = pearsonsIntermediateWrapper(retained_a,retained_b)
+    return pcc
+    
+  }
+
+
+  // Randomly xy displaces the pixels of a single nucleus stack, with the pixels wrapping to the opposite end of the image.
+  def randomizerWrapper(channel_a:List[Array[Int]],channel_b:List[Array[Int]],width:Int,masking_channel:List[Array[Int]]):Double={
+    println("Testing significance...")
+    val length = channel_a(0).length
+    val height = length/width
+    val original_pcc = pearsonsIntermediateWrapper(channel_a,channel_b)
+    val pccs = (1 until 500).par map {_ => random_image_translator(channel_a,channel_b,width,height,masking_channel)}
+    val below_threshold = pccs.filter (x=> x.abs < original_pcc.abs)
+    val p_value = below_threshold.length.toDouble/500
+    println(p_value)
+    return p_value
+  }
+
+    // Significance Testing. Wrapper accepts a list of nuclei, each comprising a list of slices, each of which is an array of shorts.
+    // Also accepts a list of image widths. Returns a list, which consists of a list of the PCC values obtained for each nucleus over 500 iterations of 
+    // the constrained displacement algorithm.
+  def randomizationTestingWrapper(channel_a:List[List[Array[Int]]],channel_b:List[List[Array[Int]]],widths:List[Int],masking_channel:List[List[Array[Int]]]):List[Double]={
+    val inputs = ((channel_a,channel_b,widths).zipped,masking_channel).zipped
+    val p_values=inputs map {case((a,b,w),m)=>randomizerWrapper(a,b,w,m)}
+    return p_values.toList
+  }
+
 	
 	def measureNucleusIntensity(channel:ImagePlus,nucleus:Nuclei):Double = {
 		val measurements=ij.measure.Measurements.MEAN
@@ -467,21 +611,27 @@ object ISA {
 	def processImageFile(filepath:String,csv_writer:CSVWriter,explanatory_value:String){
 		val opener = new ij.io.Opener()
 		val image:ImagePlus = opener.openImage(filepath)
+    println("Finding nuclei and focusing...")
 		
 		val channels:Array[ImagePlus]=ChannelSplitter.split(image)
 		val blue = channels(2)
 		val green = subtractBackground(channels(1),15)
 		val red = subtractBackground(channels(0),15)
-		val focussed_nuclei = maskNuclei(blue)
-		
-		
+		val (focussed_nuclei,nuclei_mask) = maskNuclei(blue)
+		val mask_float = new ij.ImagePlus("mask", nuclei_mask.getProcessor().convertToShort(false))
+    val mask_pixels = focussed_nuclei map (x=>getNucleiPixels(mask_float,x))
+		visualCheck(blue,focussed_nuclei)
 		println("Analysing...")
 		val green_masks = makeObjectMasks(green,focussed_nuclei)
 		val red_masks = makeObjectMasks(red,focussed_nuclei)
 		
-		val blue_pixels = focussed_nuclei map (x=> getNucleiPixels(blue,x))
-		val green_pixels = focussed_nuclei map (x=> getNucleiPixels(green,x))
-		val red_pixels = focussed_nuclei map (x=> getNucleiPixels(red,x))
+		val blue_pixels = focussed_nuclei.zipWithIndex map {case (x,i) => getNucleiPixels(blue,x,mask_pixels(i))}
+		val green_pixels = focussed_nuclei.zipWithIndex map {case (x,i) => getNucleiPixels(green,x,mask_pixels(i))}
+		val red_pixels = focussed_nuclei.zipWithIndex map {case (x,i) => getNucleiPixels(red,x,mask_pixels(i))}
+
+    val image_widths = focussed_nuclei map (x=>getNucleiBoundaries(x).getBounds().width)
+    val coloc_p_values = randomizationTestingWrapper(green_pixels,red_pixels,image_widths,mask_pixels)
+
 		val nucleus_areas = focussed_nuclei.map(n=>getNucleusMeanArea(n))
 	
 		val green_objects = green_masks.map(x => object_mask_analyzer(x))
@@ -490,27 +640,18 @@ object ISA {
     val (red_object_count,red_object_mean_area,red_object_sd_area)=red_objects.unzip3
 		
 
-    val (green_thresholded, red_thresholded) = costesFullImageWrapper(green_pixels,red_pixels)
-
+    
 		
-
-	
-		val rg_thresholded = pearsonsWrapper(green_thresholded,red_thresholded)
-		
-		val overlap_data = green_thresholded.zip(red_thresholded) map {case (g,r) =>overlapWrapper(g,r)}
-		val (gr_overlap,rg_overlap) = overlap_data.unzip
-
-		val gr_overlapw = gr_overlap.map(a=>a.toString)
-		val rg_overlapw = rg_overlap.map(a=>a.toString)
-		
-		
+		val mrog = meanMandersNuclearWrapper(red_pixels,green_pixels)
+    val mgor = meanMandersNuclearWrapper(green_pixels,red_pixels)
 		val rg_r_values = pearsonsWrapper(green_pixels,red_pixels) 
 		val bg_r_values = pearsonsWrapper(blue_pixels,green_pixels) 
 		val rb_r_values = pearsonsWrapper(blue_pixels,red_pixels) 
+    
 		val green_intensities = measureNucleiIntensities(green,focussed_nuclei) 
 		val red_intensities = measureNucleiIntensities(red,focussed_nuclei)
 
-		val rows = for (i <-nucleus_areas.indices) yield (List(explanatory_value,nucleus_areas(i),green_intensities(i),red_intensities(i),rg_r_values(i),bg_r_values(i),rb_r_values(i),rg_thresholded(i),gr_overlapw(i),rg_overlapw(i),red_object_count(i),red_object_mean_area(i),green_object_count(i),green_object_mean_area(i)))
+		val rows = for (i <-nucleus_areas.indices) yield (List(explanatory_value,nucleus_areas(i),green_intensities(i),red_intensities(i),rg_r_values(i),bg_r_values(i),rb_r_values(i),red_object_count(i),red_object_mean_area(i),green_object_count(i),green_object_mean_area(i),mgor(i),mrog(i),coloc_p_values(i)))
 		for (r<-rows){
 			println(r)
 			csv_writer.writeRow(r)
@@ -525,12 +666,13 @@ object ISA {
 	
 
 	def main(args: Array[String]){
+    // val top_directory = "/Users/work/Documents/h2ax_time_series_2/"
 		val top_directory = new ij.io.DirectoryChooser("Choose Directory").getDirectory().toString
 		val output_file = top_directory+"ZisaAnalysis.csv"
 		val csv_writer = CSVWriter.open(output_file,append=false)
-		csv_writer.writeRow(Seq("ExplanatoryValue","Nucleus Area","GreenIntensity","RedIntensity","GreenRedPearson","GreenBluePearson","RedBluePearson","PearsonRGThresholded","GreenOverlapRed","RedOverlapGreen","RedObjectCount","RedObjectMeanArea","GreenObjectCount","GreenObjectMeanArea"))
+		csv_writer.writeRow(Seq("ExplanatoryValue","Nucleus Area","GreenIntensity","RedIntensity","GreenRedPearson","GreenBluePearson","RedBluePearson","RedObjectCount","RedObjectMeanArea","GreenObjectCount","GreenObjectMeanArea","MeanThresholdOverlapGOR","MeanThresholdOverlapROG","ColocPValue"))
 		
-		// val top_directory = "/Users/work/Documents/h2ax_time_series_2/"
+		
 		for (subdirectory_name <- getListOfSubDirectories(top_directory)){
 			
 			for (file<-getListOfFilesInSubDirectory(top_directory+subdirectory_name)){
