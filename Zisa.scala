@@ -8,6 +8,8 @@
 // This app is based around the ImageJ Java library. 
 // Schneider, C.A., Rasband, W.S., Eliceiri, K.W. "NIH Image to ImageJ: 25 years of image analysis". Nature Methods 9, 671-675, 2012.
 
+// jlln.github.com
+
 import ij._
 import ij.ImagePlus
 import ij.IJ
