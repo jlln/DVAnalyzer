@@ -387,12 +387,13 @@ object ISA {
     channel.setRoi(boundaries)
     val cropped_image = channel.getProcessor.crop()
     cropped_image.setAutoThreshold("RenyiEntropy dark")
-    val object_mask = new ImagePlus("object_mask",cropped_image.convertToByte(true))
+    cropped_image.convertToByte(true)
+    val object_mask = new ImagePlus("object_mask",cropped_image)
     
     
     object_mask.show()
     IJ.run("Tile")
-    Thread.sleep(2000)
+    Thread.sleep(50)
     object_mask
   }
 
@@ -406,7 +407,6 @@ object ISA {
     val r_objects = prepareObjectChannel(r,background_radius,current_slice,boundaries)
     val g_objects = prepareObjectChannel(g,background_radius,current_slice,boundaries)
     val b_objects = prepareObjectChannel(b,background_radius,current_slice,boundaries)
-    
 
     List(analyzeObjects(current_slice,boundaries,r_objects), analyzeObjects(current_slice,boundaries,g_objects), analyzeObjects(current_slice,boundaries,b_objects)).flatten
     // Performs object analsysis and Mander's overlap analsis
