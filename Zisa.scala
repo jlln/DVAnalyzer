@@ -389,11 +389,13 @@ object ISA {
     cropped_image.setAutoThreshold("RenyiEntropy dark")
     cropped_image.convertToByte(true)
     val object_mask = new ImagePlus("object_mask",cropped_image)
+    val check_image = object_mask.duplicate()
+    check_image.getProcessor().resetMinAndMax()
     
-    
+    check_image.show()
     object_mask.show()
     IJ.run("Tile")
-    Thread.sleep(50)
+    
     object_mask
   }
 
@@ -407,7 +409,7 @@ object ISA {
     val r_objects = prepareObjectChannel(r,background_radius,current_slice,boundaries)
     val g_objects = prepareObjectChannel(g,background_radius,current_slice,boundaries)
     val b_objects = prepareObjectChannel(b,background_radius,current_slice,boundaries)
-
+    Thread.sleep(1000)
     List(analyzeObjects(current_slice,boundaries,r_objects), analyzeObjects(current_slice,boundaries,g_objects), analyzeObjects(current_slice,boundaries,b_objects)).flatten
     // Performs object analsysis and Mander's overlap analsis
     // Returns r - object count , r - mean object area, r-object area sd, and then same for g and b, then ROB,BOR, ROG, GOR, GOB,BOG
