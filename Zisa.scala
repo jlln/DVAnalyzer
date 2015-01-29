@@ -189,7 +189,7 @@ object ISA {
       }
   
   
-  def maskNuclei(blue:ImagePlus):(List[Nucleus],ImagePlus)={
+  def maskNuclei(blue:ImagePlus):(Array[Nucleus],ImagePlus)={
     WindowManager.closeAllWindows()
     
     val nuclei_mask=blue.duplicate()
@@ -235,10 +235,7 @@ object ISA {
     for (r <- processed_roi){
       nuclei=mergeNuclei(nuclei,r)
       }
-    val edge_mask = blue.duplicate()
-    IJ.run(edge_mask, "Find Edges","stack")
-    val focussed_nuclei = (for (n<-nuclei) yield nucleiFocusser(n,edge_mask)).filter(x=> x.getSlices.length !=0)
-    (focussed_nuclei.toList,nuclei_mask)
+    (nuclei,nuclei_mask)
     }
   
   // Accepts a list of nuclei or slice areas, and an array of results arrays for the corresponding slices or nuclei.
@@ -260,14 +257,6 @@ object ISA {
     // nuclei map {n => analyzeNucleus(image,n)(measureSliceIntensity)}
 
     println("Analyzing Nuclei")
-    // val calibration = image.getCalibration()
-    // calibration.setUnit("micron")
-    // val background_radius = calibration.getRawX(0.4)
-    // val bg_corrected_object_mask:ij.ImagePlus = subtractBackground(image.duplicate(),background_radius.toInt)
-    // val middle_slice:Int = (math.floor(bg_corrected_object_mask.getStackSize()/2)).toInt
-    // bg_corrected_object_mask.setSlice(middle_slice)
-    // image_for_object_masks.show()
-    // Thread.sleep(400)
     val slices:List[Int] = (nuclei map {n => n.getImageSlices}).flatten.distinct
     val image = subtractBackground(input_image,2,slices)
 
@@ -361,10 +350,13 @@ object ISA {
 
 
   def analyzeObjects(slice:Int,boundaries:ij.gui.Roi,object_mask:ij.ImagePlus):List[Double] = {
+    
+    
+    IJ.run("Tile")
     println("Analyzing Objects")
     val calibration = object_mask.getCalibration()
     calibration.setUnit("micron")
-    val background_radius = math.pow(calibration.getRawX(2),2)*3.14156
+    val background_radius = math.pow(calibration.getRawX(0.5),2)*3.14156
     val object_upper = math.pow(calibration.getRawX(40),2)*3.14156
     var roim= new RoiManager()
     var results= new ResultsTable()
@@ -374,7 +366,9 @@ object ISA {
       background_radius,object_upper,
       0,1.0)
     object_mask.show()
+    IJ.run("Tile")
     pa.analyze(object_mask)
+    Thread.sleep(500)
     results.getColumnIndex("Area") match {
       case -1 => List(0,0,0)
       case _ => {
@@ -405,14 +399,15 @@ object ISA {
 
 
   def prepareObjectChannel(channel:ij.ImagePlus,background_radius:Double,slice:Int,boundaries:ij.gui.Roi):ij.ImagePlus = {
-    
+    WindowManager.closeAllWindows
     channel.setSlice(slice)
     channel.setRoi(boundaries)
     val cropped_image = channel.getProcessor.crop()
+    val original_image = new ImagePlus("original",cropped_image.duplicate())
+    original_image.show()
     cropped_image.setAutoThreshold("RenyiEntropy dark")
     cropped_image.convertToByte(true)
     val object_mask = new ImagePlus("object_mask",cropped_image)
-
     object_mask
   }
 
@@ -424,13 +419,12 @@ object ISA {
     calibration.setUnit("micron")
     val background_radius = calibration.getRawX(0.5)
     val r_objects = prepareObjectChannel(r,background_radius,current_slice,boundaries)
+    val r_results = analyzeObjects(current_slice,boundaries,r_objects)
     val g_objects = prepareObjectChannel(g,background_radius,current_slice,boundaries)
+    val g_results = analyzeObjects(current_slice,boundaries,g_objects)
     val b_objects = prepareObjectChannel(b,background_radius,current_slice,boundaries)
-    r_objects.show
-    g_objects.show
-    b_objects.show
-    IJ.run("Tile")
-    List(analyzeObjects(current_slice,boundaries,r_objects), analyzeObjects(current_slice,boundaries,g_objects), analyzeObjects(current_slice,boundaries,b_objects)).flatten
+    val b_results = analyzeObjects(current_slice,boundaries,b_objects)
+    List(r_results,g_results,b_results).flatten
     // Performs object analsysis and Mander's overlap analsis
     // Returns r - object count , r - mean object area, r-object area sd, and then same for g and b, then ROB,BOR, ROG, GOR, GOB,BOG
   }
@@ -457,10 +451,27 @@ object ISA {
 
 
 
+
+  def threeChannelNucleusFocusser(edge_masks:List[ij.ImagePlus],nucleus:Nucleus):Nucleus={
+    val retained_by_channel:List[Nucleus] = edge_masks.map{em=> nucleiFocusser(nucleus,em)}
+    val retained_slices_by_channel = (retained_by_channel.map{n=>n.getSlices}).toList
+    new Nucleus(((retained_slices_by_channel(0).intersect(retained_slices_by_channel(1))).intersect(retained_slices_by_channel(2))).toArray)
+  }
+
+  def threeChannelNucleiFocusser(r:ij.ImagePlus,g:ij.ImagePlus,b:ij.ImagePlus,nuclei:Array[Nucleus]):List[Nucleus]={
+    val edge_masks:List[ij.ImagePlus] = for (i <- List(r,g,b)) yield i.duplicate()
+    edge_masks.map{em => IJ.run(em, "Find Edges","stack")}
+    val focussed_nuclei:List[Nucleus] = (nuclei.map{n=>threeChannelNucleusFocusser(edge_masks,n)}).toList
+    focussed_nuclei.filter{n=> n.getSlices.length > 0}
+
+
+  }
+
   def processImageToNuclei(image:ij.ImagePlus):List[Nucleus]={
     val channels:Array[ImagePlus]=ChannelSplitter.split(image)
     val (red,green,blue) = (channels(0),channels(1),channels(2))
-    val (focussed_nuclei,nuclei_mask) = maskNuclei(blue)
+    val (nuclei,nuclei_mask) = maskNuclei(blue)
+    val focussed_nuclei = threeChannelNucleiFocusser(red,green,blue,nuclei)
     focussed_nuclei
   }
   
