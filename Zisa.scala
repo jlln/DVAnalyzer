@@ -54,6 +54,7 @@ class NucleusSlice(slice:Int,x_centre:Double,y_centre:Double,roi:ij.gui.Roi,area
 }
 class Nucleus(slices:Array[NucleusSlice]){
   def getSlices = slices.toList
+  def getImageSlices = slices.toList.map{ s=> s.getSlice}
   def last = slices.last
   def append(s:NucleusSlice):Nucleus = new Nucleus(slices:+s)
   def getMaximumCrossSectionRoi = slices.zip(slices.map(s=>s.getArea)).maxBy(_._2)._1.getRoi
@@ -133,14 +134,15 @@ object ISA {
     
   
   
-  def subtractBackground(image:ij.ImagePlus,radius:Int):ImagePlus={
-      for (i<-(1 until image.getStackSize)){
-        image.setSlice(i)
-        val str = "rolling="+radius.toString+" , slice"
-        IJ.run(image,"Subtract Background...",str)
-        }
-      image
-    }
+  def subtractBackground(image:ij.ImagePlus,radius:Int,slices:List[Int]):ImagePlus={
+    println("Subtracting Background")
+    for (i<-slices){
+      image.setSlice(i)
+      val str = "rolling="+radius.toString+" , slice"
+      IJ.run(image,"Subtract Background...",str)
+      }
+    image
+  }
   
   def mergeNuclei(nuclei:Array[Nucleus],ro_i:NucleusSlice):Array[Nucleus]={
     
@@ -250,7 +252,7 @@ object ISA {
   }
 
 
-  def analyzeNuclei(image:ij.ImagePlus,nuclei:List[Nucleus]):List[List[Double]] = {
+  def analyzeNuclei(input_image:ij.ImagePlus,nuclei:List[Nucleus]):List[List[Double]] = {
     // Each type of measurement is a function that applies to a single slice of a nucleus ie a NucleusSlice object, returning a double
     // A curried wrapper function will produce area-weighted averages across the slices of each nuclei using a provided function, returning a double.
     // Each nucleus will be described by these various measurements, and by its total area.
@@ -258,23 +260,40 @@ object ISA {
     // nuclei map {n => analyzeNucleus(image,n)(measureSliceIntensity)}
 
     println("Analyzing Nuclei")
-    val calibration = image.getCalibration()
-    calibration.setUnit("micron")
-    val background_radius = calibration.getRawX(0.4)
-    val image_for_object_masks = subtractBackground(image.duplicate(),background_radius.toInt)
+    // val calibration = image.getCalibration()
+    // calibration.setUnit("micron")
+    // val background_radius = calibration.getRawX(0.4)
+    // val bg_corrected_object_mask:ij.ImagePlus = subtractBackground(image.duplicate(),background_radius.toInt)
+    // val middle_slice:Int = (math.floor(bg_corrected_object_mask.getStackSize()/2)).toInt
+    // bg_corrected_object_mask.setSlice(middle_slice)
+    // image_for_object_masks.show()
+    // Thread.sleep(400)
+    val slices:List[Int] = (nuclei map {n => n.getImageSlices}).flatten.distinct
+    val image = subtractBackground(input_image,2,slices)
 
-    (nuclei map {n=> List(n.getTotalArea) ++ analyzeNucleus(image,n)(measureSliceIntensity) ++ analyzeNucleus(image,n)(slicePearsons(0)) ++ analyzeNucleus(image_for_object_masks,n)(analyzeSubnuclearObjects)}).toList
+
+    (nuclei map {n=> List(n.getTotalArea) ++ analyzeNucleus(image,n,true)(measureSliceIntensity) ++ analyzeNucleus(image,n,true)(slicePearsons(0)) ++ analyzeNucleus(image,n,false)(analyzeSubnuclearObjects)}).toList
     
     
   }
 
-  def analyzeNucleus(image:ij.ImagePlus,nucleus:Nucleus)(analyticalFunction:(NucleusSlice, ij.ImagePlus,ij.ImagePlus,ij.ImagePlus) => List[Double]):List[Double] = {
-    
-    val slices = nucleus.getSlices
+  def analyzeNucleus(image:ij.ImagePlus,nucleus:Nucleus,all_slices:Boolean)(analyticalFunction:(NucleusSlice, ij.ImagePlus,ij.ImagePlus,ij.ImagePlus) 
+    => List[Double]):List[Double] = {
+    val nuclear_slices = nucleus.getSlices
+    val middle_slice = (math.floor(nuclear_slices.length/2)).toInt
+    val slices = all_slices match {
+      case true => nuclear_slices
+      case false => nuclear_slices.length match {                               //Just using the most central slices
+        case x if x > 4 => nuclear_slices.slice(middle_slice -2,middle_slice+3)
+        case x if x < 5 => nuclear_slices
+      }
+                            
+        
+    }
     val areas = slices.map(s=>s.getArea)
     val channels:Array[ImagePlus]=ChannelSplitter.split(image)
     val (red,green,blue) = (channels(0),channels(1),channels(2))
-    val raw_values:List[List[Double]] = for (s <- nucleus.getSlices) yield {
+    val raw_values:List[List[Double]] = for (s <- slices) yield {
       analyticalFunction(s,red,green,blue)
     }
     scaleResultsByTotalNuclearArea(areas,raw_values)
@@ -291,6 +310,7 @@ object ISA {
 
   // Measure slice intensity.
   def measureSliceIntensity(slice:NucleusSlice,r:ij.ImagePlus,g:ij.ImagePlus,b:ij.ImagePlus):List[Double] = {
+    println("Measuring Pixel Intensities")
     r.setSlice(slice.getSlice)
     r.setRoi(slice.getRoi)
     val measurements=ij.measure.Measurements.MEAN
@@ -308,6 +328,7 @@ object ISA {
   // The threshold value can be 1 or 0, depending on if zero-x or zero-zero pixels are to be discarded. ie use 0 for standard correlation 
   // measurement, and use 1 for pure spatial intensity correlation in overlapping regions.
   def slicePearsons(threshold:Int)(slice:NucleusSlice,r:ij.ImagePlus,g:ij.ImagePlus,b:ij.ImagePlus):List[Double] = {
+    println("Calculting Pearson's Correlation Coefficient")
     val r_pixels = slice.getPixels(r)
     val g_pixels = slice.getPixels(g)
     val b_pixels = slice.getPixels(b)
@@ -340,9 +361,10 @@ object ISA {
 
 
   def analyzeObjects(slice:Int,boundaries:ij.gui.Roi,object_mask:ij.ImagePlus):List[Double] = {
+    println("Analyzing Objects")
     val calibration = object_mask.getCalibration()
     calibration.setUnit("micron")
-    val background_radius = math.pow(calibration.getRawX(0.5),2)*3.14156
+    val background_radius = math.pow(calibration.getRawX(2),2)*3.14156
     val object_upper = math.pow(calibration.getRawX(40),2)*3.14156
     var roim= new RoiManager()
     var results= new ResultsTable()
@@ -370,6 +392,7 @@ object ISA {
   
 
   def mandersOverlapCoefficient(channel_a:ij.ImagePlus,channel_b:ij.ImagePlus):List[Double] = {
+    println("Calculating Mander's Overlap Coefficient")
     val pixels_a = channel_a.getProcessor.getFloatArray().flatten map{x=>x.toInt}
     val pixels_b = channel_b.getProcessor.getFloatArray().flatten map{x=>x.toInt}
     val sum = pixels_a.zip(pixels_b) map {case(a,b) => a+b}
@@ -389,13 +412,7 @@ object ISA {
     cropped_image.setAutoThreshold("RenyiEntropy dark")
     cropped_image.convertToByte(true)
     val object_mask = new ImagePlus("object_mask",cropped_image)
-    val check_image = object_mask.duplicate()
-    check_image.getProcessor().resetMinAndMax()
-    
-    check_image.show()
-    object_mask.show()
-    IJ.run("Tile")
-    
+
     object_mask
   }
 
@@ -409,7 +426,10 @@ object ISA {
     val r_objects = prepareObjectChannel(r,background_radius,current_slice,boundaries)
     val g_objects = prepareObjectChannel(g,background_radius,current_slice,boundaries)
     val b_objects = prepareObjectChannel(b,background_radius,current_slice,boundaries)
-    Thread.sleep(1000)
+    r_objects.show
+    g_objects.show
+    b_objects.show
+    IJ.run("Tile")
     List(analyzeObjects(current_slice,boundaries,r_objects), analyzeObjects(current_slice,boundaries,g_objects), analyzeObjects(current_slice,boundaries,b_objects)).flatten
     // Performs object analsysis and Mander's overlap analsis
     // Returns r - object count , r - mean object area, r-object area sd, and then same for g and b, then ROB,BOR, ROG, GOR, GOB,BOG
@@ -423,9 +443,9 @@ object ISA {
     for (n<-nuclei){
       val boundaries = n.getBoundingBox
       for (s<-n.getSlices){
-        blue.setSlice(s.getSlice)
-        blue.setRoi(boundaries)
-        val cropped_image = blue.getProcessor.crop()
+        image.setSlice(s.getSlice)
+        image.setRoi(boundaries)
+        val cropped_image = image.getProcessor.crop()
         val preview_image = new ij.ImagePlus("i",cropped_image)
         preview_image.getChannelProcessor().resetMinAndMax()
         preview_image.show()
@@ -460,10 +480,9 @@ object ISA {
       
     for (subdirectory_name <- getListOfSubDirectories(top_directory)){
       for (file<-getListOfFilesInSubDirectory(top_directory+subdirectory_name)){
-        println(top_directory+subdirectory_name+"/"+file)
         val image =openImageFile(top_directory+subdirectory_name+"/"+file)
         val nuclei = processImageToNuclei(image)
-        // visualCheck(image,nuclei)
+        visualCheck(image,nuclei)
         val results = analyzeNuclei(image,nuclei)
         results.foreach(println)
         }
