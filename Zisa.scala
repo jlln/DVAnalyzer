@@ -169,24 +169,7 @@ object ISA {
     }    
   }
   
-  def nucleiFocusser(nuclei:Nucleus,edge_mask:ij.ImagePlus):Nucleus = {
-        var variance_results = new ResultsTable()
-        val measurements = ij.measure.Measurements.MEAN+ij.measure.Measurements.AREA
-        val analyzer= new Analyzer(edge_mask,measurements,variance_results)
-        for (s<-nuclei.getSlices){
-          edge_mask.setSlice(s.getSlice)
-          edge_mask.setRoi(s.getRoi)
-          analyzer.measure()
-        }
-        val variance_values1 = variance_results.getColumn(variance_results.getColumnIndex("Mean"))
-        val variance_values=variance_values1.map(x => x*x)
-        val area_values = variance_results.getColumn(variance_results.getColumnIndex("Area"))
-        val mean_area = mean(area_values)
-        val variance_threshold = 0.8*variance_values.max        
-        val retained_slices = for ((s,i)<-nuclei.getSlices.zipWithIndex 
-          if (variance_values(i)>variance_threshold & area_values(i)>mean_area*0.7)) yield s
-        new Nucleus(retained_slices.toArray)
-      }
+  
   
   
   def maskNuclei(blue:ImagePlus):(Array[Nucleus],ImagePlus)={
@@ -403,11 +386,15 @@ object ISA {
     channel.setSlice(slice)
     channel.setRoi(boundaries)
     val cropped_image = channel.getProcessor.crop()
-    val original_image = new ImagePlus("original",cropped_image.duplicate())
+    val c_i = subtractBackground(new ImagePlus("",cropped_image),2,List(1))
+    val original_image_processor = cropped_image.duplicate()
+    original_image_processor.resetMinAndMax()
+    val original_image = new ImagePlus("original",original_image_processor)
     original_image.show()
-    cropped_image.setAutoThreshold("RenyiEntropy dark")
-    cropped_image.convertToByte(true)
-    val object_mask = new ImagePlus("object_mask",cropped_image)
+    val c_ip = c_i.getProcessor
+    c_ip.setAutoThreshold("RenyiEntropy dark")
+    c_ip.convertToByte(true)
+    val object_mask = new ImagePlus("object_mask",c_ip)
     object_mask
   }
 
@@ -449,6 +436,25 @@ object ISA {
       }
     }
 
+  def nucleiFocusser(nucleus:Nucleus,edge_mask:ij.ImagePlus):Nucleus = {
+    var variance_results = new ResultsTable()
+    val measurements = ij.measure.Measurements.MEAN+ij.measure.Measurements.AREA
+    val analyzer= new Analyzer(edge_mask,measurements,variance_results)
+    for (s<-nucleus.getSlices){
+      edge_mask.setSlice(s.getSlice)
+      edge_mask.setRoi(s.getRoi)
+      analyzer.measure()
+    }
+    val variance_values1 = variance_results.getColumn(variance_results.getColumnIndex("Mean"))
+    val variance_values=variance_values1.map(x => x*x)
+    val area_values = variance_results.getColumn(variance_results.getColumnIndex("Area"))
+    val mean_area = mean(area_values)
+    val variance_threshold = 0.8*variance_values.max        
+    val retained_slices = for ((s,i)<-nucleus.getSlices.zipWithIndex 
+      if (variance_values(i)>variance_threshold & area_values(i)>mean_area*0.7)) yield s
+    new Nucleus(retained_slices.toArray)
+  }
+
 
 
 
@@ -459,6 +465,7 @@ object ISA {
   }
 
   def threeChannelNucleiFocusser(r:ij.ImagePlus,g:ij.ImagePlus,b:ij.ImagePlus,nuclei:Array[Nucleus]):List[Nucleus]={
+    println("Finding Focussed Slices")
     val edge_masks:List[ij.ImagePlus] = for (i <- List(r,g,b)) yield i.duplicate()
     edge_masks.map{em => IJ.run(em, "Find Edges","stack")}
     val focussed_nuclei:List[Nucleus] = (nuclei.map{n=>threeChannelNucleusFocusser(edge_masks,n)}).toList
@@ -493,7 +500,6 @@ object ISA {
       for (file<-getListOfFilesInSubDirectory(top_directory+subdirectory_name)){
         val image =openImageFile(top_directory+subdirectory_name+"/"+file)
         val nuclei = processImageToNuclei(image)
-        visualCheck(image,nuclei)
         val results = analyzeNuclei(image,nuclei)
         results.foreach(println)
         }
