@@ -135,7 +135,7 @@ object ISA {
   
   
   def subtractBackground(image:ij.ImagePlus,radius:Int,slices:List[Int]):ImagePlus={
-    println("Subtracting Background")
+    // println("Subtracting Background")
     for (i<-slices){
       image.setSlice(i)
       val str = "rolling="+radius.toString+" , slice"
@@ -282,7 +282,7 @@ object ISA {
 
   // Measure slice intensity.
   def measureSliceIntensity(slice:NucleusSlice,r:ij.ImagePlus,g:ij.ImagePlus,b:ij.ImagePlus):List[Double] = {
-    println("Measuring Pixel Intensities")
+    // println("Measuring Pixel Intensities")
     r.setSlice(slice.getSlice)
     r.setRoi(slice.getRoi)
     val measurements=ij.measure.Measurements.MEAN
@@ -300,7 +300,7 @@ object ISA {
   // The threshold value can be 1 or 0, depending on if zero-x or zero-zero pixels are to be discarded. ie use 0 for standard correlation 
   // measurement, and use 1 for pure spatial intensity correlation in overlapping regions.
   def slicePearsons(threshold:Int)(slice:NucleusSlice,r:ij.ImagePlus,g:ij.ImagePlus,b:ij.ImagePlus):List[Double] = {
-    println("Calculting Pearson's Correlation Coefficient")
+    // println("Calculting Pearson's Correlation Coefficient")
     val r_pixels = slice.getPixels(r)
     val g_pixels = slice.getPixels(g)
     val b_pixels = slice.getPixels(b)
@@ -336,7 +336,7 @@ object ISA {
     
     
     IJ.run("Tile")
-    println("Analyzing Objects")
+    // println("Analyzing Objects")
     val calibration = object_mask.getCalibration()
     calibration.setUnit("micron")
     val background_radius = math.pow(calibration.getRawX(0.5),2)*3.14156
@@ -369,7 +369,7 @@ object ISA {
   
 
   def mandersOverlapCoefficient(channel_a:ij.ImagePlus,channel_b:ij.ImagePlus):List[Double] = {
-    println("Calculating Mander's Overlap Coefficient")
+    // println("Calculating Mander's Overlap Coefficient")
     val pixels_a = channel_a.getProcessor.getFloatArray().flatten map{x=>x.toInt}
     val pixels_b = channel_b.getProcessor.getFloatArray().flatten map{x=>x.toInt}
     val sum = pixels_a.zip(pixels_b) map {case(a,b) => a+b}
@@ -501,7 +501,12 @@ object ISA {
         val image =openImageFile(top_directory+subdirectory_name+"/"+file)
         val nuclei = processImageToNuclei(image)
         val results = analyzeNuclei(image,nuclei)
-        results.foreach(println)
+        val result_rows:List[List[String]] = results.map{r=> r.map{x=>x.toString}}
+        val rows:List[Seq[String]] = result_rows.map {r=> subdirectory_name.toString +: r}
+        for (r<-rows) {
+          println(r)
+          csv_writer.writeRow(r)
+          }
         }
       }
     }
