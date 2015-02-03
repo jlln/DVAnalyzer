@@ -339,23 +339,25 @@ object ISA {
     // println("Analyzing Objects")
     val calibration = object_mask.getCalibration()
     calibration.setUnit("micron")
-    val background_radius = math.pow(calibration.getRawX(0.5),2)*3.14156
-    val object_upper = math.pow(calibration.getRawX(40),2)*3.14156
+    val object_lower = math.pow(calibration.getRawX(1),2)*3.14156
+    val object_upper = math.pow(calibration.getRawX(80),2)*3.14156
     var roim= new RoiManager()
     var results= new ResultsTable()
     val pa = new ParticleAnalyzer(ParticleAnalyzer.ADD_TO_MANAGER,
       ij.measure.Measurements.MEAN+ij.measure.Measurements.CENTROID+ij.measure.Measurements.AREA,
       results,
-      background_radius,object_upper,
+      object_lower,object_upper,
       0,1.0)
     object_mask.show()
     IJ.run("Tile")
     pa.analyze(object_mask)
-    Thread.sleep(500)
+    // Thread.sleep(500)
     results.getColumnIndex("Area") match {
       case -1 => List(0,0,0)
       case _ => {
         val areas = results.getColumn(results.getColumnIndex("Area"))
+        val centroids = results.getColumn(results.getColumnIndex("X")).zip( results.getColumn(results.getColumnIndex("Y")) )
+        println(centroids.toList)
         val object_count = areas.length.toDouble
         val mean_object_area = mean(areas).toDouble
         val object_area_sd = standardDeviation(areas).toDouble
@@ -386,7 +388,7 @@ object ISA {
     channel.setSlice(slice)
     channel.setRoi(boundaries)
     val cropped_image = channel.getProcessor.crop()
-    val c_i = subtractBackground(new ImagePlus("",cropped_image),2,List(1))
+    val c_i = subtractBackground(new ImagePlus("",cropped_image),4,List(1))
     val original_image_processor = cropped_image.duplicate()
     original_image_processor.resetMinAndMax()
     val original_image = new ImagePlus("original",original_image_processor)
@@ -394,6 +396,7 @@ object ISA {
     val c_ip = c_i.getProcessor
     c_ip.setAutoThreshold("RenyiEntropy dark")
     c_ip.convertToByte(true)
+
     val object_mask = new ImagePlus("object_mask",c_ip)
     object_mask
   }
@@ -506,10 +509,11 @@ object ISA {
         for (r<-rows) {
           println(r)
           csv_writer.writeRow(r)
-          }
+          WindowManager.closeAllWindows()
         }
       }
     }
+  }
   
   
   
