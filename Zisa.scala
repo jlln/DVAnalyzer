@@ -1,7 +1,4 @@
-// For each experimental condition - each nucleus has a series of numerical attributes, and a total area. When calculating the population average
-// the values for each nucleus should be scaled according to its area.
-// Within each nucleus, each slice has an area - the nuclear averages across slices should also be scaled by area.
-//  i.e. calculate weighted averages using areas. - multiply each value by area, take the mean, then divide by total area.
+
 
 
 
@@ -34,6 +31,7 @@ class NucleusSlice(slice:Int,x_centre:Double,y_centre:Double,roi:ij.gui.Roi,area
   def getSlice = slice
   def getXCentre = x_centre
   def getYCentre = y_centre
+  def getCentroid = (x_centre,y_centre)
   def getRoi = roi
   def getArea = area
   def getBoundingBox = {
@@ -189,7 +187,6 @@ object ISA {
     IJ.run(nuclei_mask,"Make Binary", "method=RenyiEntropy background=Default calculate ")
     IJ.run(nuclei_mask,"Fill Holes", "stack")
     IJ.run(nuclei_mask,"Remove Outliers...", outlier_search_string);
-    // IJ.run(nuclei_mask,"Dilate","stack")
     IJ.run(nuclei_mask,"Watershed", "stack")
     var roim= new RoiManager()
     var results_table= new ResultsTable()
@@ -197,7 +194,7 @@ object ISA {
     ij.measure.Measurements.MEAN+ij.measure.Measurements.CENTROID+ij.measure.Measurements.AREA,
     results_table,
     cell_lower,cell_upper,
-    0,1.0)
+    0.3,1.0)
     val stack_size = nuclei_mask.getStackSize()
     for (i<-(0 until stack_size)){
       nuclei_mask.setSliceWithoutUpdate(i + 1)
@@ -233,6 +230,10 @@ object ISA {
 
 
   def analyzeNuclei(input_image:ij.ImagePlus,nuclei:List[Nucleus]):List[List[Double]] = {
+
+    // For each experimental condition - each nucleus has a series of numerical attributes, and a total area. When calculating the population average
+    // the values for each nucleus should be scaled according to its area.
+    // Within each nucleus, each slice has an area - the nuclear averages across slices should also be scaled by area.
     // Each type of measurement is a function that applies to a single slice of a nucleus ie a NucleusSlice object, returning a double
     // A curried wrapper function will produce area-weighted averages across the slices of each nuclei using a provided function, returning a double.
     // Each nucleus will be described by these various measurements, and by its total area.
@@ -351,7 +352,6 @@ object ISA {
     object_mask.show()
     IJ.run("Tile")
     pa.analyze(object_mask)
-    // Thread.sleep(500)
     results.getColumnIndex("Area") match {
       case -1 => List(0,0,0)
       case _ => {
@@ -364,14 +364,11 @@ object ISA {
         List(object_count,mean_object_area,object_area_sd)
       }
     }
-    
-    // List(0,0,0)
   }
 
   
 
   def mandersOverlapCoefficient(channel_a:ij.ImagePlus,channel_b:ij.ImagePlus):List[Double] = {
-    // println("Calculating Mander's Overlap Coefficient")
     val pixels_a = channel_a.getProcessor.getFloatArray().flatten map{x=>x.toInt}
     val pixels_b = channel_b.getProcessor.getFloatArray().flatten map{x=>x.toInt}
     val sum = pixels_a.zip(pixels_b) map {case(a,b) => a+b}
@@ -394,14 +391,52 @@ object ISA {
     val original_image = new ImagePlus("original",original_image_processor)
     original_image.show()
     val c_ip = c_i.getProcessor
-    c_ip.setAutoThreshold("RenyiEntropy dark")
+    c_ip.setAutoThreshold("Otsu dark") 
     c_ip.convertToByte(true)
 
     val object_mask = new ImagePlus("object_mask",c_ip)
+    object_mask.show()
+    IJ.run("Tile")
+    // Thread.sleep(500)
     object_mask
   }
 
+
+  def getObjectCount(object_mask:ij.ImagePlus):Double = {
+    var roim= new RoiManager()
+    var results= new ResultsTable()
+    val pa = new ParticleAnalyzer(ParticleAnalyzer.NOTHING,
+      ij.measure.Measurements.AREA,
+      results,
+      0,100000000,
+      0,1.0)
+    pa.analyze(object_mask)
+    results.getColumnIndex("Area") match {
+      case -1 =>0
+      case _ => results.getColumn(results.getColumnIndex("Area")).length * results.getColumn(results.getColumnIndex("Area")).sum
+    }
+  }
+
+
+  def newThresoldFunction(channel:ij.process.ImageProcessor):Double={
+    val counts:Seq[Double] = for (t<- 1 until 256) yield {
+      val new_channel = channel.duplicate()
+      new_channel.setThreshold(t,255,3)
+      val count = getObjectCount(new ImagePlus("",new_channel))
+      count
+    }
+    val counts_with_thresholds = counts.zipWithIndex.sortBy(_._1)
+    val best = counts_with_thresholds(254)
+    val best_threshold = best._2.toDouble
+    best_threshold
+  }
+
+  
+
+
   def analyzeSubnuclearObjects(slice:NucleusSlice,r:ij.ImagePlus,g:ij.ImagePlus,b:ij.ImagePlus):List[Double] = {
+    // Performs object analsysis and Mander's overlap analsis
+    // Returns r - object count , r - mean object area, r-object area sd, and then same for g and b.
     WindowManager.closeAllWindows
     val current_slice = slice.getSlice
     val boundaries = slice.getBoundingBox
@@ -415,8 +450,7 @@ object ISA {
     val b_objects = prepareObjectChannel(b,background_radius,current_slice,boundaries)
     val b_results = analyzeObjects(current_slice,boundaries,b_objects)
     List(r_results,g_results,b_results).flatten
-    // Performs object analsysis and Mander's overlap analsis
-    // Returns r - object count , r - mean object area, r-object area sd, and then same for g and b, then ROB,BOR, ROG, GOR, GOB,BOG
+    
   }
 
 
@@ -433,7 +467,7 @@ object ISA {
         val preview_image = new ij.ImagePlus("i",cropped_image)
         preview_image.getChannelProcessor().resetMinAndMax()
         preview_image.show()
-        Thread.sleep(100)
+        // Thread.sleep(100)
         WindowManager.closeAllWindows()
         }
       }
@@ -493,11 +527,9 @@ object ISA {
   def main(args: Array[String]){
     val top_directory = new ij.io.DirectoryChooser("Choose Directory").getDirectory().toString
     val full_output_file = top_directory+"FullZisaAnalysis.csv"
-    val csv_writer = CSVWriter.open(full_output_file,append=false)
-    csv_writer.writeRow(Seq("ExplanatoryValue","Nucleus Area","GreenIntensity","RedIntensity",
-      "GreenRedPearson","GreenBluePearson","RedBluePearson","RedObjectCount","RedObjectMeanArea",
-      "GreenObjectCount","GreenObjectMeanArea","MeanThresholdOverlapGOR","MeanThresholdOverlapROG",
-      "ColocPValue"))
+    val object_output_file = top_directory+"ObjectZisaAnalysis.csv"
+    val full_csv_writer = CSVWriter.open(full_output_file,append=false)
+    full_csv_writer.writeRow(Seq("ExperimentalCondition","totalarea","intensity_red","intensity_green","intensity_blue","pearsons_rg","pearsons_rb","pearsons_gb","object_count_red","mean_object_area_red","object_area_sd_red","object_count_green","mean_object_area_green","object_area_sd_green","object_count_blue","mean_object_area_blue","object_area_sd_blue"))
       
     for (subdirectory_name <- getListOfSubDirectories(top_directory)){
       for (file<-getListOfFilesInSubDirectory(top_directory+subdirectory_name)){
@@ -508,7 +540,7 @@ object ISA {
         val rows:List[Seq[String]] = result_rows.map {r=> subdirectory_name.toString +: r}
         for (r<-rows) {
           println(r)
-          csv_writer.writeRow(r)
+          full_csv_writer.writeRow(r)
           WindowManager.closeAllWindows()
         }
       }
