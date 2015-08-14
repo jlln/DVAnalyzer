@@ -26,23 +26,14 @@ import scala.math.sqrt
 import scala.math.pow
 
 
-class Result(labels:List[String],values:List[Double]){
+class Result(area:Double,labels:List[String],values:List[Option[Double]]){
   def getLabels = labels
-  def scale(scaling_factor:Double) = {
-    val new_values = values.map{v=>v*scaling_factor}
-    new Result(labels,new_values)
-  }
   def getResultValues = values
-  def addResultValues(that:Result) = {
-    val new_values:List[Double] = this.values.zip(that.getResultValues).map{
-      case (v1,v2) => v1+v2
-    }
-    new Result(this.labels,new_values)
-  }
+  def getArea = area
   def concatenateResults(that:Result) = {
-    val new_values:List[Double] = this.values ++that.getResultValues
+    val new_values:List[Option[Double]] = this.values ++that.getResultValues
     val new_labels:List[String] = this.labels ++that.getLabels
-    new Result(new_labels,new_values)
+    new Result(area,new_labels,new_values)
   }
   def printResult{
     val interleaved = labels.zip(values)
@@ -50,7 +41,20 @@ class Result(labels:List[String],values:List[Double]){
   }
 }
 
-
+class FinalResult(area:Double,labels:List[String],values:List[Double]){
+  def getLabels = labels
+  def getResultValues = values
+  def getArea = area
+  def concatenateResults(that:FinalResult) = {
+    val new_values:List[Double] = this.values ++that.getResultValues
+    val new_labels:List[String] = this.labels ++that.getLabels
+    new FinalResult(area,new_labels,new_values)
+  }
+  def printResult{
+    val interleaved = labels.zip(values)
+    println(interleaved)
+  }
+}
 class NucleusSlice(slice:Int,x_centre:Double,y_centre:Double,roi:ij.gui.Roi,area:Double){
   def getSlice = slice
   def getXCentre = x_centre
@@ -434,27 +438,35 @@ object ISA {
 
 
 
-   def areaWeightedResultsMean(areas:Seq[Double],results:Seq[Result]):Result = {
-    val total_area = areas.sum
-    val scaled_results = areas.zip(results).map{ 
-      case (a,r)=>{
-        val scaling_factor = a/total_area
-        r.scale(scaling_factor)
-      }
-    } 
+  def mergeResults(results:List[Result]):FinalResult = {
     val labels = results(0).getLabels
-    val results_and_areas = results.zip(areas)
-    val scaled_individual_results:Seq[Result] = {
-      results_and_areas.map{case(r,a)=>{
-        val scaling_factor = a/total_area
-        r.scale(scaling_factor)
+    val relevent:List[List[(Double,Double)]] = {
+      (0 until labels.length).toList.map{
+        i=> results.map{
+          r=> r.getResultValues(i) match{
+            case Some(x) => (x,r.getArea)
           }
         }
+      }    
     }
-    scaled_individual_results.tail.foldLeft(scaled_individual_results.head)((a,b)=>a.addResultValues(b))
+    val final_values:List[Double] = {
+      (0 until labels.length).toList.map{
+        i=>{
+          val relevent_values = relevent(i)
+          val total_area:Double = relevent_values.map(x=>x._2).sum
+          val scaled_values:List[Double] = relevent_values.map{
+            case(v,a)=> v*a/total_area
+          }
+          scaled_values.sum
+        }
+      }
+    }
+    val final_area = results.map(r=>r.getArea).sum
+    new FinalResult(final_area,labels,final_values)
+    
   }
   def analyzeNucleus(nucleus:Nucleus,images:Array[ImagePlus])(analyticalFunction:(NucleusSlice,Array[ImagePlus],Double,Double)
-    =>Result):Result = {
+    =>Result):FinalResult = {
     val calibration = images(0).getCalibration()
     calibration.setUnit("micron")
     val object_lower = math.pow(calibration.getRawX(1),2)*3.14156
@@ -464,7 +476,7 @@ object ISA {
     val raw_results = slices.map{s=>
       analyticalFunction(s,images,object_lower,object_upper)
     }
-    areaWeightedResultsMean(areas,raw_results)
+    mergeResults(raw_results)
   }
 
   def measureIntensities(nucleus_slice:NucleusSlice,channels:Array[ImagePlus],
@@ -478,7 +490,7 @@ object ISA {
       c=> List(s"Channel$c"+"_MeanIntensity",s"Channel$c"+"_StandardDeviationIntensity",
         s"Channel$c"+"_SkewnessIntensity",s"Channel$c"+"_KurtosisIntensity")
     }
-    new Result(labels,result_values)
+    new Result(nucleus_slice.getArea,labels,result_values)
   }
 
 
@@ -516,7 +528,7 @@ object ISA {
         pearsonsPixelCorrelation(channel_a,channel_b,0)
       }
     }
-    new Result(channel_pair_labels,result_values)
+    new Result(nucleus_slice.getArea,channel_pair_labels,result_values)
   }
 
 
@@ -551,7 +563,7 @@ object ISA {
         pa.analyze(oc)
         val areas_index = results_table.getColumnIndex("Area")
         if (areas_index == -1){
-          List(0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0)
+          List(0.0,None,None,None,None,None,None,None,None,None,None,None,None)
         }
         else{
           val areas:Array[Float] = results_table.getColumn(areas_index)
@@ -585,7 +597,7 @@ object ISA {
     val labels:List[String] = for (c<-channel_prefixes;s<-label_suffixes) yield {
       c + s
     } 
-    new Result(labels,result_values)
+    new Result(nucleus_slice.getArea,labels,result_values)
 
     
   }
