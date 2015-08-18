@@ -130,3 +130,21 @@
 [0m[[0mdebug[0m] [0m	/home/james/.ivy2/cache/com.github.tototoshi/scala-csv_2.11/jars/scala-csv_2.11-1.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/james/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0mDisposing 73 top-level windows...[0m
+[0m[[0mdebug[0m] [0mWaiting 2 s to let AWT thread exit.[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Run$_run-main-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted Run$_run-main-0[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[TimerQueue,5,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[XToolkt-Shutdown-Thread,5,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-XAWT,6,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
+[0m[[0mdebug[0m] [0m	Thread Run$_run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mDisposing 73 top-level windows...[0m
+[0m[[0mdebug[0m] [0mWaiting 2 s to let AWT thread exit.[0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[TimerQueue,5,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[XToolkt-Shutdown-Thread,5,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[AWT-XAWT,6,system][0m
+[0m[[0mdebug[0m] [0mNot interrupting system thread Thread[Java2D Disposer,10,system][0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m

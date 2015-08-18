@@ -41,20 +41,7 @@ class Result(area:Double,labels:List[String],values:List[Option[Double]]){
   }
 }
 
-class FinalResult(area:Double,labels:List[String],values:List[Double]){
-  def getLabels = labels
-  def getResultValues = values
-  def getArea = area
-  def concatenateResults(that:FinalResult) = {
-    val new_values:List[Double] = this.values ++that.getResultValues
-    val new_labels:List[String] = this.labels ++that.getLabels
-    new FinalResult(area,new_labels,new_values)
-  }
-  def printResult{
-    val interleaved = labels.zip(values)
-    println(interleaved)
-  }
-}
+
 class NucleusSlice(slice:Int,x_centre:Double,y_centre:Double,roi:ij.gui.Roi,area:Double){
   def getSlice = slice
   def getXCentre = x_centre
@@ -96,17 +83,9 @@ class Nucleus(slices:Array[NucleusSlice]){
     val y= start_y.max
     val widths:Array[Int] = for (s<-slices) yield s.getRoi.getBounds().width
     val w = widths.max
-    val ww = w%2 match {
-      case 0 =>w
-      case _ => w-1
-    }
     val heights:Array[Int] = for (s<-slices) yield s.getRoi.getBounds().height
     val h = heights.max
-    val hh = h%2 match {
-      case 0 =>h
-      case _ => h-1
-    }
-    new ij.gui.Roi(x,y,ww,hh)
+    new ij.gui.Roi(x,y,w,h)
     
   }
 
@@ -403,9 +382,10 @@ object ISA {
   
   
   def thresholdObjects(nucleus:Nucleus,channel:ij.ImagePlus):ij.ImagePlus = {
+    val outer_bounds = nucleus.getBoundingBox
     val image_processors = for (s<-nucleus.getSlices) yield {
       channel.setSlice(s.getSlice)
-      channel.setRoi(nucleus.getBoundingBox)
+      channel.setRoi(outer_bounds)
       val processor = channel.getProcessor().crop()
       processor
     }
@@ -415,8 +395,9 @@ object ISA {
       ip.getFloatArray()
     }
     val threshold = findInflection(pixel_array)
-
-    val output_stack = new ij.ImageStack(nucleus.getBoundingBox.getBounds().width,nucleus.getBoundingBox.getBounds().height)
+    val width = image_processors.head.getWidth
+    val height = image_processors.head.getHeight
+    val output_stack = new ij.ImageStack(width,height)
     for (p<-image_processors){
       val ft = p.convertToFloat()
       val bp = p.convertToByte(false)
@@ -438,35 +419,46 @@ object ISA {
 
 
 
-  def mergeResults(results:List[Result]):FinalResult = {
-    val labels = results(0).getLabels
-    val relevent:List[List[(Double,Double)]] = {
-      (0 until labels.length).toList.map{
-        i=> results.map{
-          r=> r.getResultValues(i) match{
-            case Some(x) => (x,r.getArea)
+  def mergeResults(results:List[Result]):Result = {
+    val area_multiplied_results:List[List[(Double,Double)]] = {
+      (0 until results.head.getLabels.length).toList.map{
+        l=>{
+          results.map{r=>{
+          val entry = r.getResultValues(l)
+          entry match{
+            case Some(x) => (x*r.getArea,r.getArea)
+            case None => (0.0,0.0)
+            }
+            }}
           }
-        }
-      }    
-    }
-    val final_values:List[Double] = {
-      (0 until labels.length).toList.map{
-        i=>{
-          val relevent_values = relevent(i)
-          val total_area:Double = relevent_values.map(x=>x._2).sum
-          val scaled_values:List[Double] = relevent_values.map{
-            case(v,a)=> v*a/total_area
-          }
-          scaled_values.sum
         }
       }
+      val total_areas:List[Double] = area_multiplied_results.map{
+        l=>l.map{x=>x._2}.sum
+      }
+      val area_multiplied_results_values:List[List[Double]]={
+        area_multiplied_results.map{
+        a=> a.map{
+          r=>r._1}
+        }
+      }
+      val corrected_values:List[Double] = area_multiplied_results_values.zip(total_areas).map{
+        case (r,t)=>r.map{
+          v=>v/t
+          }.sum
+        }
+      val optioned_corrected_values = corrected_values.map{
+      case x if x !=0.000 => Some(x)
+      case x if x == 0.000 => None
+      }
+      val total_area = results.map{r=>r.getArea}.sum
+      new Result(total_area,results.head.getLabels,optioned_corrected_values)
     }
-    val final_area = results.map(r=>r.getArea).sum
-    new FinalResult(final_area,labels,final_values)
-    
-  }
+  
+
+
   def analyzeNucleus(nucleus:Nucleus,images:Array[ImagePlus])(analyticalFunction:(NucleusSlice,Array[ImagePlus],Double,Double)
-    =>Result):FinalResult = {
+    =>Result):Result = {
     val calibration = images(0).getCalibration()
     calibration.setUnit("micron")
     val object_lower = math.pow(calibration.getRawX(1),2)*3.14156
@@ -481,11 +473,11 @@ object ISA {
 
   def measureIntensities(nucleus_slice:NucleusSlice,channels:Array[ImagePlus],
     object_lower:Double,object_upper:Double):Result={
-    val result_values:List[Double] = channels.toList.flatMap{ oc=>
+    val result_values:List[Option[Double]] = channels.toList.flatMap{ oc=>
         val pixels = nucleus_slice.getPixels(oc).flatten
 
         List(mean(pixels),standardDeviation(pixels),skewness(pixels),kurtosis(pixels))
-        }
+        }.map{r=>Some(r)}
     val labels:List[String] = (1 until channels.length+1).toList.flatMap{
       c=> List(s"Channel$c"+"_MeanIntensity",s"Channel$c"+"_StandardDeviationIntensity",
         s"Channel$c"+"_SkewnessIntensity",s"Channel$c"+"_KurtosisIntensity")
@@ -525,9 +517,11 @@ object ISA {
       case Array(a,b) =>{
         val channel_a:Array[Float] = nucleus_slice.getPixels(a).flatten
         val channel_b:Array[Float] = nucleus_slice.getPixels(b).flatten
-        pearsonsPixelCorrelation(channel_a,channel_b,0)
+        val pp = pearsonsPixelCorrelation(channel_a,channel_b,0)
+        println(pp)
+        pp
       }
-    }
+    }.map{r=>Some(r)}
     new Result(nucleus_slice.getArea,channel_pair_labels,result_values)
   }
 
@@ -551,7 +545,7 @@ object ISA {
 
   def objectAnalysis2(nucleus_slice:NucleusSlice,object_channels:Array[ImagePlus],
     object_lower:Double,object_upper:Double):Result = {
-    val result_values:List[Double] = object_channels.flatMap{ oc=>
+    val result_values:List[Option[Double]] = object_channels.flatMap{ oc=>
         oc.setSlice(nucleus_slice.getSlice)
         var roim= new RoiManager()
         var results_table= new ResultsTable()
@@ -563,7 +557,7 @@ object ISA {
         pa.analyze(oc)
         val areas_index = results_table.getColumnIndex("Area")
         if (areas_index == -1){
-          List(0.0,None,None,None,None,None,None,None,None,None,None,None,None)
+          List(Some(0.0),None,None,None,None,None,None,None,None,None,None,None,None)
         }
         else{
           val areas:Array[Float] = results_table.getColumn(areas_index)
@@ -582,7 +576,7 @@ object ISA {
             skewness(nearest_neighbours),kurtosis(nearest_neighbours),
             mean(radiality),standardDeviation(radiality),
             skewness(radiality),kurtosis(radiality))
-        }
+        }.map{r=>Some(r)}
         
       }.toList
 
@@ -659,6 +653,6 @@ object ISA {
   }
   
   
-  
+  sys.exit(0)
 }
 }

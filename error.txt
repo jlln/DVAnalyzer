@@ -1,0 +1,140 @@
+Loading Image: /home/james/Documents/h2ax_time_series_2/1.5/1.5_4_R3D_D3D.tif
+Finding Focussed Slices
+Finding Threshold
+Finding Threshold
+Finding Threshold
+0.4178197485463571
+0.6082019680070139
+0.3474516668149671
+0.40757314104386116
+0.5990893217626223
+0.34501057961242454
+0.38852145336569477
+0.5948699683654881
+0.3483696252710446
+0.3759493830274515
+0.6069946259149677
+0.35989792056791997
+0.3464520685750018
+0.616508874473669
+0.3622715439282958
+0.3369174128685208
+0.6118244958870912
+0.3700993328600646
+0.34485754479725217
+0.6052826508034735
+0.3835048836779296
+0.3480753443988377
+0.590675950133448
+0.38564072809530936
+0.36811261171390497
+0.5962793432236267
+0.39551614833050713
+0.3720368764742711
+0.5885068365200127
+0.38509545606201734
+0.3666512555363052
+0.566477631865068
+0.3655998625097855
+0.3602665564153303
+0.5614216671073493
+0.3575598775757903
+0.36092471554400224
+0.5776569032482303
+0.3541909342120776
+0.3560507013055629
+0.5857126379268617
+0.3482114737782174
+0.3687770951347689
+0.6039492970730487
+0.351212626107511
+List((Channel1_ObjectCount,Some(28.0)), (Channel1_ObjectSizeMean,Some(35.642857142857146)), (Channel1_ObjectSizeStandardDeviation,Some(74.7090615491255)), (Channel1_ObjectSizeSkewness,Some(4.274059730264407)), (Channel1_ObjectSizeKurtosis,Some(20.94535592713891)), (Channel1_ObjectNearestNeighbourDistanceMean,Some(8.858759424853929)), (Channel1_ObjectNearestNeighbourDistanceStandardDeviation,Some(3.4032727035930233)), (Channel1_ObjectNearestNeighbourDistanceSkewness,Some(0.5044304736621475)), (Channel1_ObjectNearestNeighbourDistanceKurtosis,Some(2.436342384817571)), (Channel1_ObjectRadialPositionMean,Some(0.28952849789657836)), (Channel1_ObjectRadialPositionStandardDeviation,Some(0.07810457207623002)), (Channel1_ObjectRadialPositionSkewness,Some(-0.4187297387968816)), (Channel1_ObjectRadialPositionKurtosis,Some(2.2810269037116977)), (Channel2_ObjectCount,Some(18.0)), (Channel2_ObjectSizeMean,Some(140.61111111111111)), (Channel2_ObjectSizeStandardDeviation,Some(176.6138722652986)), (Channel2_ObjectSizeSkewness,Some(1.4982693574014723)), (Channel2_ObjectSizeKurtosis,Some(4.157399721590637)), (Channel2_ObjectNearestNeighbourDistanceMean,Some(15.83318097040351)), (Channel2_ObjectNearestNeighbourDistanceStandardDeviation,Some(6.089766638322106)), (Channel2_ObjectNearestNeighbourDistanceSkewness,Some(0.018303414677162375)), (Channel2_ObjectNearestNeighbourDistanceKurtosis,Some(2.470806984299787)), (Channel2_ObjectRadialPositionMean,Some(0.285324459450548)), (Channel2_ObjectRadialPositionStandardDeviation,Some(0.09174608679126392)), (Channel2_ObjectRadialPositionSkewness,Some(-0.2807363241780004)), (Channel2_ObjectRadialPositionKurtosis,Some(2.43786531341019)), (Channel3_ObjectCount,Some(17.000000000000004)), (Channel3_ObjectSizeMean,Some(14.17647058823529)), (Channel3_ObjectSizeStandardDeviation,Some(6.1857073789944765)), (Channel3_ObjectSizeSkewness,Some(0.8739739750127963)), (Channel3_ObjectSizeKurtosis,Some(2.9344430839532327)), (Channel3_ObjectNearestNeighbourDistanceMean,Some(10.980738310796085)), (Channel3_ObjectNearestNeighbourDistanceStandardDeviation,Some(3.3971434368645244)), (Channel3_ObjectNearestNeighbourDistanceSkewness,Some(1.445296765285494)), (Channel3_ObjectNearestNeighbourDistanceKurtosis,Some(4.119905102068485)), (Channel3_ObjectRadialPositionMean,Some(0.3077860006639176)), (Channel3_ObjectRadialPositionStandardDeviation,Some(0.05600137352959119)), (Channel3_ObjectRadialPositionSkewness,Some(-0.3427781652579149)), (Channel3_ObjectRadialPositionKurtosis,Some(2.4281086966767798)))
+List((Channel1_MeanIntensity,Some(900.4160612558549)), (Channel1_StandardDeviationIntensity,Some(732.3476957680269)), (Channel1_SkewnessIntensity,Some(0.6883328173706753)), (Channel1_KurtosisIntensity,Some(2.7545870784447812)), (Channel2_MeanIntensity,Some(585.4184869478513)), (Channel2_StandardDeviationIntensity,Some(752.9959094057551)), (Channel2_SkewnessIntensity,Some(3.4335598177467235)), (Channel2_KurtosisIntensity,Some(19.24301771011527)), (Channel3_MeanIntensity,Some(793.346054296347)), (Channel3_StandardDeviationIntensity,Some(557.5779200872846)), (Channel3_SkewnessIntensity,Some(0.24319214786909552)), (Channel3_KurtosisIntensity,Some(2.1471324785894192)))
+List((Channel1PearsonChannel2,Some(0.36812972663619603)), (Channel1PearsonChannel3,Some(0.594600422014264)), (Channel2PearsonChannel3,Some(0.3639590871585753)))
+Finding Threshold
+Finding Threshold
+Finding Threshold
+0.3652311872895736
+0.4413700210478154
+0.15852200376884595
+0.368735768996133
+0.442384510908483
+0.15664734294823382
+0.35822722694448345
+0.46056917514605655
+0.17793898946998207
+0.3582096539715426
+0.5023013637833312
+0.20932169340792964
+0.35652638062970565
+0.525382658960293
+0.2266203448439207
+List((Channel1_ObjectCount,Some(7.0)), (Channel1_ObjectSizeMean,Some(11.857142857142858)), (Channel1_ObjectSizeStandardDeviation,Some(12.620035900204444)), (Channel1_ObjectSizeSkewness,Some(1.8429047110624284)), (Channel1_ObjectSizeKurtosis,Some(4.708290521676512)), (Channel1_ObjectNearestNeighbourDistanceMean,Some(20.253101170574045)), (Channel1_ObjectNearestNeighbourDistanceStandardDeviation,Some(14.156272927296028)), (Channel1_ObjectNearestNeighbourDistanceSkewness,Some(0.9327581861280717)), (Channel1_ObjectNearestNeighbourDistanceKurtosis,Some(3.0431754794969113)), (Channel1_ObjectRadialPositionMean,Some(0.34078290382883103)), (Channel1_ObjectRadialPositionStandardDeviation,Some(0.08812011256514127)), (Channel1_ObjectRadialPositionSkewness,Some(-0.9959507385900033)), (Channel1_ObjectRadialPositionKurtosis,Some(2.6291764494964998)), (Channel2_ObjectCount,Some(23.0)), (Channel2_ObjectSizeMean,Some(47.869565217391305)), (Channel2_ObjectSizeStandardDeviation,Some(44.2633466463247)), (Channel2_ObjectSizeSkewness,Some(1.802438998965725)), (Channel2_ObjectSizeKurtosis,Some(6.448522258923045)), (Channel2_ObjectNearestNeighbourDistanceMean,Some(11.693069089775683)), (Channel2_ObjectNearestNeighbourDistanceStandardDeviation,Some(3.83073205395752)), (Channel2_ObjectNearestNeighbourDistanceSkewness,Some(-0.386276367806014)), (Channel2_ObjectNearestNeighbourDistanceKurtosis,Some(2.140693321872823)), (Channel2_ObjectRadialPositionMean,Some(0.3408404644640506)), (Channel2_ObjectRadialPositionStandardDeviation,Some(0.0933046061693665)), (Channel2_ObjectRadialPositionSkewness,Some(-0.3786097723988845)), (Channel2_ObjectRadialPositionKurtosis,Some(2.6135423816690966)), (Channel3_ObjectCount,Some(14.0)), (Channel3_ObjectSizeMean,Some(29.0)), (Channel3_ObjectSizeStandardDeviation,Some(17.812515664153512)), (Channel3_ObjectSizeSkewness,Some(0.26131401935560733)), (Channel3_ObjectSizeKurtosis,Some(1.4627519922089525)), (Channel3_ObjectNearestNeighbourDistanceMean,Some(14.481052358432796)), (Channel3_ObjectNearestNeighbourDistanceStandardDeviation,Some(4.610882369663244)), (Channel3_ObjectNearestNeighbourDistanceSkewness,Some(0.8177003893513803)), (Channel3_ObjectNearestNeighbourDistanceKurtosis,Some(2.2194040801681396)), (Channel3_ObjectRadialPositionMean,Some(0.3342461576301967)), (Channel3_ObjectRadialPositionStandardDeviation,Some(0.09465574670016542)), (Channel3_ObjectRadialPositionSkewness,Some(-0.023515956171545508)), (Channel3_ObjectRadialPositionKurtosis,Some(1.7761695855113777)))
+List((Channel1_MeanIntensity,Some(1257.443365114767)), (Channel1_StandardDeviationIntensity,Some(1069.8052133754345)), (Channel1_SkewnessIntensity,Some(0.418497606180498)), (Channel1_KurtosisIntensity,Some(2.149421674352544)), (Channel2_MeanIntensity,Some(338.4513159400219)), (Channel2_StandardDeviationIntensity,Some(535.1856126100676)), (Channel2_SkewnessIntensity,Some(5.062115142735141)), (Channel2_KurtosisIntensity,Some(35.65846109839549)), (Channel3_MeanIntensity,Some(569.7989415972086)), (Channel3_StandardDeviationIntensity,Some(410.46608634509096)), (Channel3_SkewnessIntensity,Some(1.0231807807861726)), (Channel3_KurtosisIntensity,Some(5.881850742276434)))
+List((Channel1PearsonChannel2,Some(0.36134914164899773)), (Channel1PearsonChannel3,Some(0.47466405683317925)), (Channel2PearsonChannel3,Some(0.18603056344513877)))
+Finding Threshold
+Finding Threshold
+Finding Threshold
+0.4580587352445278
+0.6182225237934885
+0.38330834697225596
+0.4238756073561069
+0.6178675490820621
+0.3853618326390668
+0.38571955896422816
+0.6050461050189148
+0.3803623593417513
+0.34143089502880325
+0.5945866083298932
+0.35965877895928067
+0.30102156445542483
+0.593856969268185
+0.3428484765764454
+0.28287753554334194
+0.5879740657900675
+0.338258244456569
+0.30059304563879763
+0.5872743982556208
+0.33768251496737367
+0.34027621809810715
+0.5778583132497076
+0.3155850105604228
+List((Channel1_ObjectCount,Some(31.000000000000004)), (Channel1_ObjectSizeMean,Some(17.354838709677416)), (Channel1_ObjectSizeStandardDeviation,Some(19.537471667734643)), (Channel1_ObjectSizeSkewness,Some(2.7094526710050166)), (Channel1_ObjectSizeKurtosis,Some(10.528681298282235)), (Channel1_ObjectNearestNeighbourDistanceMean,Some(8.80665385443334)), (Channel1_ObjectNearestNeighbourDistanceStandardDeviation,Some(3.835398855071012)), (Channel1_ObjectNearestNeighbourDistanceSkewness,Some(3.5831707667757517)), (Channel1_ObjectNearestNeighbourDistanceKurtosis,Some(17.456308083964558)), (Channel1_ObjectRadialPositionMean,Some(0.22628432623567915)), (Channel1_ObjectRadialPositionStandardDeviation,Some(0.11635118109051866)), (Channel1_ObjectRadialPositionSkewness,Some(0.05218724412787889)), (Channel1_ObjectRadialPositionKurtosis,Some(1.707380531721258)), (Channel2_ObjectCount,Some(47.0)), (Channel2_ObjectSizeMean,Some(34.04255319148936)), (Channel2_ObjectSizeStandardDeviation,Some(27.673597100123015)), (Channel2_ObjectSizeSkewness,Some(1.0848845839938186)), (Channel2_ObjectSizeKurtosis,Some(3.1873988329161254)), (Channel2_ObjectNearestNeighbourDistanceMean,Some(9.45679938476744)), (Channel2_ObjectNearestNeighbourDistanceStandardDeviation,Some(1.972062627622855)), (Channel2_ObjectNearestNeighbourDistanceSkewness,Some(0.28844965581724974)), (Channel2_ObjectNearestNeighbourDistanceKurtosis,Some(3.236896556605559)), (Channel2_ObjectRadialPositionMean,Some(0.2313366168680655)), (Channel2_ObjectRadialPositionStandardDeviation,Some(0.10927576818798673)), (Channel2_ObjectRadialPositionSkewness,Some(-0.0073916107217836275)), (Channel2_ObjectRadialPositionKurtosis,Some(1.9896818045346285)), (Channel3_ObjectCount,Some(19.0)), (Channel3_ObjectSizeMean,Some(15.368421052631579)), (Channel3_ObjectSizeStandardDeviation,Some(13.243510928656779)), (Channel3_ObjectSizeSkewness,Some(2.173633024368096)), (Channel3_ObjectSizeKurtosis,Some(7.7389209418218305)), (Channel3_ObjectNearestNeighbourDistanceMean,Some(15.695178641052163)), (Channel3_ObjectNearestNeighbourDistanceStandardDeviation,Some(4.389612361450977)), (Channel3_ObjectNearestNeighbourDistanceSkewness,Some(0.7009586925826381)), (Channel3_ObjectNearestNeighbourDistanceKurtosis,Some(2.1753403733318684)), (Channel3_ObjectRadialPositionMean,Some(0.222503465203695)), (Channel3_ObjectRadialPositionStandardDeviation,Some(0.10447774145101948)), (Channel3_ObjectRadialPositionSkewness,Some(0.22228201690546592)), (Channel3_ObjectRadialPositionKurtosis,Some(2.2989296957605534)))
+List((Channel1_MeanIntensity,Some(1602.10620080434)), (Channel1_StandardDeviationIntensity,Some(1478.8101660262284)), (Channel1_SkewnessIntensity,Some(0.4162948832439567)), (Channel1_KurtosisIntensity,Some(1.9717331191042629)), (Channel2_MeanIntensity,Some(500.7985216948035)), (Channel2_StandardDeviationIntensity,Some(631.3686379766517)), (Channel2_SkewnessIntensity,Some(3.334916578224144)), (Channel2_KurtosisIntensity,Some(19.654674615642104)), (Channel3_MeanIntensity,Some(685.4179834669565)), (Channel3_StandardDeviationIntensity,Some(498.3229530140194)), (Channel3_SkewnessIntensity,Some(0.39442116746939865)), (Channel3_KurtosisIntensity,Some(3.093557373643635)))
+List((Channel1PearsonChannel2,Some(0.35537583694945885)), (Channel1PearsonChannel3,Some(0.5981483017663286)), (Channel2PearsonChannel3,Some(0.3559428676271391)))
+Finding Threshold
+[error] (Run$_run-main-0) java.lang.IllegalArgumentException: Dimensions do not match
+java.lang.IllegalArgumentException: Dimensions do not match
+	at ij.ImageStack.addSlice(ImageStack.java:100)
+	at ij.ImageStack.addSlice(ImageStack.java:93)
+	at Zisa.ISA$$anonfun$thresholdObjects$1.apply(WaveZisa.scala:418)
+	at Zisa.ISA$$anonfun$thresholdObjects$1.apply(WaveZisa.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at Zisa.ISA$.thresholdObjects(WaveZisa.scala:407)
+	at Zisa.ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$64.apply(WaveZisa.scala:616)
+	at Zisa.ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$64.apply(WaveZisa.scala:616)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:186)
+	at Zisa.ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10.apply(WaveZisa.scala:616)
+	at Zisa.ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10.apply(WaveZisa.scala:615)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at Zisa.ISA$$anonfun$main$1$$anonfun$apply$9.apply(WaveZisa.scala:615)
+	at Zisa.ISA$$anonfun$main$1$$anonfun$apply$9.apply(WaveZisa.scala:612)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at Zisa.ISA$$anonfun$main$1.apply(WaveZisa.scala:612)
+	at Zisa.ISA$$anonfun$main$1.apply(WaveZisa.scala:611)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at Zisa.ISA$.main(WaveZisa.scala:611)
+	at Zisa.ISA.main(WaveZisa.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+[trace] Stack trace suppressed: run last compile:run for the full output.
+

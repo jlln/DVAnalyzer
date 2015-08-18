@@ -19,3 +19,5 @@ console
 val t = Array(2,3,1)
 console
 test
+console
+val t = 1.0
