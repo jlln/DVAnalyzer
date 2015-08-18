@@ -24,9 +24,8 @@ name hashing:
 1 items
 0 -> true
 products:
-103 items
+105 items
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$1.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$14.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$15.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$16.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$17.class
@@ -49,22 +48,22 @@ products:
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$32.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$33.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$34.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$36$$anonfun$apply$4.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$36.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$37$$anonfun$apply$5.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$35.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$37$$anonfun$apply$4.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$37.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$38$$anonfun$apply$6.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$38$$anonfun$apply$5.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$38.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$39$$anonfun$apply$2.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$39$$anonfun$apply$6.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$39.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$4.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$40$$anonfun$apply$2.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$40.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$41.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$42.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$43.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$44$$anonfun$45.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$44.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$46.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$45$$anonfun$46.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$45.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$47.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$48.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$49.class
@@ -73,41 +72,42 @@ products:
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$51.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$52.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$53.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$54$$anonfun$55.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$54$$anonfun$56.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$54.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$57.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$55$$anonfun$56.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$55$$anonfun$57.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$55.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$58.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$6.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$60$$anonfun$61.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$60$$anonfun$apply$7.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$60.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$62.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$63$$anonfun$apply$8.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$61$$anonfun$62.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$61$$anonfun$apply$7.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$61.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$63.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$64$$anonfun$apply$8.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$64.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$7.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfFilesInSubDirectory$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfFilesInSubDirectory$2.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfSubDirectories$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfSubDirectories$2.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$64.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$65.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$66.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$67.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$68.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$maskNuclei$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$maskNuclei$2.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nearestNeighbours$1$$anonfun$58.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nearestNeighbours$1$$anonfun$59.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nearestNeighbours$1$$anonfun$60.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nearestNeighbours$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nucleiFocusser$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$standardScores$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$threeChannelNucleiFocusser$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$threeChannelNucleiFocusser$2.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdCount$1.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1$$anonfun$35$$anonfun$apply$1.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1$$anonfun$35.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1$$anonfun$36$$anonfun$apply$1.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1$$anonfun$36.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA.class
@@ -115,7 +115,7 @@ products:
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$11.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$12.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$13.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$9.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$14.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getImageSlices$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getMaximumCrossSectionRoi$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getMaximumCrossSectionRoi$2.class
@@ -125,11 +125,14 @@ products:
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getPixels$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getTotalArea$1.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus.class
-/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/NucleusSlice$$anonfun$8.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/NucleusSlice$$anonfun$9.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/NucleusSlice.class
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Result.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/StringResult$$anonfun$8.class
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/StringResult.class
 binary dependencies:
-3 items
+4 items
+/home/james/Documents/modzisa/WaveZisa.scala -> /home/james/.ivy2/cache/com.github.tototoshi/scala-csv_2.11/jars/scala-csv_2.11-1.0.0.jar
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar
 /home/james/Documents/modzisa/WaveZisa.scala -> /home/james/Documents/modzisa/lib/ij-1.47u.jar
 /home/james/Documents/modzisa/WaveZisa.scala -> /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
@@ -150,11 +153,10 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-103 items
+105 items
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$1
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$14
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$15
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$16
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$17
@@ -177,22 +179,22 @@ class names:
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$32
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$33
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$34
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$36
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$36$$anonfun$apply$4
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$35
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$37
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$37$$anonfun$apply$5
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$37$$anonfun$apply$4
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$38
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$38$$anonfun$apply$6
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$38$$anonfun$apply$5
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$39
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$39$$anonfun$apply$2
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$39$$anonfun$apply$6
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$4
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$40
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$40$$anonfun$apply$2
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$41
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$42
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$43
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$44
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$44$$anonfun$45
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$46
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$45
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$45$$anonfun$46
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$47
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$48
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$49
@@ -202,16 +204,17 @@ class names:
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$52
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$53
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$54
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$54$$anonfun$55
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$54$$anonfun$56
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$57
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$55
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$55$$anonfun$56
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$55$$anonfun$57
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$58
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$6
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$60
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$60$$anonfun$61
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$60$$anonfun$apply$7
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$62
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$61
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$61$$anonfun$62
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$61$$anonfun$apply$7
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$63
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$63$$anonfun$apply$8
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$64
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$64$$anonfun$apply$8
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$7
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$getListOfFilesInSubDirectory$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$getListOfFilesInSubDirectory$2
@@ -220,29 +223,29 @@ class names:
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$main$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$main$1$$anonfun$apply$9
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$64
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$65
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$66
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$67
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$68
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$maskNuclei$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$maskNuclei$2
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$nearestNeighbours$1
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$nearestNeighbours$1$$anonfun$58
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$nearestNeighbours$1$$anonfun$59
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$nearestNeighbours$1$$anonfun$60
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$nucleiFocusser$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$standardScores$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$threeChannelNucleiFocusser$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$threeChannelNucleiFocusser$2
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$thresholdCount$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$thresholdObjects$1
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$thresholdObjects$1$$anonfun$35
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$thresholdObjects$1$$anonfun$35$$anonfun$apply$1
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$thresholdObjects$1$$anonfun$36
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.ISA$$anonfun$thresholdObjects$1$$anonfun$36$$anonfun$apply$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$10
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$11
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$12
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$13
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$9
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$14
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$getImageSlices$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$getMaximumCrossSectionRoi$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$getMaximumCrossSectionRoi$2
@@ -252,10 +255,12 @@ class names:
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$getPixels$1$$anonfun$apply$3
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Nucleus$$anonfun$getTotalArea$1
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.NucleusSlice
-/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.NucleusSlice$$anonfun$8
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.NucleusSlice$$anonfun$9
 /home/james/Documents/modzisa/WaveZisa.scala -> Zisa.Result
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.StringResult
+/home/james/Documents/modzisa/WaveZisa.scala -> Zisa.StringResult$$anonfun$8
 used names:
-421 items
+434 items
 /home/james/Documents/modzisa/WaveZisa.scala -> !=
 /home/james/Documents/modzisa/WaveZisa.scala -> &
 /home/james/Documents/modzisa/WaveZisa.scala -> &&
@@ -274,6 +279,7 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> Array
 /home/james/Documents/modzisa/WaveZisa.scala -> ArrayBuffer
 /home/james/Documents/modzisa/WaveZisa.scala -> ByteProcessor
+/home/james/Documents/modzisa/WaveZisa.scala -> CSVWriter
 /home/james/Documents/modzisa/WaveZisa.scala -> ChannelSplitter
 /home/james/Documents/modzisa/WaveZisa.scala -> ClassTag
 /home/james/Documents/modzisa/WaveZisa.scala -> DirectoryChooser
@@ -313,6 +319,7 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> Seq
 /home/james/Documents/modzisa/WaveZisa.scala -> String
 /home/james/Documents/modzisa/WaveZisa.scala -> StringContext
+/home/james/Documents/modzisa/WaveZisa.scala -> StringResult
 /home/james/Documents/modzisa/WaveZisa.scala -> T
 /home/james/Documents/modzisa/WaveZisa.scala -> Traversable
 /home/james/Documents/modzisa/WaveZisa.scala -> Tuple2
@@ -369,6 +376,7 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> collection
 /home/james/Documents/modzisa/WaveZisa.scala -> com
 /home/james/Documents/modzisa/WaveZisa.scala -> combinations
+/home/james/Documents/modzisa/WaveZisa.scala -> concatenateResults
 /home/james/Documents/modzisa/WaveZisa.scala -> contains
 /home/james/Documents/modzisa/WaveZisa.scala -> convertToByte
 /home/james/Documents/modzisa/WaveZisa.scala -> convertToFloat
@@ -378,6 +386,9 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> crop
 /home/james/Documents/modzisa/WaveZisa.scala -> cropped_image
 /home/james/Documents/modzisa/WaveZisa.scala -> csv
+/home/james/Documents/modzisa/WaveZisa.scala -> csv_writer
+/home/james/Documents/modzisa/WaveZisa.scala -> data_result
+/home/james/Documents/modzisa/WaveZisa.scala -> defaultCSVFormat
 /home/james/Documents/modzisa/WaveZisa.scala -> directoryName
 /home/james/Documents/modzisa/WaveZisa.scala -> distances
 /home/james/Documents/modzisa/WaveZisa.scala -> double2Double
@@ -433,6 +444,7 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> getSlice
 /home/james/Documents/modzisa/WaveZisa.scala -> getSlices
 /home/james/Documents/modzisa/WaveZisa.scala -> getStackSize
+/home/james/Documents/modzisa/WaveZisa.scala -> getValues
 /home/james/Documents/modzisa/WaveZisa.scala -> getWidth
 /home/james/Documents/modzisa/WaveZisa.scala -> getXCentre
 /home/james/Documents/modzisa/WaveZisa.scala -> getYCentre
@@ -442,6 +454,7 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> gui
 /home/james/Documents/modzisa/WaveZisa.scala -> h
 /home/james/Documents/modzisa/WaveZisa.scala -> head
+/home/james/Documents/modzisa/WaveZisa.scala -> headings
 /home/james/Documents/modzisa/WaveZisa.scala -> height
 /home/james/Documents/modzisa/WaveZisa.scala -> heights
 /home/james/Documents/modzisa/WaveZisa.scala -> i
@@ -524,12 +537,13 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> numericalSecondDerivative
 /home/james/Documents/modzisa/WaveZisa.scala -> nz_items_a
 /home/james/Documents/modzisa/WaveZisa.scala -> nz_items_b
-/home/james/Documents/modzisa/WaveZisa.scala -> objectAnalysis2
+/home/james/Documents/modzisa/WaveZisa.scala -> objectAnalysis
 /home/james/Documents/modzisa/WaveZisa.scala -> object_centroids
 /home/james/Documents/modzisa/WaveZisa.scala -> object_channels
 /home/james/Documents/modzisa/WaveZisa.scala -> object_lower
 /home/james/Documents/modzisa/WaveZisa.scala -> object_upper
 /home/james/Documents/modzisa/WaveZisa.scala -> oc
+/home/james/Documents/modzisa/WaveZisa.scala -> open
 /home/james/Documents/modzisa/WaveZisa.scala -> openImage
 /home/james/Documents/modzisa/WaveZisa.scala -> openImageFile
 /home/james/Documents/modzisa/WaveZisa.scala -> optioned_corrected_values
@@ -537,7 +551,9 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> outer_bounds
 /home/james/Documents/modzisa/WaveZisa.scala -> outlier_radius
 /home/james/Documents/modzisa/WaveZisa.scala -> outlier_search_string
+/home/james/Documents/modzisa/WaveZisa.scala -> output_file
 /home/james/Documents/modzisa/WaveZisa.scala -> output_stack
+/home/james/Documents/modzisa/WaveZisa.scala -> overall_result
 /home/james/Documents/modzisa/WaveZisa.scala -> p
 /home/james/Documents/modzisa/WaveZisa.scala -> pa
 /home/james/Documents/modzisa/WaveZisa.scala -> package
@@ -548,7 +564,6 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> plugin
 /home/james/Documents/modzisa/WaveZisa.scala -> pow
 /home/james/Documents/modzisa/WaveZisa.scala -> pp
-/home/james/Documents/modzisa/WaveZisa.scala -> printResult
 /home/james/Documents/modzisa/WaveZisa.scala -> println
 /home/james/Documents/modzisa/WaveZisa.scala -> process
 /home/james/Documents/modzisa/WaveZisa.scala -> processImageToNuclei
@@ -610,6 +625,7 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> starting_step
 /home/james/Documents/modzisa/WaveZisa.scala -> step_size
 /home/james/Documents/modzisa/WaveZisa.scala -> steps
+/home/james/Documents/modzisa/WaveZisa.scala -> string_result
 /home/james/Documents/modzisa/WaveZisa.scala -> subdirectory_name
 /home/james/Documents/modzisa/WaveZisa.scala -> subnuclear_object_results
 /home/james/Documents/modzisa/WaveZisa.scala -> sum
@@ -632,6 +648,7 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> toDouble
 /home/james/Documents/modzisa/WaveZisa.scala -> toInt
 /home/james/Documents/modzisa/WaveZisa.scala -> toList
+/home/james/Documents/modzisa/WaveZisa.scala -> toSeq
 /home/james/Documents/modzisa/WaveZisa.scala -> toString
 /home/james/Documents/modzisa/WaveZisa.scala -> top_directory
 /home/james/Documents/modzisa/WaveZisa.scala -> total
@@ -661,6 +678,7 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> wrapFloatArray
 /home/james/Documents/modzisa/WaveZisa.scala -> wrapIntArray
 /home/james/Documents/modzisa/WaveZisa.scala -> wrapRefArray
+/home/james/Documents/modzisa/WaveZisa.scala -> writeRow
 /home/james/Documents/modzisa/WaveZisa.scala -> x
 /home/james/Documents/modzisa/WaveZisa.scala -> x1
 /home/james/Documents/modzisa/WaveZisa.scala -> x2
@@ -678,127 +696,131 @@ used names:
 /home/james/Documents/modzisa/WaveZisa.scala -> zip
 /home/james/Documents/modzisa/WaveZisa.scala -> zipWithIndex
 product stamps:
-103 items
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$14.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$15.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$16.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$17.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$18.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$19.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$2.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$20.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$21.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$22.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$23.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$24.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$25.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$26.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$27.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$28.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$29.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$3.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$30.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$31.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$32.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$33.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$34.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$36$$anonfun$apply$4.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$36.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$37$$anonfun$apply$5.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$37.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$38$$anonfun$apply$6.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$38.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$39$$anonfun$apply$2.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$39.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$4.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$40.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$41.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$42.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$43.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$44$$anonfun$45.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$44.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$46.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$47.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$48.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$49.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$5.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$50.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$51.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$52.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$53.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$54$$anonfun$55.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$54$$anonfun$56.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$54.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$57.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$6.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$60$$anonfun$61.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$60$$anonfun$apply$7.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$60.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$62.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$63$$anonfun$apply$8.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$63.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$7.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfFilesInSubDirectory$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfFilesInSubDirectory$2.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfSubDirectories$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfSubDirectories$2.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$64.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$65.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$66.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$67.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$maskNuclei$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$maskNuclei$2.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nearestNeighbours$1$$anonfun$58.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nearestNeighbours$1$$anonfun$59.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nearestNeighbours$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nucleiFocusser$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$standardScores$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$threeChannelNucleiFocusser$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$threeChannelNucleiFocusser$2.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdCount$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1$$anonfun$35$$anonfun$apply$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1$$anonfun$35.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA.class -> lastModified(1439697570000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$10.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$11.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$12.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$13.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$9.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getImageSlices$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getMaximumCrossSectionRoi$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getMaximumCrossSectionRoi$2.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getMeanArea$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getOverlayRoi$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getPixels$1$$anonfun$apply$3.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getPixels$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getTotalArea$1.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/NucleusSlice$$anonfun$8.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/NucleusSlice.class -> lastModified(1439697571000)
-/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Result.class -> lastModified(1439697571000)
+105 items
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$15.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$16.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$17.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$18.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$19.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$2.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$20.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$21.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$22.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$23.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$24.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$25.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$26.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$27.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$28.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$29.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$3.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$30.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$31.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$32.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$33.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$34.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$35.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$37$$anonfun$apply$4.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$37.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$38$$anonfun$apply$5.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$38.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$39$$anonfun$apply$6.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$39.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$4.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$40$$anonfun$apply$2.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$40.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$41.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$42.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$43.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$44.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$45$$anonfun$46.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$45.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$47.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$48.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$49.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$5.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$50.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$51.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$52.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$53.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$54.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$55$$anonfun$56.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$55$$anonfun$57.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$55.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$58.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$6.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$61$$anonfun$62.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$61$$anonfun$apply$7.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$61.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$63.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$64$$anonfun$apply$8.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$64.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$7.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfFilesInSubDirectory$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfFilesInSubDirectory$2.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfSubDirectories$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$getListOfSubDirectories$2.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$65.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$66.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$67.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10$$anonfun$68.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9$$anonfun$apply$10.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1$$anonfun$apply$9.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$main$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$maskNuclei$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$maskNuclei$2.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nearestNeighbours$1$$anonfun$59.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nearestNeighbours$1$$anonfun$60.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nearestNeighbours$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$nucleiFocusser$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$standardScores$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$threeChannelNucleiFocusser$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$threeChannelNucleiFocusser$2.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdCount$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1$$anonfun$36$$anonfun$apply$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1$$anonfun$36.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$$anonfun$thresholdObjects$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA$.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/ISA.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$10.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$11.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$12.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$13.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$14.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getImageSlices$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getMaximumCrossSectionRoi$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getMaximumCrossSectionRoi$2.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getMeanArea$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getOverlayRoi$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getPixels$1$$anonfun$apply$3.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getPixels$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus$$anonfun$getTotalArea$1.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Nucleus.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/NucleusSlice$$anonfun$9.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/NucleusSlice.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/Result.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/StringResult$$anonfun$8.class -> lastModified(1439883430000)
+/home/james/Documents/modzisa/target/scala-2.11/classes/Zisa/StringResult.class -> lastModified(1439883430000)
 source stamps:
 1 items
-/home/james/Documents/modzisa/WaveZisa.scala -> hash(675673fe75c68e68b6a5f9f761d6f91cd877c236)
+/home/james/Documents/modzisa/WaveZisa.scala -> hash(332d38784af8ef70071ec8a129b62d5fd9188fb8)
 binary stamps:
-3 items
+4 items
+/home/james/.ivy2/cache/com.github.tototoshi/scala-csv_2.11/jars/scala-csv_2.11-1.0.0.jar -> lastModified(1400343420000)
 /home/james/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar -> lastModified(1414078488000)
 /home/james/Documents/modzisa/lib/ij-1.47u.jar -> lastModified(1437550618000)
 /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar -> lastModified(1437981043000)
 class names:
-3 items
-/home/james/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar -> scala.Option
-/home/james/Documents/modzisa/lib/ij-1.47u.jar -> ij.plugin.filter.Analyzer
+4 items
+/home/james/.ivy2/cache/com.github.tototoshi/scala-csv_2.11/jars/scala-csv_2.11-1.0.0.jar -> com.github.tototoshi.csv.CSVWriter$
+/home/james/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar -> scala.math.package$
+/home/james/Documents/modzisa/lib/ij-1.47u.jar -> ij.gui.Roi
 /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar -> java.lang.Object
 internal apis:
 1 items
 /home/james/Documents/modzisa/WaveZisa.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDCCGX/AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAATHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cOlNe1t0AAlldWNsZWRpYW5zcQB+AAyCZF3idAAGbm90aWZ5c3EAfgAMhzBu+XQAEW5lYXJlc3ROZWlnaGJvdXJzc3EAfgAMilYUK3QACWdldExhYmVsc3NxAH4ADOpwZH10ABdnZXRMaXN0T2ZTdWJEaXJlY3Rvcmllc3NxAH4ADF08jWh0AAR3YWl0c3EAfgAM3eqHbXQACGdldFNsaWNlc3EAfgAMeGkfp3QADSRhc0luc3RhbmNlT2ZzcQB+AAzq1r4AdAAHZ2V0QXJlYXNxAH4ADOUEwZp0ABJjb25jYXRlbmF0ZVJlc3VsdHNzcQB+AAzfx+SEdAAIdmFyaWFuY2VzcQB+AAyk1xjNdAAIdGFrZVN0ZXBzcQB+AAzkD4DldAAGZXF1YWxzc3EAfgAMUx8s33QADGFzSW5zdGFuY2VPZnNxAH4ADNnZIMV0AA5zdGFuZGFyZFNjb3Jlc3NxAH4ADGVl+p50AAttZXJnZU51Y2xlaXNxAH4ADJALImV0AAhrdXJ0b3Npc3NxAH4ADBvIGnB0AAxzeW5jaHJvbml6ZWRzcQB+AAzYyIHndAAFaUZpbmRzcQB+AAzeIHrHdAANJGlzSW5zdGFuY2VPZnNxAH4ADN+9yHN0AARtZWFuc3EAfgAM+HC+8nQADmdldEJvdW5kaW5nQm94c3EAfgAMHYjt0XQAA0lTQXNxAH4ADIGsgGB0AAdOdWNsZXVzc3EAfgAMiIRtCXQADWdldE92ZXJsYXlSb2lzcQB+AAxLyVmQdAAEbWFpbnNxAH4ADM7wA610ABt0aHJlZUNoYW5uZWxOdWNsZXVzRm9jdXNzZXJzcQB+AAxdU2JGdAAEbGFzdHNxAH4ADAYC6R50AA9vYmplY3RBbmFseXNpczJzcQB+AAxL9eU1dAAMZ2V0VG90YWxBcmVhc3EAfgAMOxQT6HQACW5vdGlmeUFsbHNxAH4ADFlNEuN0ABVudWNsZXVzU2xpY2VFdWNsZWRpYW5zcQB+AAxm1hsndAANb3BlbkltYWdlRmlsZXNxAH4ADIfklMp0AA50aHJlc2hvbGRDb3VudHNxAH4ADL/Bw+Z0AAxpc0luc3RhbmNlT2ZzcQB+AAxBRLiJdAAScGVhcnNvbkNvcnJlbGF0aW9uc3EAfgAMZTKVB3QABjxpbml0PnNxAH4ADNCH6g90AAptYXNrTnVjbGVpc3EAfgAMGrWcrXQACWdldFBpeGVsc3NxAH4ADMP3TQZ0AApnZXRYQ2VudHJlc3EAfgAM3zdXY3QAC2dldENlbnRyb2lkc3EAfgAMavnegHQAAj09c3EAfgAMNCddhnQAFG1ha2VDcm9wcGVkUHJvY2Vzc29yc3EAfgAMw7q6bnQABWNsb25lc3EAfgAM5qnfzHQAGHBlYXJzb25zUGl4ZWxDb3JyZWxhdGlvbnNxAH4ADAl8kuJ0AAZnZXRSb2lzcQB+AAxHHF+qdAAOYW5hbHl6ZU51Y2xldXNzcQB+AAy3sCTFdAAadGhyZWVDaGFubmVsTnVjbGVpRm9jdXNzZXJzcQB+AAz4BtjQdAAKZ2V0WUNlbnRyZXNxAH4ADBfdXv90ABRwcm9jZXNzSW1hZ2VUb051Y2xlaXNxAH4ADFBzvnN0AAh0b1N0cmluZ3NxAH4ADFF86N10ABlnZXRNYXhpbXVtQ3Jvc3NTZWN0aW9uUm9pc3EAfgAMMyDXDnQAC2dldE1lYW5BcmVhc3EAfgAMOMZk13QADE51Y2xldXNTbGljZXNxAH4ADHx2ez50AAIhPXNxAH4ADFEABnR0ABB0aHJlc2hvbGRPYmplY3Rzc3EAfgAM1+hnynQACHNrZXduZXNzc3EAfgAMDodWq3QADmZpbmRJbmZsZWN0aW9uc3EAfgAMZKAzxXQACGdldENsYXNzc3EAfgAMkhLH9nQADm51Y2xlaUZvY3Vzc2Vyc3EAfgAM7nyJEXQAEXN0YW5kYXJkRGV2aWF0aW9uc3EAfgAM3keHwnQAHGdldExpc3RPZkZpbGVzSW5TdWJEaXJlY3RvcnlzcQB+AAzMxUMOdAAMbWVyZ2VSZXN1bHRzc3EAfgAMxrDg03QABlJlc3VsdHNxAH4ADBYvLmh0AA5nZXRJbWFnZVNsaWNlc3NxAH4ADKhHOhl0AAJuZXNxAH4ADN7oEVN0AAlnZXRTbGljZXNzcQB+AAzs9gJidAAZbnVtZXJpY2FsU2Vjb25kRGVyaXZhdGl2ZXNxAH4ADCKqfy10AAJlcXNxAH4ADD7WwGl0AA9nZXRSZXN1bHRWYWx1ZXNzcQB+AAyHDULodAACIyNzcQB+AAxoO+OFdAAIZmluYWxpemVzcQB+AAzrzzWndAAIaGFzaENvZGVzcQB+AAxo3SVQdAALcHJpbnRSZXN1bHRzcQB+AAz0GQmfdAASbWVhc3VyZUludGVuc2l0aWVzc3EAfgAMfHSKBHQABmFwcGVuZHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAARzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AK94cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0AAtaaXNhLlJlc3VsdHVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgDHAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgCvTAAJaW5oZXJpdGVkcQB+AK9MAAdwYXJlbnRzcQB+AK94cQB+AM5zcQB+AMcBdXEAfgCq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cGVxAH4A21sADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AzXNxAH4A2nQABUFycmF5cQB+AT91cQB+ANgAAAABc3EAfgDadAAGU3RyaW5nc3EAfgDec3EAfgDhdXEAfgDkAAAAA3NxAH4A5nEAfgDpc3EAfgDmcQB+AOtxAH4A7XBzcQB+AMcBdXEAfgCqAAAAAHBzcQB+AMcBdXEAfgDYAAAAAnNxAH4A2nEAfgDdcQB+AVlzcQB+ANpxAH4A73EAfgE/cHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AARaaXNhc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFPNKlu3HVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0ADcvaG9tZS9qYW1lcy9Eb2N1bWVudHMvbW9kemlzYS90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUZ1Zz/nXGjmi2pfn3Ydb5HNh3wjY=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCj08LpAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAUnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cOlNe1t0AAlldWNsZWRpYW5zcQB+AAxa2t54dAAGbm90aWZ5c3EAfgAMhzBu+XQAEW5lYXJlc3ROZWlnaGJvdXJzc3EAfgAMLyI2V3QACWdldExhYmVsc3NxAH4ADKoBIi90AAxTdHJpbmdSZXN1bHRzcQB+AAzqcGR9dAAXZ2V0TGlzdE9mU3ViRGlyZWN0b3JpZXNzcQB+AAwfLn/SdAAEd2FpdHNxAH4ADN3qh210AAhnZXRTbGljZXNxAH4ADGgh6K90AA0kYXNJbnN0YW5jZU9mc3EAfgAM6ta+AHQAB2dldEFyZWFzcQB+AAzlBMGadAASY29uY2F0ZW5hdGVSZXN1bHRzc3EAfgAM38fkhHQACHZhcmlhbmNlc3EAfgAMpNcYzXQACHRha2VTdGVwc3EAfgAMENUKJXQABmVxdWFsc3NxAH4ADL9jFg50AAxhc0luc3RhbmNlT2ZzcQB+AAww02e8dAAOb2JqZWN0QW5hbHlzaXNzcQB+AAzZ2SDFdAAOc3RhbmRhcmRTY29yZXNzcQB+AAxlZfqedAALbWVyZ2VOdWNsZWlzcQB+AAwGatqAdAAIeV9jZW50cmVzcQB+AAyQCyJldAAIa3VydG9zaXNzcQB+AAy7FF4UdAAMc3luY2hyb25pemVkc3EAfgAM2MiB53QABWlGaW5kc3EAfgAMryXcnHQADSRpc0luc3RhbmNlT2ZzcQB+AAzfvchzdAAEbWVhbnNxAH4ADPhwvvJ0AA5nZXRCb3VuZGluZ0JveHNxAH4ADB2I7dF0AANJU0FzcQB+AAyBrIBgdAAHTnVjbGV1c3NxAH4ADIiEbQl0AA1nZXRPdmVybGF5Um9pc3EAfgAMS8lZkHQABG1haW5zcQB+AAzO8AOtdAAbdGhyZWVDaGFubmVsTnVjbGV1c0ZvY3Vzc2Vyc3EAfgAMXVNiRnQABGxhc3RzcQB+AAxL9eU1dAAMZ2V0VG90YWxBcmVhc3EAfgAMT5yIGHQACW5vdGlmeUFsbHNxAH4ADFlNEuN0ABVudWNsZXVzU2xpY2VFdWNsZWRpYW5zcQB+AAxm1hsndAANb3BlbkltYWdlRmlsZXNxAH4ADIfklMp0AA50aHJlc2hvbGRDb3VudHNxAH4ADFQ5USZ0AAxpc0luc3RhbmNlT2ZzcQB+AAxBRLiJdAAScGVhcnNvbkNvcnJlbGF0aW9uc3EAfgAM5ssN/XQABjxpbml0PnNxAH4ADNCH6g90AAptYXNrTnVjbGVpc3EAfgAMGrWcrXQACWdldFBpeGVsc3NxAH4ADMDyNPx0AAh4X2NlbnRyZXNxAH4ADMYkYKF0AApnZXRYQ2VudHJlc3EAfgAMNY2QWHQACWdldFZhbHVlc3NxAH4ADHeQn4B0AAZsYWJlbHNzcQB+AAzfN1djdAALZ2V0Q2VudHJvaWRzcQB+AAz2+TIVdAACPT1zcQB+AAw0J12GdAAUbWFrZUNyb3BwZWRQcm9jZXNzb3JzcQB+AAzOhqRTdAAFY2xvbmVzcQB+AAzmqd/MdAAYcGVhcnNvbnNQaXhlbENvcnJlbGF0aW9uc3EAfgAMCXyS4nQABmdldFJvaXNxAH4ADEccX6p0AA5hbmFseXplTnVjbGV1c3NxAH4ADLewJMV0ABp0aHJlZUNoYW5uZWxOdWNsZWlGb2N1c3NlcnNxAH4ADLVMhGl0AApnZXRZQ2VudHJlc3EAfgAMF91e/3QAFHByb2Nlc3NJbWFnZVRvTnVjbGVpc3EAfgAMwzyFg3QABnZhbHVlc3NxAH4ADD6pEi50AAh0b1N0cmluZ3NxAH4ADFF86N10ABlnZXRNYXhpbXVtQ3Jvc3NTZWN0aW9uUm9pc3EAfgAMMyDXDnQAC2dldE1lYW5BcmVhc3EAfgAMOMZk13QADE51Y2xldXNTbGljZXNxAH4ADCUle3N0AAIhPXNxAH4ADFEABnR0ABB0aHJlc2hvbGRPYmplY3Rzc3EAfgAM1+hnynQACHNrZXduZXNzc3EAfgAMDodWq3QADmZpbmRJbmZsZWN0aW9uc3EAfgAMXRdSmHQACGdldENsYXNzc3EAfgAMkhLH9nQADm51Y2xlaUZvY3Vzc2Vyc3EAfgAM7nyJEXQAEXN0YW5kYXJkRGV2aWF0aW9uc3EAfgAM3keHwnQAHGdldExpc3RPZkZpbGVzSW5TdWJEaXJlY3RvcnlzcQB+AAzMxUMOdAAMbWVyZ2VSZXN1bHRzc3EAfgAMxrDg03QABlJlc3VsdHNxAH4ADBYvLmh0AA5nZXRJbWFnZVNsaWNlc3NxAH4ADN3NMY10AAJuZXNxAH4ADN7oEVN0AAlnZXRTbGljZXNzcQB+AAzs9gJidAAZbnVtZXJpY2FsU2Vjb25kRGVyaXZhdGl2ZXNxAH4ADLSFshV0AAJlcXNxAH4ADD7WwGl0AA9nZXRSZXN1bHRWYWx1ZXNzcQB+AAwxocqwdAACIyNzcQB+AAwf47lTdAAIZmluYWxpemVzcQB+AAwpcw2ZdAAIaGFzaENvZGVzcQB+AAxo3SVQdAALcHJpbnRSZXN1bHRzcQB+AAz0GQmfdAASbWVhc3VyZUludGVuc2l0aWVzc3EAfgAMfHSKBHQABmFwcGVuZHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAVzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ALt4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0AAtaaXNhLlJlc3VsdHVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGk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w7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgFdeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgDOdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgDnWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgDZc3EAfgDmdAAFQXJyYXlxAH4BZXVxAH4A5AAAAAFzcQB+AOZ0AAZTdHJpbmdzcQB+AOpzcQB+AO11cQB+APAAAAADc3EAfgDycQB+APVzcQB+APJxAH4A93EAfgD5cHNxAH4A0wF1cQB+ALYAAAAAcHNxAH4A0wF1cQB+AOQAAAACc3EAfgDmcQB+AOlxAH4Bf3NxAH4A5nEAfgD7cQB+AWVwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQABFppc2FzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAU8/vWqwdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQzLTh4SvjvcAceyKEpti1f2RiPuA==
 external apis:
 0 items
 source infos:
@@ -806,7 +828,7 @@ source infos:
 /home/james/Documents/modzisa/WaveZisa.scala -> 
 AAAAAAAAAAA=
 compilations:
-325 items
+329 items
 000 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTs5c2B11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
 001 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTtL2HqZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
 002 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTtL3fHl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
@@ -1132,3 +1154,7 @@ compilations:
 322 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTzSlSD91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
 323 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTzSnnk91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
 324 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTzSpbtx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+325 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTz9i5T51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+326 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTz9qMGV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+327 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTz+68WF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+328 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABTz+9arB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANy9ob21lL2phbWVzL0RvY3VtZW50cy9tb2R6aXNhL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv

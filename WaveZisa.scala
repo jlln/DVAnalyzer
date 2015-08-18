@@ -41,6 +41,18 @@ class Result(area:Double,labels:List[String],values:List[Option[Double]]){
   }
 }
 
+class StringResult(data_result:Result,nucleus:Nucleus,image:String){
+  val x_centre = nucleus.getXCentre.toString
+  val y_centre = nucleus.getYCentre.toString
+  val labels:List[String] = List("Filename","x_centre","y_centre")++data_result.getLabels
+  val values:List[String] = List(image,x_centre,y_centre)++data_result.getResultValues.map{x=> x match{
+    case Some(y) =>y.toString
+    case None => "NA"
+    }}
+  def getLabels = labels
+  def getValues = values.toSeq
+}
+
 
 class NucleusSlice(slice:Int,x_centre:Double,y_centre:Double,roi:ij.gui.Roi,area:Double){
   def getSlice = slice
@@ -88,7 +100,8 @@ class Nucleus(slices:Array[NucleusSlice]){
     new ij.gui.Roi(x,y,w,h)
     
   }
-
+  def getXCentre = slices.head.getXCentre
+  def getYCentre = slices.head.getYCentre
 
   def getOverlayRoi:List[ij.gui.Roi] = {
     val roi = getMaximumCrossSectionRoi
@@ -136,9 +149,6 @@ object ISA {
     }
     (thresholdCount(pixels,threshold+interval)-2*thresholdCount(pixels,threshold)+thresholdCount(pixels,threshold-interval))/(interval*interval)
   }
-
-
-
 
   def takeStep(pixels:List[Float],steps:List[(Double,Double)],step_size:Float):List[(Double,Double)] = {
    val new_threshold = { 
@@ -518,7 +528,6 @@ object ISA {
         val channel_a:Array[Float] = nucleus_slice.getPixels(a).flatten
         val channel_b:Array[Float] = nucleus_slice.getPixels(b).flatten
         val pp = pearsonsPixelCorrelation(channel_a,channel_b,0)
-        println(pp)
         pp
       }
     }.map{r=>Some(r)}
@@ -543,7 +552,7 @@ object ISA {
   }
 
 
-  def objectAnalysis2(nucleus_slice:NucleusSlice,object_channels:Array[ImagePlus],
+  def objectAnalysis(nucleus_slice:NucleusSlice,object_channels:Array[ImagePlus],
     object_lower:Double,object_upper:Double):Result = {
     val result_values:List[Option[Double]] = object_channels.flatMap{ oc=>
         oc.setSlice(nucleus_slice.getSlice)
@@ -596,24 +605,39 @@ object ISA {
     
   }
 
-
- 
- 
+  
   
   def main(args: Array[String]){
     val top_directory = new ij.io.DirectoryChooser("Choose Directory").getDirectory().toString
+    val output_file = top_directory+"FullZisaAnalysis.csv"
+    val csv_writer = CSVWriter.open(output_file,append=false)
+    val headings = Seq("Filename", "x_centre", "y_centre", "Channel1_ObjectCount", "Channel1_ObjectSizeMean", "Channel1_ObjectSizeStandardDeviation", "Channel1_ObjectSizeSkewness", "Channel1_ObjectSizeKurtosis", 
+      "Channel1_ObjectNearestNeighbourDistanceMean", "Channel1_ObjectNearestNeighbourDistanceStandardDeviation", "Channel1_ObjectNearestNeighbourDistanceSkewness", "Channel1_ObjectNearestNeighbourDistanceKurtosis", "Channel1_ObjectRadialPositionMean", 
+      "Channel1_ObjectRadialPositionStandardDeviation", "Channel1_ObjectRadialPositionSkewness", "Channel1_ObjectRadialPositionKurtosis", "Channel2_ObjectCount", "Channel2_ObjectSizeMean", 
+      "Channel2_ObjectSizeStandardDeviation", "Channel2_ObjectSizeSkewness", "Channel2_ObjectSizeKurtosis", "Channel2_ObjectNearestNeighbourDistanceMean", "Channel2_ObjectNearestNeighbourDistanceStandardDeviation", "Channel2_ObjectNearestNeighbourDistanceSkewness", 
+      "Channel2_ObjectNearestNeighbourDistanceKurtosis", "Channel2_ObjectRadialPositionMean", "Channel2_ObjectRadialPositionStandardDeviation",
+     "Channel2_ObjectRadialPositionSkewness", "Channel2_ObjectRadialPositionKurtosis", "Channel3_ObjectCount", "Channel3_ObjectSizeMean", "Channel3_ObjectSizeStandardDeviation", 
+     "Channel3_ObjectSizeSkewness", "Channel3_ObjectSizeKurtosis", "Channel3_ObjectNearestNeighbourDistanceMean", "Channel3_ObjectNearestNeighbourDistanceStandardDeviation", "Channel3_ObjectNearestNeighbourDistanceSkewness", "Channel3_ObjectNearestNeighbourDistanceKurtosis", "Channel3_ObjectRadialPositionMean", 
+     "Channel3_ObjectRadialPositionStandardDeviation", "Channel3_ObjectRadialPositionSkewness", "Channel3_ObjectRadialPositionKurtosis", "Channel1_MeanIntensity", "Channel1_StandardDeviationIntensity", "Channel1_SkewnessIntensity", 
+     "Channel1_KurtosisIntensity", "Channel2_MeanIntensity", "Channel2_StandardDeviationIntensity", "Channel2_SkewnessIntensity", "Channel2_KurtosisIntensity", "Channel3_MeanIntensity", "Channel3_StandardDeviationIntensity", "Channel3_SkewnessIntensity", 
+     "Channel3_KurtosisIntensity", "Channel1PearsonChannel2", "Channel1PearsonChannel3", "Channel2PearsonChannel3")
+    csv_writer.writeRow(headings)
     for (subdirectory_name <- getListOfSubDirectories(top_directory)){
       for (file<-getListOfFilesInSubDirectory(top_directory+subdirectory_name)){
         val image =openImageFile(top_directory+subdirectory_name+"/"+file)
         val (nuclei,channels) = processImageToNuclei(image)
         for (n<-nuclei){
           val thresholded_channels = channels.map{c=>thresholdObjects(n,c)}
-          val subnuclear_object_results = analyzeNucleus(n,thresholded_channels)(objectAnalysis2)
+          val subnuclear_object_results = analyzeNucleus(n,thresholded_channels)(objectAnalysis)
           val intensity_results = analyzeNucleus(n,channels)(measureIntensities)
           val correlation_results = analyzeNucleus(n,channels)(pearsonCorrelation)
-          subnuclear_object_results.printResult
-          intensity_results.printResult
-          correlation_results.printResult
+          val overall_result = subnuclear_object_results.concatenateResults(intensity_results.concatenateResults(correlation_results))
+          val string_result = new StringResult(overall_result,n,file)
+          println(string_result.getValues)
+          csv_writer.writeRow(string_result.getValues)
+          // subnuclear_object_results.printResult
+          // intensity_results.printResult
+          // correlation_results.printResult
         //   val image_processors = for (s<-n.getSlices) yield {
         //     val topo_image = channels(0)    
         //     topo_image.setSlice(s.getSlice)
