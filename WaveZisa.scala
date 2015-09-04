@@ -26,6 +26,10 @@ import scala.math.sqrt
 import scala.math.pow
 
 
+
+
+
+
 class Result(area:Double,labels:List[String],values:List[Option[Double]]){
   def getLabels = labels
   def getResultValues = values
@@ -41,13 +45,13 @@ class Result(area:Double,labels:List[String],values:List[Option[Double]]){
   }
 }
 
-class StringResult(data_result:Result,nucleus:Nucleus,image:String){
+class StringResult(data_result:Result,nucleus:Nucleus,image:String,condition:String){
   val x_centre = nucleus.getXCentre.toString
   val y_centre = nucleus.getYCentre.toString
-  val labels:List[String] = List("Filename","x_centre","y_centre")++data_result.getLabels
-  val values:List[String] = List(image,x_centre,y_centre)++data_result.getResultValues.map{x=> x match{
+  val labels:List[String] = List("Condition","Filename","x_centre","y_centre")++data_result.getLabels
+  val values:List[String] = List(condition,image,x_centre,y_centre)++data_result.getResultValues.map{x=> x match{
     case Some(y) =>y.toString
-    case None => "NA"
+    case None => "NaN"
     }}
   def getLabels = labels
   def getValues = values.toSeq
@@ -134,6 +138,89 @@ object ISA {
   
 
 
+  def neighbourEight(x:Int,y:Int,image_width:Int,image_height:Int):Array[(Int,Int)]={
+    //0-index x and y
+    val left_edge:Boolean = (x==0)
+    val right_edge:Boolean = (x==image_width-1)
+    val top:Boolean = (y==0)
+    val bottom:Boolean = (y==image_height-1)
+    if (left_edge){
+      if (top){
+        Array((x,y-1),(x+1,y),(x+1,y-1))
+      }
+      else if (bottom){
+        Array((x,y+1),(x+1,y),(x+1,y+1))
+      }
+      else{
+        Array((x,y+1),(x,y-1),(x+1,y),(x+1,y+1),(x+1,y-1))
+      }
+    }
+    else if (right_edge){
+      if (top){
+        Array((x,y-1),(x-1,y),(x-1,y-1))
+      }
+      else if (bottom){
+        Array((x,y+1),(x-1,y),(x-1,y+1))
+      }
+      else{
+        Array((x,y+1),(x,y-1),(x+1,y),(x+1,y+1),(x+1,y-1))
+      }
+    }
+    else if (top){
+      Array((x-1,y),(x,y),(x+1,y),(x-1,y-1),(x,y-1),(x+1,y-1))
+    }
+    else if (bottom){
+      Array((x-1,y),(x,y),(x+1,y),(x-1,y+1),(x,y+1),(x+1,y+1))
+    }
+
+    else{
+      Array((x-1,y),(x-1,y+1),(x-1,y-1),(x,y+1),(x,y-1),(x+1,y),(x+1,y+1),(x+1,y-1))
+    }
+  }
+
+  def describeObjects(image:Array[Array[Float]]) = {
+    val width = image.head.length
+    val height = image.length
+    val label_array:Array[Array[Int]] = image.map{y=>{
+      y.map{x=>{
+        if (x== 0.0) 0
+        else -1
+        }}
+      }}
+
+  }
+
+  def expandBlob(blob_number:Int,image_width:Int,image_height:Int,current_elements:Array[(Int,Int)],label_array:Array[Array[Int]]):Array[Array[Int]]={
+    val neighbours = current_elements.flatMap{
+      case (x,y) => neighbourEight(x,y,image_width,image_height)
+    }
+    val foreground_neighbours:Array[(Int,Int)] = neighbours.filter(n=> label_array(n._1)(n._2) == -1)
+    if (foreground_neighbours.length == 0) label_array 
+    else{
+      val new_current_elements = foreground_neighbours
+      var flat_label_array = label_array.flatten
+      val update_indices = foreground_neighbours.map{
+        case (x,y) => y*image_width+x
+      }
+      for (u<-update_indices) flat_label_array.update(u,blob_number)
+      val new_label_array = flat_label_array.grouped(image_width)
+      expandBlob(blob_number,image_width,image_height,new_current_elements,new_label_array) 
+    }
+  }
+
+  def findBlobs(image:Array[Array[Int]],image_width:Int,image_height:Int,blob_count:Int,blobs:List[List(x,y)]){
+    val y_index = image.indexWhere(_.contains(-1))
+    if (y_index == -1) blobs
+    else{
+      val row = image(y_index)
+      val x_index = row.indexOf(-1)
+      val new_row = row.updated(x_index,blob_count+1)
+      val new_image = image.updated(y_index,new_row)
+      val blob_core = (x_index,y_index)
+    }
+  }
+  
+
   def thresholdCount(pixels:List[Float],threshold:Double):Double={
     pixels.filter(x=>x>threshold).length.toDouble/pixels.length
   }
@@ -171,19 +258,18 @@ object ISA {
   def iFind(pixels:List[Float],steps:List[(Double,Double)],step_size:Float):Double = {
     val mean_pixels = mean(pixels)
     val mean_minus_min = mean_pixels - pixels.min
-    val threshold = 0.00003/((4*mean_pixels)*(0.25*mean_minus_min)*(standardDeviation(pixels)+pixels.max-pixels.min))
+    val threshold = 0.00004/standardDeviation(pixels)
 
     steps.length match{
       //take the first two steps
       case x if x < 2 => iFind(pixels,takeStep(pixels,steps,step_size),step_size)
       case _ =>{
+        if (steps.last._1 < 0) iFind(pixels,List(),step_size/2)
         val second_derivatives = steps.map{x=>x._2}
-        val second_derivatives_variance = variance(second_derivatives)
-        second_derivatives_variance match {
+        val second_derivatives_standev = standardDeviation(second_derivatives)
+        second_derivatives_standev match {
           case x if x < threshold => iFind(pixels,takeStep(pixels,steps,step_size),step_size) 
-          case x if x > threshold => {
-            steps.last._1
-          }
+          case x if x > threshold => steps.last._1         
         }
       }
     }  
@@ -215,7 +301,7 @@ object ISA {
     val variance_values=variance_values1.map(x => x*x)
     val area_values = variance_results.getColumn(variance_results.getColumnIndex("Area"))
     val mean_area = mean(area_values)
-    val variance_threshold = 0.6*variance_values.max        
+    val variance_threshold = 0.8*variance_values.max        
     val retained_slices = for ((s,i)<-nucleus.getSlices.zipWithIndex 
       if (variance_values(i)>variance_threshold & area_values(i)>mean_area*0.5)) yield s
     new Nucleus(retained_slices.toArray)
@@ -244,7 +330,10 @@ object ISA {
     val channels:Array[ImagePlus]=ChannelSplitter.split(image)
     val (red,green,blue) = (channels(0),channels(1),channels(2))
     val (nuclei,nuclei_mask) = maskNuclei(blue)
-    val focussed_nuclei = threeChannelNucleiFocusser(red,green,blue,nuclei)
+    // val focussed_nuclei = threeChannelNucleiFocusser(red,green,blue,nuclei)
+    val edge_mask = blue.duplicate
+    IJ.run(edge_mask, "Find Edges","stack")
+    val focussed_nuclei = nuclei.toList.map{n=>nucleiFocusser(n,edge_mask)}.filter{n=> n.getSlices.length > 0}
     (focussed_nuclei,channels)
   }
 
@@ -405,24 +494,29 @@ object ISA {
       ip.getFloatArray()
     }
     val threshold = findInflection(pixel_array)
+    println(threshold)
     val width = image_processors.head.getWidth
     val height = image_processors.head.getHeight
     val output_stack = new ij.ImageStack(width,height)
     for (p<-image_processors){
       val ft = p.convertToFloat()
       val bp = p.convertToByte(false)
-      val fta:Array[Array[Int]] = ft.getFloatArray().map{x=>
+      val fta:Array[Array[Float]] = ft.getFloatArray().map{x=>
         x.map{y=>
-          if (y>threshold) 255
-          else 0
+          if (y>threshold) y
+          else 0.0
         }
-      }
-
+      } 
       bp.setIntArray(fta)
+      val preview_image = new ImagePlus("preview",bp)
+      preview_image.show()
+      Thread.sleep(500)
+      WindowManager.closeAllWindows()
       output_stack.addSlice(bp)
     }
     val thresholded_image = new ImagePlus("thresholded",output_stack)
     IJ.run(thresholded_image,"Make Binary", "method=Default background=Default stack ")
+
     WindowManager.closeAllWindows()
     thresholded_image
   }
@@ -436,6 +530,7 @@ object ISA {
           results.map{r=>{
           val entry = r.getResultValues(l)
           entry match{
+            case Some(x) if x.isNaN => (0.0,0.0)
             case Some(x) => (x*r.getArea,r.getArea)
             case None => (0.0,0.0)
             }
@@ -470,8 +565,9 @@ object ISA {
   def analyzeNucleus(nucleus:Nucleus,images:Array[ImagePlus])(analyticalFunction:(NucleusSlice,Array[ImagePlus],Double,Double)
     =>Result):Result = {
     val calibration = images(0).getCalibration()
-    calibration.setUnit("micron")
-    val object_lower = math.pow(calibration.getRawX(1),2)*3.14156
+    calibration.setUnit("micron") 
+    // val object_lower = math.pow(calibration.getRawX(10),2)*3.14156
+    val object_lower = 0
     val object_upper = math.pow(calibration.getRawX(500),2)*3.14156
     val slices = nucleus.getSlices
     val areas = slices.map{s=> s.getArea}
@@ -533,6 +629,8 @@ object ISA {
     }.map{r=>Some(r)}
     new Result(nucleus_slice.getArea,channel_pair_labels,result_values)
   }
+
+  
 
 
   def nearestNeighbours(object_centroids:List[(Float,Float)]):List[Double] = {
@@ -605,13 +703,13 @@ object ISA {
     
   }
 
-  
+
   
   def main(args: Array[String]){
     val top_directory = new ij.io.DirectoryChooser("Choose Directory").getDirectory().toString
     val output_file = top_directory+"FullZisaAnalysis.csv"
     val csv_writer = CSVWriter.open(output_file,append=false)
-    val headings = Seq("Filename", "x_centre", "y_centre", "Channel1_ObjectCount", "Channel1_ObjectSizeMean", "Channel1_ObjectSizeStandardDeviation", "Channel1_ObjectSizeSkewness", "Channel1_ObjectSizeKurtosis", 
+    val headings = Seq("Condition","Filename", "x_centre", "y_centre", "Channel1_ObjectCount", "Channel1_ObjectSizeMean", "Channel1_ObjectSizeStandardDeviation", "Channel1_ObjectSizeSkewness", "Channel1_ObjectSizeKurtosis", 
       "Channel1_ObjectNearestNeighbourDistanceMean", "Channel1_ObjectNearestNeighbourDistanceStandardDeviation", "Channel1_ObjectNearestNeighbourDistanceSkewness", "Channel1_ObjectNearestNeighbourDistanceKurtosis", "Channel1_ObjectRadialPositionMean", 
       "Channel1_ObjectRadialPositionStandardDeviation", "Channel1_ObjectRadialPositionSkewness", "Channel1_ObjectRadialPositionKurtosis", "Channel2_ObjectCount", "Channel2_ObjectSizeMean", 
       "Channel2_ObjectSizeStandardDeviation", "Channel2_ObjectSizeSkewness", "Channel2_ObjectSizeKurtosis", "Channel2_ObjectNearestNeighbourDistanceMean", "Channel2_ObjectNearestNeighbourDistanceStandardDeviation", "Channel2_ObjectNearestNeighbourDistanceSkewness", 
@@ -632,7 +730,7 @@ object ISA {
           val intensity_results = analyzeNucleus(n,channels)(measureIntensities)
           val correlation_results = analyzeNucleus(n,channels)(pearsonCorrelation)
           val overall_result = subnuclear_object_results.concatenateResults(intensity_results.concatenateResults(correlation_results))
-          val string_result = new StringResult(overall_result,n,file)
+          val string_result = new StringResult(overall_result,n,file,subdirectory_name)
           println(string_result.getValues)
           csv_writer.writeRow(string_result.getValues)
           // subnuclear_object_results.printResult
@@ -674,9 +772,10 @@ object ISA {
 
       }
     }
+    println("done")
   }
   
   
-  sys.exit(0)
+ 
 }
 }

@@ -5,21 +5,284 @@
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/ivys/ivy.xml (4.0.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/ivys/ivy.xml ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/ivys/ivy.xml.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0!ivy.xml(ivy.original) (5132ms)[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 in sbt-plugin-releases[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@7eee1540[0m
+[0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-core_2.10;7.1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-core_2.10;7.1.0 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-core_2.10;7.1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scalaz#scalaz-core_2.10;7.1.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-core_2.10/7.1.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-core_2.10/7.1.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for org.scalaz#scalaz-core_2.10;7.1.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-core_2.10/7.1.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-core_2.10/7.1.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for org.scalaz#scalaz-core_2.10;7.1.0[0m
+[0m[[0mdebug[0m] [0m		tried /home/james/.ivy2/local/org.scalaz/scalaz-core_2.10/7.1.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scalaz#scalaz-core_2.10;7.1.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.scalaz#scalaz-core_2.10;7.1.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.pom (7.1.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scalaz#scalaz-core_2.10;7.1.0!scalaz-core_2.10.pom(pom.original) (1229ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-core_2.10/7.1.0/bundles/scalaz-core_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-core_2.10/7.1.0/bundles/scalaz-core_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-core_2.10/7.1.0/bundles/scalaz-core_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-core_2.10/7.1.0/bundles/scalaz-core_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/james/.ivy2/local/org.scalaz/scalaz-core_2.10/7.1.0/bundles/scalaz-core_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar[0m
+[0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-core_2.10;7.1.0 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@7130d1ca[0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@4dfefe39[0m
+[0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-effect_2.10;7.1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-effect_2.10;7.1.0 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-effect_2.10;7.1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scalaz#scalaz-effect_2.10;7.1.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-effect_2.10/7.1.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-effect_2.10/7.1.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for org.scalaz#scalaz-effect_2.10;7.1.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-effect_2.10/7.1.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-effect_2.10/7.1.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for org.scalaz#scalaz-effect_2.10;7.1.0[0m
+[0m[[0mdebug[0m] [0m		tried /home/james/.ivy2/local/org.scalaz/scalaz-effect_2.10/7.1.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scalaz#scalaz-effect_2.10;7.1.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.scalaz#scalaz-effect_2.10;7.1.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.pom (7.1.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scalaz#scalaz-effect_2.10;7.1.0!scalaz-effect_2.10.pom(pom.original) (1158ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-effect_2.10/7.1.0/bundles/scalaz-effect_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scalaz/scalaz-effect_2.10/7.1.0/bundles/scalaz-effect_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-effect_2.10/7.1.0/bundles/scalaz-effect_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scalaz/scalaz-effect_2.10/7.1.0/bundles/scalaz-effect_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/james/.ivy2/local/org.scalaz/scalaz-effect_2.10/7.1.0/bundles/scalaz-effect_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar[0m
+[0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-effect_2.10;7.1.0 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@3d61ecbe[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@30ff3d30[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@46f5a0b6[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@74c3a0ca[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@34c9b085[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@69a6692e[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@5e6f1a85[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@7ef02fbd[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@2a0664a[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@29664fb0[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@561410e6[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@5707be58[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@1689556[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@1451f673[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@1cd01ee0[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@270d3e69[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
-[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->master][0m
@@ -64,8 +327,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#classpath;0.13.8->org.scala-lang#scala-compiler;2.10.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-library;2.10.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.4->org.scala-lang#scala-reflect;2.10.4 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -375,19 +636,19 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving org.json4s#json4s-ast_2.10;3.2.10 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json4s#json4s-ast_2.10;3.2.10 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -411,10 +672,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving com.thoughtworks.paranamer#paranamer;2.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.thoughtworks.paranamer#paranamer;2.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -713,6 +974,81 @@
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [compile-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@6d0b3200[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@13cdacba[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@5203bcd1[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@618cc8c0[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@2bf5a3b1[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@64df772a[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@631269b9[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@2d11cd6d[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@67f070e2[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@3486faea[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@32ffe4aa[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@3be2a995[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
@@ -934,19 +1270,19 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)][0m
@@ -961,10 +1297,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -1185,12 +1521,174 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [runtime-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@464d8157[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@183f2671[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@75ff576f[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@3848e546[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@73482caa[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@7c835983[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@31ee180[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@3de4b146[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@5c2ea2b[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@55d0af28[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@2bbcc763[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@16078208[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [test-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@6d176a88[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@458c142a[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@2234aba4[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@31f48852[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@67e1e7ce[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@4269825c[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@50a4dec4[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@38138c89[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@36e682b5[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@48de4adf[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@3e7aeffe[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@1a294b7c[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@1b2466cb[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@47ad11b8[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@30768db5[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@4e3d7801[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@76974d33[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.10.4 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: sbt.ivyint.MergedDescriptors@30048b6c => sbt.ivyint.MergedDescriptors@5918b288[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scala-lang#scala-library;2.10.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.10;7.1.0->org.scalaz#scalaz-core_2.10;7.1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-effect_2.10;7.1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#modzisa-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
@@ -1412,19 +1910,19 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->org.json4s#json4s-ast_2.10;3.2.10 [compile->compile(*)][0m
@@ -1439,10 +1937,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mexcluding dependency: org.scala-lang#scalap;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.json4s#json4s-core_2.10;3.2.10->com.thoughtworks.paranamer#paranamer;2.6 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -1710,11 +2208,29 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#modzisa-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/jars/sbteclipse-plugin.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/jars/sbteclipse-plugin.jar ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/jars/sbteclipse-plugin.jar[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/jars/sbteclipse-plugin.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/jars/sbteclipse-plugin.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0!sbteclipse-plugin.jar (11243ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.1.0/scalaz-core_2.10-7.1.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalaz#scalaz-core_2.10;7.1.0!scalaz-core_2.10.jar(bundle) (29360ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.1.0/scalaz-effect_2.10-7.1.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalaz#scalaz-effect_2.10;7.1.0!scalaz-effect_2.10.jar(bundle) (2874ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt;0.13.8!sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#main;0.13.8!main.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.8!compiler-interface-bin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.8!compiler-interface-src.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.8!compiler-interface-bin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!compiler-interface-bin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!compiler-interface-bin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!compiler-interface-bin.jar[0m
@@ -1766,7 +2282,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2054ms :: artifacts dl 46ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 26529ms :: artifacts dl 43586ms[0m
 [0m[[0mdebug[0m] [0m	report for default#modzisa-build;0.1-SNAPSHOT compile produced in /home/james/Documents/modzisa/project/target/resolution-cache/reports/default-modzisa-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#modzisa-build;0.1-SNAPSHOT runtime produced in /home/james/Documents/modzisa/project/target/resolution-cache/reports/default-modzisa-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#modzisa-build;0.1-SNAPSHOT test produced in /home/james/Documents/modzisa/project/target/resolution-cache/reports/default-modzisa-build-test.xml[0m
@@ -1780,5 +2296,5 @@
 [0m[[0mdebug[0m] [0m	report for default#modzisa-build;0.1-SNAPSHOT docs produced in /home/james/Documents/modzisa/project/target/resolution-cache/reports/default-modzisa-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#modzisa-build;0.1-SNAPSHOT pom produced in /home/james/Documents/modzisa/project/target/resolution-cache/reports/default-modzisa-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#modzisa-build;0.1-SNAPSHOT scala-tool produced in /home/james/Documents/modzisa/project/target/resolution-cache/reports/default-modzisa-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2054ms resolve - 46ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (26529ms resolve - 43586ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
