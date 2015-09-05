@@ -12,6 +12,16 @@ class Result(area:Int,entries:List[ResultEntry]) {
     val output_strings = labels.zip(values).map{ case (l,v)=>l+": "+v.toString}
     output_strings.foreach(println)
   }
+  def makeValueString:List[String] = {
+   val data = entries.map(e=>e.getValue).map{
+     x=> x match{
+       case None => "NA"
+       case Some(x) => x.toString
+       }
+     }
+   data
+   
+  }
   override def hashCode = 31*area + entries.map(e=>e.hashCode).sum
   override def equals(other:Any) = other match {
     case that:Result => this.area == that.getArea && this.entries == that.getEntries
@@ -89,7 +99,6 @@ object Results{
     val test_r = area_scaled_values_and_areas.map(_._1)
     val total_area = results.map{x=>x.getArea}.sum
     val nr = new Result(total_area,test_r)
-    nr.printResults
     nr
     
     }

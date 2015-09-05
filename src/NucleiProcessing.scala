@@ -108,14 +108,18 @@ object NucleiProcessing {
       edge_mask.setRoi(s.getRoi)
       analyzer.measure()
     }
+    val slices = nucleus.getSlices
     val variance_values1 = variance_results.getColumn(variance_results.getColumnIndex("Mean"))
     val variance_values=variance_values1.map(x => x*x)
     val area_values = variance_results.getColumn(variance_results.getColumnIndex("Area"))
     val mean_area = Stats.mean(area_values)
     val variance_threshold = 0.8*variance_values.max        
     val retained_slices = for ((s,i)<-nucleus.getSlices.zipWithIndex 
-      if (variance_values(i)>variance_threshold & area_values(i)>mean_area*0.5)) yield nucleus.getSlices(i+1)
-      //The slices are offset by 1, to allow for chromatic aberration effects.
+      if (variance_values(i)>variance_threshold & area_values(i)>mean_area*0.5)) yield{
+        if (i < slices.length-1) slices(i+1)
+        else slices(i)
+    }
+      //The slices are offset by 1 where possible, to allow for chromatic aberration effects.
     new Nucleus(retained_slices.toArray)
   }
     def nucleusSliceEucledian(n1:NucleusSlice,n2:NucleusSlice):Double = {

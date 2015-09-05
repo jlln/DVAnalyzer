@@ -28,13 +28,24 @@ object Stats {
     items map (x => (n.toDouble(x)-sample_mean)/sample_standard_deviation)
   }
   
+  def correlationPearson[T](items_a:Traversable[T],items_b:Traversable[T])(implicit n:Numeric[T]):Double = {
+    val z_scores_a = standardScores(items_a).toArray
+    val z_scores_b = standardScores(items_b).toArray
+    val z_scores_ab = z_scores_a.zip(z_scores_b).map{
+      case (a,b) => a*b}
+    z_scores_ab.sum/z_scores_ab.length match{
+      case x if x.isNaN => 0
+      case x => x
+    }
+  }
+  
   def eucledian[T](x1:T,y1:T,x2:T,y2:T)(implicit n:Numeric[T]):Double = {
   
     val dy = n.toDouble(y1) - n.toDouble(y2)
     val dx = n.toDouble(x1) - n.toDouble(x2)
     sqrt(pow(dx,2)+pow(dy,2))
   }
-
+  
   def skewness[T](items:Traversable[T])(implicit n:Numeric[T]):Double = {
     val m = mean(items)
     val s = standardDeviation(items)

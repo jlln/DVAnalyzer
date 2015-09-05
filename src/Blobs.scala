@@ -35,9 +35,12 @@ object Blobs{
   
   
   def analyzePixelArray(pixels:Array[Array[Int]],colour:String):Result = {
+
     val image = ImageIO.makeImage(pixels)
-    ij.IJ.run(image,"Make Binary", "method=Default background=Default stack ")
     image.show()
+    IJ.run("Tile")
+    Thread.sleep(100)
+    ij.IJ.run(image,"Make Binary", "method=Default background=Dark stack ")
     val image_width = pixels.head.length
     val image_height = pixels.length
     val image_area = image_width * image_height
@@ -46,7 +49,7 @@ object Blobs{
     val pa = new ParticleAnalyzer(ParticleAnalyzer.ADD_TO_MANAGER,
           ij.measure.Measurements.MEAN+ij.measure.Measurements.CENTROID+ij.measure.Measurements.AREA,
           results_table,
-          0,10000,
+          0.001,2000,
           0,1.0)
     pa.analyze(image)
     val areas_index = results_table.getColumnIndex("Area")
@@ -54,13 +57,12 @@ object Blobs{
        "MeanRadialBlobDistance","SDRadialBlobDistance","SkewnessRadialBlobDistance","KurtosisRadialBlobDistance",
        "MeanNearestNeighbour","SDNearestNeigbour","SkewnessNearestNeighbour","KurtosisNearestNeighbour").map{x=>colour+x}
     if (areas_index== -1){
-      val result_entries = labels.map(l=>new ResultEntry(l,None)).updated(0,new ResultEntry("BlobCount",Some(0)))
+      val result_entries = labels.map(l=>new ResultEntry(l,None)).updated(0,new ResultEntry(colour+"BlobCount",Some(0)))
       new Result(image_area,result_entries)
     }
     else {
      
       val areas:Array[Float] = results_table.getColumn(areas_index)
-      println(areas.toList)
       val x_centres:Array[Float] = results_table.getColumn(results_table.getColumnIndex("X"))
       val y_centres:Array[Float] = results_table.getColumn(results_table.getColumnIndex("Y"))
       val centroids = x_centres.zip(y_centres)
@@ -74,20 +76,17 @@ object Blobs{
       val nearest_neighbour_stats = measurementStats(nearest_neighbours)
       val radiality_stats = measurementStats(radiality)
       val blob_count = Some(areas.length.toDouble)
-      println(areas.length)
       val result_entry_values:List[Option[Double]] = List(blob_count) ++ areas_stats ++ 
           radiality_stats ++ nearest_neighbour_stats
       val result_entries = labels.zip(result_entry_values).map{
         case (l,v) => new ResultEntry(l,v)
       }
-      Thread.sleep(500)
       WindowManager.closeAllWindows()
       new Result(image_area,result_entries)
     }
   }
   def analyzePixelArrayStack(pixels:Array[Array[Array[Int]]],colour:String):Result = {
     val r = Results.mergeResults(pixels.toList.map(s=>analyzePixelArray(s,colour)))
-    r.printResults
     r
   }
   

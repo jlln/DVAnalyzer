@@ -40,7 +40,7 @@ object ObjectThresholding {
   def iFind(pixels:List[Float],steps:List[(Double,Double)],step_size:Float):Double = {
     val mean_pixels = Stats.mean(pixels)
     val mean_minus_min = mean_pixels - pixels.min
-    val threshold = 0.000000000040 * mean_pixels
+    val threshold = 0.000000000020 * mean_pixels
     steps.length match{
       //take the first two steps
       case x if x < 2 => iFind(pixels,takeStep(pixels,steps,step_size),step_size)
