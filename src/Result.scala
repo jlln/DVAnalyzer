@@ -33,7 +33,10 @@ class Result(area:Int,entries:List[ResultEntry]) {
 class ResultEntry(label:String,value:Option[Double]){
   def getLabel = label
   def isPresent = value.isDefined
-  def getValue = value
+  def getValue = value match{
+    case Some(x) if x.isNaN => None
+    case Some(x) => Some(x)
+  }
   def scaleEntry(scaling_factor:Double) = {
     value match{
       case Some(x) => new ResultEntry(this.label, Some(x/scaling_factor))

@@ -7,7 +7,10 @@ This application performs automatic quantification of nuclear features in three-
 
 The tiff files should be in red,green,blue channel order. The blue channel is used to prepare masks of the nuclei, which are then traced through the stack to produce three-dimensional representations of the nuclei. Because the nuclei can potentially lie in different focal planes, the focussed slices of each nuclei are then identified, and the unfocussed slices of each nucleus are discarded.
 
-The total area of each nucleus is calculated as the sum of the areas of its constituent slices. Measurements of the Pearson's correlation, Manders overlap, staining intensity, object counts, and object sizes are made for each slice in the nucleus, and a weighted average is prepared according to the area of each slice. 
+Subnuclear objects are thresholded using a method derived from the Stable count thresholding technique described in 
+Russell RA, Adams NM, Stephens DA, Batty E, Jensen K, Freemont PS. Segmentation of Fluorescence Microscopy Images for Quantitative Analysis of Cell Nuclear Architecture. Biophysical Journal 96, 3379-3389, 2009. 
+
+The total area of each nucleus is calculated as the sum of the areas of its constituent slices. Measurements of the Pearson's correlation,  staining intensity, object counts, object sizes, and object position are made for each slice in the nucleus, and a weighted average is prepared according to the area of each slice. 
 
 The output is written to a csv file in the working directory, with each row corresponding to a single cell.
 
