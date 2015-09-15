@@ -130,5 +130,6 @@
 	<classpathentry kind="lib" path="/home/james/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/james/workspace/Zisa/lib/scalatest_2.11-2.2.4.jar"/>
+	<classpathentry kind="lib" path="/home/james/workspace/Zisa/lib/scalacheck_2.11-1.12.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

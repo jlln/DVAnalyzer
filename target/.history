@@ -24,3 +24,4 @@ val t = 1.0
 eclipse
 reload
 eclipse with-source=true
+run

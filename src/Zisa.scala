@@ -67,7 +67,7 @@ object Zisa {
     for (s<-subdirectories){
       for (f<-getListOfFilesInSubDirectory(top_directory+s)){
         val file_rows = processImage(s,top_directory+s+"/"+f)
-        file_rows.foreach(println)
+//        file_rows.foreach(println)
         file_rows.map(r=>csv_writer.writeRow(r))
       }
     }

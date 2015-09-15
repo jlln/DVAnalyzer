@@ -10,7 +10,7 @@ class Result(area:Int,entries:List[ResultEntry]) {
     val labels = entries.map(_.getLabel)
     val values = entries.map(_.getValue)
     val output_strings = labels.zip(values).map{ case (l,v)=>l+": "+v.toString}
-    output_strings.foreach(println)
+//    output_strings.foreach(println)
   }
   def makeValueString:List[String] = {
    val data = entries.map(e=>e.getValue).map{
@@ -36,6 +36,7 @@ class ResultEntry(label:String,value:Option[Double]){
   def getValue = value match{
     case Some(x) if x.isNaN => None
     case Some(x) => Some(x)
+    case None => None
   }
   def scaleEntry(scaling_factor:Double) = {
     value match{

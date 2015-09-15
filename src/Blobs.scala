@@ -52,6 +52,8 @@ object Blobs{
           0.001,2000,
           0,1.0)
     pa.analyze(image)
+    IJ.run("Tile")
+    Thread.sleep(200)
     val areas_index = results_table.getColumnIndex("Area")
     val labels = List("BlobCount","MeanBlobSize","SDBlobSize","SkewnessBlobSize","KurtosisBlobSize",
        "MeanRadialBlobDistance","SDRadialBlobDistance","SkewnessRadialBlobDistance","KurtosisRadialBlobDistance",

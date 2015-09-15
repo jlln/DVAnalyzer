@@ -48,6 +48,7 @@ object ObjectThresholding {
         if (steps.last._1 < 0) iFind(pixels,List(),step_size/2)
         val second_derivatives = steps.map{x=>x._2}
         val second_derivatives_running_mean = Stats.mean(second_derivatives)
+        println(second_derivatives_running_mean)
         second_derivatives_running_mean match {
           case x if x < threshold => iFind(pixels,takeStep(pixels,steps,step_size),step_size) 
           case x if x > threshold => steps.last._1         
@@ -80,7 +81,7 @@ object ObjectThresholding {
       ip.getFloatArray()
     }
     val threshold = findInflection(pixel_array)
-    println(threshold)
+//    println(threshold)
     val width = image_processors.head.getWidth
     val height = image_processors.head.getHeight
     val output_stack = new ij.ImageStack(width,height)
