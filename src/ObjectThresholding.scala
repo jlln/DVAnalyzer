@@ -37,26 +37,23 @@ object ObjectThresholding {
     steps:+(new_threshold,new_derivative)
   }
   
-  def iFind(pixels:List[Float],steps:List[(Double,Double)],step_size:Float):Double = {
-    val mean_pixels = Stats.mean(pixels)
-    val mean_minus_min = mean_pixels - pixels.min
-    val threshold = 0.000000000020 * mean_pixels
+  def iFind(threshold:Double,pixels:List[Float],steps:List[(Double,Double)],step_size:Float):Double = {
     steps.length match{
       //take the first two steps
-      case x if x < 2 => iFind(pixels,takeStep(pixels,steps,step_size),step_size)
+      case x if x < 2 => iFind(threshold,pixels,takeStep(pixels,steps,step_size),step_size)
       case _ =>{
-        if (steps.last._1 < 0) iFind(pixels,List(),step_size/2)
+        if (steps.last._1 < 0) iFind(threshold,pixels,List(),step_size/2)
         val second_derivatives = steps.map{x=>x._2}
         val second_derivatives_running_mean = Stats.mean(second_derivatives)
-        println(second_derivatives_running_mean)
+        println(second_derivatives_running_mean,threshold)
         second_derivatives_running_mean match {
-          case x if x < threshold => iFind(pixels,takeStep(pixels,steps,step_size),step_size) 
+          case x if x < threshold => iFind(threshold,pixels,takeStep(pixels,steps,step_size),step_size) 
           case x if x > threshold => steps.last._1         
         }
       }
     }  
   }
-  def findInflection(image:Array[Array[Array[Float]]]):Double = {
+  def findInflection(threshold:Double,image:Array[Array[Array[Float]]]):Double = {
     println("Finding Threshold")
     val pixels = image.flatten.flatten.toList.sorted
     val std_dev = Stats.standardDeviation(pixels)
@@ -64,7 +61,16 @@ object ObjectThresholding {
     val max_divergence = pixels.max - u
     val min_divergence = u - pixels.min 
     val starting_step = pixels.max/200
-    iFind(pixels,List(),starting_step)
+    iFind(threshold,pixels,List(),starting_step)
+  }
+  
+  
+  
+  def thresholdTestFunction(deriv_threshold:Double,image:Array[Array[Float]]):Array[Array[Int]] = {
+    val threshold = findInflection(deriv_threshold,Array(image))
+    val image_width = image.head.length
+    val output_array = image.flatten.map{p=> if (p > threshold) 255 else 0}
+    output_array.grouped(image_width).toArray
   }
   
   def thresholdObjects(nucleus:Nucleus,channel:ij.ImagePlus):(Array[Array[Array[Int]]],Double) = {
@@ -80,7 +86,10 @@ object ObjectThresholding {
       ip.convertToFloat()
       ip.getFloatArray()
     }
-    val threshold = findInflection(pixel_array)
+    val pixels:Array[Float] = pixel_array.flatten.flatten
+    val mean_pixels = Stats.mean(pixels)
+    val deriv_threshold = 0.000000000020 * mean_pixels
+    val threshold = findInflection(deriv_threshold,pixel_array)
 //    println(threshold)
     val width = image_processors.head.getWidth
     val height = image_processors.head.getHeight

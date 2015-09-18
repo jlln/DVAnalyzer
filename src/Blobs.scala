@@ -49,7 +49,7 @@ object Blobs{
     val pa = new ParticleAnalyzer(ParticleAnalyzer.ADD_TO_MANAGER,
           ij.measure.Measurements.MEAN+ij.measure.Measurements.CENTROID+ij.measure.Measurements.AREA,
           results_table,
-          0.001,2000,
+          10,20000,
           0,1.0)
     pa.analyze(image)
     IJ.run("Tile")

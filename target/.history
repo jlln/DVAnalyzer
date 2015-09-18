@@ -25,3 +25,4 @@ eclipse
 reload
 eclipse with-source=true
 run
+console
