@@ -23,7 +23,7 @@ object ImageIO {
   def drawPixels(image:ij.ImagePlus){
     image.show()
     ij.IJ.run("Tile")
-    Thread.sleep(1500)
+    Thread.sleep(500)
     WindowManager.closeAllWindows()
   }
   

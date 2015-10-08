@@ -25,7 +25,7 @@ object NucleiProcessing {
     (focussed_nuclei,channels)
   }
 
-  def maskNuclei(blue:ImagePlus):(Array[Nucleus],ImagePlus)={
+  def maskNuclei(blue:ImagePlus):(List[Nucleus],ImagePlus)={
 
     WindowManager.closeAllWindows()
     val nuclei_mask=blue.duplicate()
@@ -66,15 +66,14 @@ object NucleiProcessing {
     val processed_roi = ((((slice_list zip x_centres) zip y_centres) zip rm) zip areas) map {
           case ((((s,x),y),r),sr) => new NucleusSlice(s,x,y,r,sr)
           }
-    var nuclei:Array[Nucleus]=Array()
-    for (r <- processed_roi){
-      nuclei=mergeNuclei(nuclei,r)
-      }
+    val nuclei:List[Nucleus] = processed_roi.tail.foldLeft(List(new Nucleus(Array(processed_roi.head))))((n:List[Nucleus],ns:NucleusSlice) 
+        => mergeNuclei(n,ns))
+
     
     (nuclei,nuclei_mask)
     }
   
-  def mergeNuclei(nuclei:Array[Nucleus],ro_i:NucleusSlice):Array[Nucleus]={
+  def mergeNuclei(nuclei:List[Nucleus],ro_i:NucleusSlice):List[Nucleus]={
     
 //  If a slice is found to be from an existing nucleus, merge it into that nucleus, else create a new nucleus.
 //    How to discern if a slice belongs to a given nucleus? 

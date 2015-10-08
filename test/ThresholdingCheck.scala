@@ -34,7 +34,7 @@ class ThresholdChecker extends FunSuite with Checkers{
         case (iix,iiy) if iix < x-1 && iiy < y-1 => List(image(iiy)(iix-1),image(iiy-1)(ix),image(iiy-1)(ix+1))
         case (_,_) => List()
       }
-      val cutoff = 0.007+neighbours.sum * 0.45
+      val cutoff = 0.008+neighbours.sum * 0.44
       val pixel = if (rand.nextFloat < cutoff) 1 else 0
       image(iy).update(ix,pixel)
       image
@@ -49,20 +49,21 @@ class ThresholdChecker extends FunSuite with Checkers{
     image
   }
   
-  def noisePixels(template:Array[Array[Int]],foreground_mean:Int,background_mean:Int,noise:Int):Array[Array[Float]] = {
+  def noisePixels(template:Array[Array[Int]],foreground_mean:Int,background_mean:Int,noise:Int):Array[Array[Double]] = {
     val image_width = template.head.length
     val pixels = template.flatten
     val noised_pixels = pixels.map{
       p => (if (p == 1) foreground_mean else background_mean) + rand.nextGaussian * noise
-    }.map(p=>p.toFloat)
+    }.map(p=>p.toDouble)
     noised_pixels.grouped(image_width).toArray
   }
   
-  def makeImage(image:Array[Array[Float]]):ij.ImagePlus = {
+  def makeImage(image:Array[Array[Double]]):ij.ImagePlus = {
     val image_height =image.length
     val image_width = image.head.length
+    val fimage = image.map{r=>r.map{p=>p.toFloat}}
     val processor = new ij.process.FloatProcessor(image_height,image_width)
-    processor.setFloatArray(image)
+    processor.setFloatArray(fimage)
     new ij.ImagePlus("synthetic image",processor)
   }
   
@@ -76,18 +77,20 @@ class ThresholdChecker extends FunSuite with Checkers{
   
   val signalNoiseGen = for {
     b<-Gen.choose(1,50)
-    f<-Gen.choose(b+100,220)
-    n<-Gen.choose(15,30)
+    f<-Gen.choose(b+120,220)
+    n<-Gen.choose(5,30)
   } yield (b,f,n)
   
   
   
-  def checker (base_count:Int,noisy_image:Array[Array[Float]],derivative_threshold:Double):Boolean = {
+  def checker (base_count:Int,noisy_image:Array[Array[Double]],history:List[(Double,Double)]):Boolean = {
     
     val noisy_pixels = noisy_image.flatten
     val max_coeff = noisy_pixels.max
     val pixel_mean = Stats.mean(noisy_pixels)
-    val threshold = ObjectThresholding.findThreshold(noisy_pixels.toList,noisy_pixels.min+100,List(),derivative_threshold)
+    val standard_pixels = Stats.standardScores(noisy_pixels).toList
+    val increment = (standard_pixels.max - standard_pixels.min)/200
+    val threshold = ObjectThresholding.twoMeans(standard_pixels,List(standard_pixels.min),List(standard_pixels.max)) * Stats.standardDeviation(noisy_pixels) + pixel_mean
     val thresholded_image = noisy_image.map{row=>row.map{pixel=>{
       if (pixel < threshold) 0
       else 255
@@ -95,42 +98,23 @@ class ThresholdChecker extends FunSuite with Checkers{
     ImageIO.drawPixels(ImageIO.makeImage(thresholded_image))
     val test_blob_count = countMaskBlobs(thresholded_image)
     
-    val error_percent = (base_count - test_blob_count).toFloat / base_count
-    println("error percentage:" + error_percent * 100 + "%")
-    if (error_percent > 0.95) checker(base_count,noisy_image,derivative_threshold*(1+error_percent))
-    else if (error_percent > 0.5) checker(base_count,noisy_image,derivative_threshold*(1+error_percent)/10)
-    else if (error_percent > 0.05) checker(base_count,noisy_image,derivative_threshold*(1+error_percent)/100)
-    else if (error_percent < -0.95) checker(base_count,noisy_image,derivative_threshold*(1+error_percent))
-    else if (error_percent < -0.5) checker(base_count,noisy_image,derivative_threshold*(1+error_percent)/10)
-    else if (error_percent < -0.05) checker(base_count,noisy_image,derivative_threshold*(1+error_percent)/100)
-    
-    else{
-      println(derivative_threshold,Stats.mean(noisy_pixels),Stats.standardDeviation(noisy_pixels),noisy_pixels.max,noisy_pixels.min,Stats.skewness(noisy_pixels),Stats.kurtosis(noisy_pixels))
-      scala.math.abs(error_percent) < 0.05
-    }
-    
+    val error_percent:Double = (base_count - test_blob_count).toFloat / base_count
+    println(error_percent)
+    error_percent < 0.05
   }
   
   def thresholdExplorer(b:Int,f:Int,n:Int):Boolean = {
 //    println("b:"+b,"f:"+f,"n"+n)
-    val test_base = createPixels(500,500)
+    val test_base = createPixels(300,300)
     val base_count = countMaskBlobs(test_base.map(r=>r.map(p=>255*p)))
     val noisy_image = noisePixels(test_base,f,b,n)
     val noisy_imageplus = makeImage(noisy_image)
     val noisy_pixels = noisy_image.flatten
-    val pixel_mean = Stats.mean(noisy_pixels)
-    val pixel_sd = Stats.standardDeviation(noisy_pixels)
-    val pixel_range = scala.math.log(noisy_pixels.max - noisy_pixels.min)
-    val pixel_kurtosis = scala.math.log(Stats.kurtosis(noisy_pixels))
-    val pixel_skewness = scala.math.log(Stats.skewness(noisy_pixels))
-    val predictor = (pixel_kurtosis + pixel_skewness + pixel_range) / (pixel_mean + pixel_sd +noisy_pixels.max)
 
     //    ImageIO.drawPixels(ImageIO.makeImage(test_base))
     ImageIO.drawPixels(noisy_imageplus)
-    val derivative_threshold = 0.0000003
-    val predicted_dt = 0.044975433935057402 * predictor + -0.0013392212648638082
-    println(predicted_dt)
-    checker(base_count,noisy_image,predicted_dt)
+//    println(predicted_dt)
+    checker(base_count,noisy_image,List((0d,1d)))
     
     
   }

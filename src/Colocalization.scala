@@ -12,4 +12,7 @@ object Colocalization {
     val red_blue = new ResultEntry("RedBluePearson",Some(Stats.correlationPearson(red,blue)))
     new Result(red.length,List(red_green,green_blue,red_blue))
   }
+  
+  
+//  def threeWay(nucleus_slice_mask:Array[Array[Int]])
 }

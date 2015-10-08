@@ -39,7 +39,6 @@ object Blobs{
     val image = ImageIO.makeImage(pixels)
     image.show()
     IJ.run("Tile")
-    Thread.sleep(100)
     ij.IJ.run(image,"Make Binary", "method=Default background=Dark stack ")
     val image_width = pixels.head.length
     val image_height = pixels.length
@@ -49,11 +48,10 @@ object Blobs{
     val pa = new ParticleAnalyzer(ParticleAnalyzer.ADD_TO_MANAGER,
           ij.measure.Measurements.MEAN+ij.measure.Measurements.CENTROID+ij.measure.Measurements.AREA,
           results_table,
-          0,20000,
+          1,20000,
           0,1.0)
     pa.analyze(image)
     IJ.run("Tile")
-    Thread.sleep(200)
     val areas_index = results_table.getColumnIndex("Area")
     val labels = List("BlobCount","MeanBlobSize","SDBlobSize","SkewnessBlobSize","KurtosisBlobSize",
        "MeanRadialBlobDistance","SDRadialBlobDistance","SkewnessRadialBlobDistance","KurtosisRadialBlobDistance",
@@ -83,6 +81,7 @@ object Blobs{
       val result_entries = labels.zip(result_entry_values).map{
         case (l,v) => new ResultEntry(l,v)
       }
+      
       WindowManager.closeAllWindows()
       new Result(image_area,result_entries)
     }

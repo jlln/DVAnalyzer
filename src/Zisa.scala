@@ -6,6 +6,7 @@
 
 import com.github.tototoshi.csv._
 import java.io._
+import ij._
 object Zisa {
 
   def getListOfSubDirectories(directoryName: String): Array[String] = 
@@ -15,6 +16,7 @@ object Zisa {
        (new File(directoryName)).listFiles.map(_.getName).filter(_.contains(".tif"))
        
   def examineNucleus(nucleus: Nucleus, channels: Array[ij.ImagePlus]) = {
+
     val image_object_masks_thresholds = channels.map(c => ObjectThresholding.thresholdObjects(nucleus, c))
     val image_object_masks = image_object_masks_thresholds.map(_._1)
     val thresholds = image_object_masks_thresholds.map(_._2)
