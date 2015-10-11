@@ -15,7 +15,7 @@ object Zisa {
   def getListOfFilesInSubDirectory(directoryName: String): Array[String] = 
        (new File(directoryName)).listFiles.map(_.getName).filter(_.contains(".tif"))
        
-  def examineNucleus(nucleus: Nucleus, channels: Array[ij.ImagePlus]) = {
+  def examineNucleus(nucleus: Nucleus, channels: List[ij.ImagePlus]) = {
 
     val image_object_masks_thresholds = channels.map(c => ObjectThresholding.thresholdObjects(nucleus, c))
     val image_object_masks = image_object_masks_thresholds.map(_._1)
@@ -52,8 +52,8 @@ object Zisa {
   
   def processImage(condition:String,imagepath: String): List[List[String]] = {
     val image: ij.ImagePlus = ImageIO.openImageFile(imagepath)
-    val (nuclei, channels) = NucleiProcessing.processImageToNuclei(image) //also divides the image into separate channels
-    nuclei.map { n => condition +: examineNucleus(n, channels).makeValueString }
+    val (nuclei, channels,mask) = NucleiProcessing.processImageToNuclei(image) //also divides the image into separate channels
+    nuclei.map { n => condition +:n.getTotalArea.toString +: examineNucleus(n, channels).makeValueString }
   }
   
 
@@ -63,7 +63,7 @@ object Zisa {
     val top_directory = new ij.io.DirectoryChooser("Choose Directory").getDirectory().toString
     val output_file = top_directory + "FullZisaAnalysis.csv"
     val csv_writer = CSVWriter.open(output_file,append=false)
-    val headers = List("ExperimentalCondition","RedGreenPearson","GreenBluePearson","RedBluePearson","MeanRedIntensity","MeanGreenIntensity","MeanBlueIntensity","RedBlobCount","RedMeanBlobSize","RedSDBlobSize","RedSkewnessBlobSize","RedKurtosisBlobSize","RedMeanRadialBlobDistance","RedSDRadialBlobDistance","RedSkewnessRadialBlobDistance","RedKurtosisRadialBlobDistance","RedMeanNearestNeighbour","RedSDNearestNeigbour","RedSkewnessNearestNeighbour","RedKurtosisNearestNeighbour","GreenBlobCount","GreenMeanBlobSize","GreenSDBlobSize","GreenSkewnessBlobSize","GreenKurtosisBlobSize","GreenMeanRadialBlobDistance","GreenSDRadialBlobDistance","GreenSkewnessRadialBlobDistance","GreenKurtosisRadialBlobDistance","GreenMeanNearestNeighbour","GreenSDNearestNeigbour","GreenSkewnessNearestNeighbour","GreenKurtosisNearestNeighbour","BlueBlobCount","BlueMeanBlobSize","BlueSDBlobSize","BlueSkewnessBlobSize","BlueKurtosisBlobSize","BlueMeanRadialBlobDistance","BlueSDRadialBlobDistance","BlueSkewnessRadialBlobDistance","BlueKurtosisRadialBlobDistance","BlueMeanNearestNeighbour","BlueSDNearestNeigbour","BlueSkewnessNearestNeighbour","BlueKurtosisNearestNeighbour")
+    val headers = List("ExperimentalCondition","TotalNucleusArea","RedGreenPearson","GreenBluePearson","RedBluePearson","MeanRedIntensity","MeanGreenIntensity","MeanBlueIntensity","RedBlobCount","RedMeanBlobSize","RedSDBlobSize","RedSkewnessBlobSize","RedKurtosisBlobSize","RedMeanRadialBlobDistance","RedSDRadialBlobDistance","RedSkewnessRadialBlobDistance","RedKurtosisRadialBlobDistance","RedMeanNearestNeighbour","RedSDNearestNeigbour","RedSkewnessNearestNeighbour","RedKurtosisNearestNeighbour","GreenBlobCount","GreenMeanBlobSize","GreenSDBlobSize","GreenSkewnessBlobSize","GreenKurtosisBlobSize","GreenMeanRadialBlobDistance","GreenSDRadialBlobDistance","GreenSkewnessRadialBlobDistance","GreenKurtosisRadialBlobDistance","GreenMeanNearestNeighbour","GreenSDNearestNeigbour","GreenSkewnessNearestNeighbour","GreenKurtosisNearestNeighbour","BlueBlobCount","BlueMeanBlobSize","BlueSDBlobSize","BlueSkewnessBlobSize","BlueKurtosisBlobSize","BlueMeanRadialBlobDistance","BlueSDRadialBlobDistance","BlueSkewnessRadialBlobDistance","BlueKurtosisRadialBlobDistance","BlueMeanNearestNeighbour","BlueSDNearestNeigbour","BlueSkewnessNearestNeighbour","BlueKurtosisNearestNeighbour")
     csv_writer.writeRow(headers.toSeq)
     val subdirectories = getListOfSubDirectories(top_directory)
     for (s<-subdirectories){

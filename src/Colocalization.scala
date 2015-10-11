@@ -3,6 +3,8 @@
 /**
  * @author james
  */
+
+import ij._
 object Colocalization {
 
 
@@ -14,5 +16,7 @@ object Colocalization {
   }
   
   
-//  def threeWay(nucleus_slice_mask:Array[Array[Int]])
+  
+  
+  
 }

@@ -78,7 +78,7 @@ class ThresholdChecker extends FunSuite with Checkers{
   val signalNoiseGen = for {
     b<-Gen.choose(1,50)
     f<-Gen.choose(b+120,220)
-    n<-Gen.choose(5,30)
+    n<-Gen.choose(5,20)
   } yield (b,f,n)
   
   
@@ -90,7 +90,7 @@ class ThresholdChecker extends FunSuite with Checkers{
     val pixel_mean = Stats.mean(noisy_pixels)
     val standard_pixels = Stats.standardScores(noisy_pixels).toList
     val increment = (standard_pixels.max - standard_pixels.min)/200
-    val threshold = ObjectThresholding.twoMeans(standard_pixels,List(standard_pixels.min),List(standard_pixels.max)) * Stats.standardDeviation(noisy_pixels) + pixel_mean
+    val threshold = ObjectThresholding.fourMeans(standard_pixels,List(standard_pixels.min),List(Stats.mean(standard_pixels)/3),List(Stats.mean(standard_pixels)/1.5),List(standard_pixels.max)) * Stats.standardDeviation(noisy_pixels) + pixel_mean
     val thresholded_image = noisy_image.map{row=>row.map{pixel=>{
       if (pixel < threshold) 0
       else 255
@@ -100,7 +100,7 @@ class ThresholdChecker extends FunSuite with Checkers{
     
     val error_percent:Double = (base_count - test_blob_count).toFloat / base_count
     println(error_percent)
-    error_percent < 0.05
+    scala.math.abs(error_percent) < 0.05
   }
   
   def thresholdExplorer(b:Int,f:Int,n:Int):Boolean = {

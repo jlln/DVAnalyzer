@@ -3,22 +3,22 @@
 /**
  * @author james
  */
-class Nucleus(slices:Array[NucleusSlice]){
-  def getSlices = slices.toList
-  def getImageSlices = slices.toList.map{ s=> s.getSlice}
+class Nucleus(slices:List[NucleusSlice]){
+  def getSlices = slices
+  def getImageSlices = slices.map{ s=> s.getSlice}
   def last = slices.last
   def append(s:NucleusSlice):Nucleus = new Nucleus(slices:+s)
   def getMaximumCrossSectionRoi = slices.zip(slices.map(s=>s.getArea)).maxBy(_._2)._1.getRoi
   def getTotalArea = (slices.map(s=>s.getArea)).sum
   def getMeanArea = Stats.mean(slices.map(s=>s.getArea))
   def getBoundingBox = {
-    val start_x:Array[Int] = for (s<-slices) yield s.getRoi.getBounds().x
+    val start_x:List[Int] = for (s<-slices) yield s.getRoi.getBounds().x
     val x=start_x.min
-    val start_y:Array[Int] = for(s<-slices) yield s.getRoi.getBounds().y
+    val start_y:List[Int] = for(s<-slices) yield s.getRoi.getBounds().y
     val y= start_y.max
-    val widths:Array[Int] = for (s<-slices) yield s.getRoi.getBounds().width
+    val widths:List[Int] = for (s<-slices) yield s.getRoi.getBounds().width
     val w = widths.max
-    val heights:Array[Int] = for (s<-slices) yield s.getRoi.getBounds().height
+    val heights:List[Int] = for (s<-slices) yield s.getRoi.getBounds().height
     val h = heights.max
     new ij.gui.Roi(x,y,w,h)
     

@@ -14,15 +14,15 @@ import ij.plugin.filter.ParticleAnalyzer
 import ij.plugin.filter.Analyzer
 
 object NucleiProcessing {
-  def processImageToNuclei(image:ij.ImagePlus):(List[Nucleus],Array[ImagePlus])={
-    val channels:Array[ImagePlus]=ChannelSplitter.split(image)
+  def processImageToNuclei(image:ij.ImagePlus):(List[Nucleus],List[ImagePlus],ImagePlus)={
+    val channels:List[ImagePlus]=ChannelSplitter.split(image).toList
     val (red,green,blue) = (channels(0),channels(1),channels(2))
     val (nuclei,nuclei_mask) = maskNuclei(blue)
     // val focussed_nuclei = threeChannelNucleiFocusser(red,green,blue,nuclei)
     val edge_mask = blue.duplicate
     IJ.run(edge_mask, "Find Edges","stack")
     val focussed_nuclei = nuclei.toList.map{n=>nucleiFocusser(n,edge_mask)}.filter{n=> n.getSlices.length > 0}
-    (focussed_nuclei,channels)
+    (focussed_nuclei,channels,nuclei_mask)
   }
 
   def maskNuclei(blue:ImagePlus):(List[Nucleus],ImagePlus)={
@@ -66,7 +66,7 @@ object NucleiProcessing {
     val processed_roi = ((((slice_list zip x_centres) zip y_centres) zip rm) zip areas) map {
           case ((((s,x),y),r),sr) => new NucleusSlice(s,x,y,r,sr)
           }
-    val nuclei:List[Nucleus] = processed_roi.tail.foldLeft(List(new Nucleus(Array(processed_roi.head))))((n:List[Nucleus],ns:NucleusSlice) 
+    val nuclei:List[Nucleus] = processed_roi.tail.foldLeft(List(new Nucleus(List(processed_roi.head))))((n:List[Nucleus],ns:NucleusSlice) 
         => mergeNuclei(n,ns))
 
     
@@ -94,7 +94,7 @@ object NucleiProcessing {
       nuclei.updated(nuclei.indexOf(closest),updated_closest_nucleus)
     }
     else {
-      nuclei :+ new Nucleus(Array(ro_i))
+      nuclei :+ new Nucleus(List(ro_i))
     }    
   }
   
@@ -119,7 +119,7 @@ object NucleiProcessing {
         else slices(i)
     }
       //The slices are offset by 1 where possible, to allow for chromatic aberration effects.
-    new Nucleus(retained_slices.toArray)
+    new Nucleus(retained_slices)
   }
     def nucleusSliceEucledian(n1:NucleusSlice,n2:NucleusSlice):Double = {
     Stats.eucledian(n1.getXCentre,n1.getYCentre,n2.getXCentre,n2.getYCentre)
