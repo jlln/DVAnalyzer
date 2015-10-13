@@ -77,7 +77,7 @@ class ThresholdChecker extends FunSuite with Checkers{
   
   val signalNoiseGen = for {
     b<-Gen.choose(1,50)
-    f<-Gen.choose(b+120,220)
+    f<-Gen.choose(b+120,240)
     n<-Gen.choose(5,20)
   } yield (b,f,n)
   

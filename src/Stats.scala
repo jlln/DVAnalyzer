@@ -11,12 +11,12 @@ object Stats {
   
   
   def variance[T](items:Traversable[T])(implicit n:Numeric[T]) : Double = {
-    val itemMean = mean(items)
+    val item_mean = mean(items)
     val count = items.size
     val sum_of_squares = items.map{
-      i=> scala.math.pow(n.toDouble(i),2)
+      i=> scala.math.pow(n.toDouble(i)-item_mean,2)
     }.sum
-    (sum_of_squares/count) - scala.math.pow(itemMean,2)
+    (sum_of_squares/(count-1))
   }
   
   def standardDeviation[T](items:Traversable[T])(implicit n:Numeric[T]) : Double = 

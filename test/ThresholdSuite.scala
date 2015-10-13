@@ -8,7 +8,7 @@ import org.scalatest._
 class ThresholdSuite extends FunSuite with Matchers{
   val test_image_1_path = "/home/james/workspace/Zisa/test/test_image_1.tif"
   val test_image_1 = ImageIO.openImageFile(test_image_1_path)
-  val (nuclei_1,channels_1) = NucleiProcessing.processImageToNuclei(test_image_1)
+  val (nuclei_1,channels_1,mask) = NucleiProcessing.processImageToNuclei(test_image_1)
   val red_channel_n1:Array[Array[Array[Int]]] = ObjectThresholding.thresholdObjects(nuclei_1(0), channels_1(0))._1
   val red_channel_n2:Array[Array[Array[Int]]] = ObjectThresholding.thresholdObjects(nuclei_1(1), channels_1(0))._1
   val red_channel_n3:Array[Array[Array[Int]]] = ObjectThresholding.thresholdObjects(nuclei_1(2), channels_1(0))._1
