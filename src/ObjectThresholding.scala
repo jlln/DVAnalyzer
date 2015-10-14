@@ -29,9 +29,7 @@ object ObjectThresholding {
   }
 
   
-  def gravityClustering[T](data:Traversable[T],gravity:Double,epsilon:Double)(implicit n:Numeric[T]):List[T] = {
-    data.toList
-  }
+  
   
   
    def thresholdObjects(nucleus:Nucleus,image:ij.ImagePlus):(Array[Array[Array[Int]]],Double) = {

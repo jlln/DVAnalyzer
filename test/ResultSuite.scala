@@ -17,6 +17,8 @@ class ResultSuite extends FunSuite with Matchers {
   }
   test("ResultEntry Inequality"){
     new ResultEntry("foo",Some(55)) should not equal new ResultEntry("bar",Some(55))
+    new ResultEntry("foo",Some(55)) should not equal new ResultEntry("foo",Some(53))
+    new ResultEntry("foo",None) should not equal new ResultEntry("bar",None)
     new ResultEntry("foo",Some(55)) should not equal new ResultEntry("foo",None)
   }
 

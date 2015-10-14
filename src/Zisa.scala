@@ -44,7 +44,7 @@ object Zisa {
       case x if x > thresholds(0) => x
       case _                      => 0
     }
-    val colocalization_result = Colocalization.threeWayPearson(red_pixels_t, green_pixels_t, blue_pixels_t)
+    val colocalization_result = Results.concatenateResults(Colocalization.threeWayPearson(red_pixels_t, green_pixels_t, blue_pixels_t),Colocalization.threeWayManders(image_object_masks(0).flatten.flatten, image_object_masks(1).flatten.flatten, image_object_masks(2).flatten.flatten) )
     val r =Results.concatenateResults(colocalization_result, Results.concatenateResults(intensity_result, object_results))
     r
   }
@@ -63,7 +63,7 @@ object Zisa {
     val top_directory = new ij.io.DirectoryChooser("Choose Directory").getDirectory().toString
     val output_file = top_directory + "FullZisaAnalysis.csv"
     val csv_writer = CSVWriter.open(output_file,append=false)
-    val headers = List("ExperimentalCondition","TotalNucleusArea","RedGreenPearson","GreenBluePearson","RedBluePearson","MeanRedIntensity","MeanGreenIntensity","MeanBlueIntensity","RedBlobCount","RedMeanBlobSize","RedSDBlobSize","RedSkewnessBlobSize","RedKurtosisBlobSize","RedMeanRadialBlobDistance","RedSDRadialBlobDistance","RedSkewnessRadialBlobDistance","RedKurtosisRadialBlobDistance","RedMeanNearestNeighbour","RedSDNearestNeigbour","RedSkewnessNearestNeighbour","RedKurtosisNearestNeighbour","GreenBlobCount","GreenMeanBlobSize","GreenSDBlobSize","GreenSkewnessBlobSize","GreenKurtosisBlobSize","GreenMeanRadialBlobDistance","GreenSDRadialBlobDistance","GreenSkewnessRadialBlobDistance","GreenKurtosisRadialBlobDistance","GreenMeanNearestNeighbour","GreenSDNearestNeigbour","GreenSkewnessNearestNeighbour","GreenKurtosisNearestNeighbour","BlueBlobCount","BlueMeanBlobSize","BlueSDBlobSize","BlueSkewnessBlobSize","BlueKurtosisBlobSize","BlueMeanRadialBlobDistance","BlueSDRadialBlobDistance","BlueSkewnessRadialBlobDistance","BlueKurtosisRadialBlobDistance","BlueMeanNearestNeighbour","BlueSDNearestNeigbour","BlueSkewnessNearestNeighbour","BlueKurtosisNearestNeighbour")
+    val headers = List("ExperimentalCondition","TotalNucleusArea","RedGreenPearson","GreenBluePearson","RedBluePearson","GreenOverlapRed","RedOverlapGreen","RedOverlapBlue","BlueOverlapRed","GreenOverlapBlue","BlueOverlapGreen","MeanRedIntensity","MeanGreenIntensity","MeanBlueIntensity","RedBlobCount","RedMeanBlobSize","RedSDBlobSize","RedSkewnessBlobSize","RedKurtosisBlobSize","RedMeanRadialBlobDistance","RedSDRadialBlobDistance","RedSkewnessRadialBlobDistance","RedKurtosisRadialBlobDistance","RedMeanNearestNeighbour","RedSDNearestNeigbour","RedSkewnessNearestNeighbour","RedKurtosisNearestNeighbour","GreenBlobCount","GreenMeanBlobSize","GreenSDBlobSize","GreenSkewnessBlobSize","GreenKurtosisBlobSize","GreenMeanRadialBlobDistance","GreenSDRadialBlobDistance","GreenSkewnessRadialBlobDistance","GreenKurtosisRadialBlobDistance","GreenMeanNearestNeighbour","GreenSDNearestNeigbour","GreenSkewnessNearestNeighbour","GreenKurtosisNearestNeighbour","BlueBlobCount","BlueMeanBlobSize","BlueSDBlobSize","BlueSkewnessBlobSize","BlueKurtosisBlobSize","BlueMeanRadialBlobDistance","BlueSDRadialBlobDistance","BlueSkewnessRadialBlobDistance","BlueKurtosisRadialBlobDistance","BlueMeanNearestNeighbour","BlueSDNearestNeigbour","BlueSkewnessNearestNeighbour","BlueKurtosisNearestNeighbour")
     csv_writer.writeRow(headers.toSeq)
     val subdirectories = getListOfSubDirectories(top_directory)
     for (s<-subdirectories){
