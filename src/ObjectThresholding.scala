@@ -71,7 +71,7 @@ object ObjectThresholding {
       fta
     }
     IJ.run("Tile")
-    Thread.sleep(250 * output_array.length)
+    Thread.sleep(50 * output_array.length)
     WindowManager.closeAllWindows()
     (output_array,threshold)
      }

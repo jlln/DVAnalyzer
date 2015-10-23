@@ -1,9 +1,16 @@
 
-object scratchpad {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(43); 
-	val t = List(1,2,3,4);System.out.println("""t  : List[Int] = """ + $show(t ));$skip(23); 
-	val m = Stats.mean(t);System.out.println("""m  : Double = """ + $show(m ));$skip(23); 
-	val d = t.map(x=>x-m);System.out.println("""d  : List[Double] = """ + $show(d ));$skip(44); 
-	val s2 = d.map(x=>scala.math.pow(x,2)).sum;System.out.println("""s2  : Double = """ + $show(s2 ));$skip(45); 
-	val s4a = d.map(x=>scala.math.pow(x,4)).sum;System.out.println("""s4a  : Double = """ + $show(s4a ));$skip(32); 
-	val s4b = scala.math.pow(s2,2);System.out.println("""s4b  : Double = """ + $show(s4b ))}
+object scratchpad {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(285); 
+	val test_pixel_array_2 = Array(
+    Array(0,0,0,0,0,0,0,0),
+    Array(0,1,1,1,1,1,0,0),
+    Array(0,1,0,0,0,1,0,0),
+    Array(0,1,0,0,0,1,0,0),
+    Array(0,1,0,0,0,1,0,0),
+    Array(0,1,0,0,0,1,0,0),
+    Array(0,1,1,1,1,1,0,0),
+    Array(0,0,0,0,0,0,0,0)
+    
+  );System.out.println("""test_pixel_array_2  : Array[Array[Int]] = """ + $show(test_pixel_array_2 ));$skip(60); 
+  val label_array:Array[Array[Int]] = Array.ofDim[Int](8,8);System.out.println("""label_array  : Array[Array[Int]] = """ + $show(label_array ));$skip(71); val res$0 = 
+  Blobs.contourTrace(test_pixel_array_2, label_array,1, 1, 7, 8, 8, 1);System.out.println("""res0: Array[Array[Int]] = """ + $show(res$0))}
 }

@@ -17,11 +17,11 @@ object NucleiProcessing {
   def processImageToNuclei(image:ij.ImagePlus):(List[Nucleus],List[ImagePlus],ImagePlus)={
     val channels:List[ImagePlus]=ChannelSplitter.split(image).toList
     val (red,green,blue) = (channels(0),channels(1),channels(2))
-    val (nuclei,nuclei_mask) = maskNuclei(blue)
+    val (nuclei,nuclei_mask) = Profiling.timed(Profiling.printTime("maskedNuclei completed in")){maskNuclei(blue)}
     // val focussed_nuclei = threeChannelNucleiFocusser(red,green,blue,nuclei)
     val edge_mask = blue.duplicate
     IJ.run(edge_mask, "Find Edges","stack")
-    val focussed_nuclei = nuclei.toList.map{n=>nucleiFocusser(n,edge_mask)}.filter{n=> n.getSlices.length > 0}
+    val focussed_nuclei = Profiling.timed(Profiling.printTime("focussing nuclei completed in")){nuclei.toList.map{n=>nucleiFocusser(n,edge_mask)}.filter{n=> n.getSlices.length > 0}}
     (focussed_nuclei,channels,nuclei_mask)
   }
 
@@ -79,6 +79,7 @@ object NucleiProcessing {
 //    How to discern if a slice belongs to a given nucleus? 
 //    First find nuclei that are within the radius,
 //    then from this set of nuclei (if there are more than one) choose the closest.
+//    Only the previous slice is considered.
     val slice = ro_i.getSlice
     val area = ro_i.getArea
     val radius = scala.math.sqrt(area)/3.14156
@@ -115,14 +116,16 @@ object NucleiProcessing {
     val variance_threshold = 0.8*variance_values.max        
     val retained_slices = for ((s,i)<-nucleus.getSlices.zipWithIndex 
       if (variance_values(i)>variance_threshold & area_values(i)>mean_area*0.5)) yield{
-        if (i < slices.length-1) slices(i+1)
-        else slices(i)
+        slices(i)
     }
-      //The slices are offset by 1 where possible, to allow for chromatic aberration effects.
     new Nucleus(retained_slices)
   }
     def nucleusSliceEucledian(n1:NucleusSlice,n2:NucleusSlice):Double = {
     Stats.eucledian(n1.getXCentre,n1.getYCentre,n2.getXCentre,n2.getYCentre)
   }
+    
+    
+
+    
 
 }

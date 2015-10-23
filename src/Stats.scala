@@ -34,14 +34,14 @@ object Stats {
     items map (x => (n.toDouble(x)-sample_mean)/sample_standard_deviation)
   }
   
-  def correlationPearson[T](items_a:Traversable[T],items_b:Traversable[T])(implicit n:Numeric[T]):Double = {
+  def correlationPearson[T](items_a:Traversable[T],items_b:Traversable[T])(implicit n:Numeric[T]):Option[Double] = {
     val z_scores_a = standardScores(items_a).toArray
     val z_scores_b = standardScores(items_b).toArray
     val z_scores_ab = z_scores_a.zip(z_scores_b).map{
       case (a,b) => a*b}
     z_scores_ab.sum/(z_scores_ab.length-1) match{
-      case x if x.isNaN => 0
-      case x => x
+      case x if x.isNaN => None
+      case x => Some(x)
     }
   }
   

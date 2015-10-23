@@ -28,13 +28,13 @@ class StatsSuite extends FunSuite with Matchers {
   
   test("PearsonCorrelationCoefficient positive"){
     val items_a = List(1,2,3,4)
-    Stats.correlationPearson(items_a,items_a) shouldBe 1.0
+    Stats.correlationPearson(items_a,items_a) shouldBe Some(1.0)
 
   }
   test("PearsonCorrelationCoefficient negative"){
     val items_a = List(1,2,3,4)
     val items_b = List(-1,-2,-3,-4)
-    Stats.correlationPearson(items_a,items_b) shouldBe -1.0
+    Stats.correlationPearson(items_a,items_b) shouldBe Some(-1.0)
   }
   
   test("Kurtosis-2"){

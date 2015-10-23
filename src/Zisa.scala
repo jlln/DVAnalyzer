@@ -51,7 +51,7 @@ object Zisa {
 
   
   def processImage(condition:String,imagepath: String): List[List[String]] = {
-    val image: ij.ImagePlus = ImageIO.openImageFile(imagepath)
+    val image:ij.ImagePlus = Profiling.timed(Profiling.printTime("Image loaded in")){ImageIO.openImageFile(imagepath)}
     val (nuclei, channels,mask) = NucleiProcessing.processImageToNuclei(image) //also divides the image into separate channels
     nuclei.map { n => condition +:n.getTotalArea.toString +: examineNucleus(n, channels).makeValueString }
   }

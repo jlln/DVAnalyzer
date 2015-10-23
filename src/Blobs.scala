@@ -37,8 +37,7 @@ object Blobs{
   def analyzePixelArray(pixels:Array[Array[Int]],colour:String):Result = {
 
     val image = ImageIO.makeImage(pixels)
-    image.show()
-    IJ.run("Tile")
+
     ij.IJ.run(image,"Make Binary", "method=Default background=Dark stack ")
     val image_width = pixels.head.length
     val image_height = pixels.length
@@ -51,7 +50,6 @@ object Blobs{
           1,20000,
           0,1.0)
     pa.analyze(image)
-    IJ.run("Tile")
     val areas_index = results_table.getColumnIndex("Area")
     val labels = List("BlobCount","MeanBlobSize","SDBlobSize","SkewnessBlobSize","KurtosisBlobSize",
        "MeanRadialBlobDistance","SDRadialBlobDistance","SkewnessRadialBlobDistance","KurtosisRadialBlobDistance",
@@ -86,10 +84,12 @@ object Blobs{
       new Result(image_area,result_entries)
     }
   }
-  def analyzePixelArrayStack(pixels:Array[Array[Array[Int]]],colour:String):Result = {
+  def analyzePixelArrayStack(pixels:Array[Array[Array[Int]]],colour:String):Result = Profiling.timed(Profiling.printTime("Pixel blob array stack analysis completed in")){
     val r = Results.mergeResults(pixels.toList.map(s=>analyzePixelArray(s,colour)))
     r
   }
+  
+
   
   
 }
