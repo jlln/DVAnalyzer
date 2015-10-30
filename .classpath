@@ -125,9 +125,9 @@
 	<classpathentry kind="lib" path="lib/imglib2-io-2.0.0-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="lib/serializer-2.7.1.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.5.10.jar"/>
-	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/james/.ivy2/cache/com.github.tototoshi/scala-csv_2.11/jars/scala-csv_2.11-1.0.0.jar"/>
 	<classpathentry kind="lib" path="/home/james/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar"/>
+	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/james/workspace/Zisa/lib/scalatest_2.11-2.2.4.jar"/>
 	<classpathentry kind="lib" path="/home/james/workspace/Zisa/lib/scalacheck_2.11-1.12.5.jar"/>

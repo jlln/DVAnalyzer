@@ -34,7 +34,7 @@ object Blobs{
   }
   
   
-  def analyzePixelArray(pixels:Array[Array[Int]],colour:String):Result = {
+  def analyzePixelArray(pixels:Array[Array[Int]],colour:String,nuclear_slice_centroid:(Double,Double)):Result = {
 
     val image = ImageIO.makeImage(pixels)
 
@@ -65,8 +65,8 @@ object Blobs{
       val y_centres:Array[Float] = results_table.getColumn(results_table.getColumnIndex("Y"))
       val centroids = x_centres.zip(y_centres)
       val nearest_neighbours = nearestNeighbours(centroids.toList)
-      val slice_centre_x:Float = image_width/2f
-      val slice_centre_y:Float = image_height/2f
+      val slice_centre_x:Double = nuclear_slice_centroid._1
+      val slice_centre_y:Double = nuclear_slice_centroid._2
       val radiality:Seq[Double] = centroids.map{
         case (x,y) => (Stats.eucledian(x,y,slice_centre_x,slice_centre_y))/image_area
       }
@@ -84,8 +84,10 @@ object Blobs{
       new Result(image_area,result_entries)
     }
   }
-  def analyzePixelArrayStack(pixels:Array[Array[Array[Int]]],colour:String):Result = Profiling.timed(Profiling.printTime("Pixel blob array stack analysis completed in")){
-    val r = Results.mergeResults(pixels.toList.map(s=>analyzePixelArray(s,colour)))
+  def analyzePixelArrayStack(pixels:Array[Array[Array[Int]]],colour:String,centroids:List[(Double,Double)]):Result = Profiling.timed(Profiling.printTime("Pixel blob array stack analysis completed in")){
+    val r = Results.mergeResults(pixels.toList.zip(centroids).map{
+      case (s,c)=>analyzePixelArray(s,colour,c)
+      })
     r
   }
   

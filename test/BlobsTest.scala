@@ -37,7 +37,7 @@ val (nuclei_1,channels_1,mask) = NucleiProcessing.processImageToNuclei(test_imag
 val red_channel_n1:Array[Array[Array[Int]]] = ObjectThresholding.thresholdObjects(nuclei_1(0), channels_1(0))._1
 val blue_channel_n1:Array[Array[Array[Int]]] = ObjectThresholding.thresholdObjects(nuclei_1(0), channels_1(2))._1
 test("blob stats"){
-  val blob_stats = Blobs.analyzePixelArrayStack(blue_channel_n1,"Blue")
+  val blob_stats = Blobs.analyzePixelArrayStack(blue_channel_n1,"Blue",nuclei_1.head.getCentroids)
    (blob_stats.getEntries.length === 13)
 
 }

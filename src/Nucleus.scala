@@ -25,6 +25,8 @@ class Nucleus(slices:List[NucleusSlice]){
   }
   def getXCentre = slices.head.getXCentre
   def getYCentre = slices.head.getYCentre
+  def getCentroids:List[(Double,Double)] = slices.map{ s=>
+    (s.getCentroid)}.toList
 
   def getOverlayRoi:List[ij.gui.Roi] = {
     val roi = getMaximumCrossSectionRoi
@@ -45,5 +47,8 @@ class Nucleus(slices:List[NucleusSlice]){
     }
   }
 
+  def getMaskingImages(mask_image:ij.ImagePlus):List[List[List[Int]]] = {
+    getSlices.map(s=>s.getMaskPixels(mask_image))
+  }
       
 }

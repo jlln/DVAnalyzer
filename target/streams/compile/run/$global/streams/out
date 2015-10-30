@@ -1,6 +1,5 @@
 [0m[[0minfo[0m] [0mRunning Zisa.ISA [0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-1 to terminate.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	/home/james/workspace/Zisa/target/scala-2.11/classes[0m
 [0m[[0mdebug[0m] [0m	/home/james/workspace/Zisa/lib/pentaho-package-manager-1.0.0.jar[0m
@@ -21,6 +20,7 @@
 [0m[[0mdebug[0m] [0m	/home/james/workspace/Zisa/lib/jai_codec.jar[0m
 [0m[[0mdebug[0m] [0m	/home/james/workspace/Zisa/lib/imglib2-algorithms-gpl-2.0.0-SNAPSHOT.jar[0m
 [0m[[0mdebug[0m] [0m	/home/james/workspace/Zisa/lib/imglib2-realtransform-2.0.0-SNAPSHOT.jar[0m
+[0m[[0mdebug[0m] [0m	/home/james/workspace/Zisa/lib/scalacheck_2.11-1.12.5.jar[0m
 [0m[[0mdebug[0m] [0m	/home/james/workspace/Zisa/lib/weka-dev-3.7.6.jar[0m
 [0m[[0mdebug[0m] [0m	/home/james/workspace/Zisa/lib/jhotdraw-7.6.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/james/workspace/Zisa/lib/imglib-io-2.0.0-SNAPSHOT.jar[0m
@@ -131,7 +131,8 @@
 [0m[[0mdebug[0m] [0m	/home/james/.ivy2/cache/org.scala-lang/scala-swing/jars/scala-swing-2.10.2.jar[0m
 [0m[[0mdebug[0m] [0m	/home/james/.ivy2/cache/com.github.tototoshi/scala-csv_2.11/jars/scala-csv_2.11-1.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/james/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar[0m
-[0m[[31merror[0m] [0m(run-main-1) java.lang.NullPointerException[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[31merror[0m] [0m(run-main-0) java.lang.NullPointerException[0m
 java.lang.NullPointerException
 	at Zisa.ISA$.main(Zisa.scala:528)
 	at Zisa.ISA.main(Zisa.scala)
@@ -148,9 +149,9 @@ java.lang.NullPointerException
 	at sbt.Logger$$anon$4.apply(Logger.scala:85)
 	at sbt.TrapExit$App.run(TrapExit.scala:248)
 	at java.lang.Thread.run(Thread.java:745)
-[0m[[0mdebug[0m] [0m	Thread run-main-1 exited.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread AWT-Shutdown to terminate.[0m
-[0m[[0mdebug[0m] [0m	Thread AWT-Shutdown exited.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread AWT-EventQueue-0 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread AWT-EventQueue-0 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
-[0m[[0mdebug[0m] [0mDisposing 89 top-level windows...[0m
+[0m[[0mdebug[0m] [0mDisposing 1 top-level windows...[0m
 [0m[[0mdebug[0m] [0mWaiting 2 s to let AWT thread exit.[0m

@@ -15,15 +15,16 @@ object Zisa {
   def getListOfFilesInSubDirectory(directoryName: String): Array[String] = 
        (new File(directoryName)).listFiles.map(_.getName).filter(_.contains(".tif"))
        
-  def examineNucleus(nucleus: Nucleus, channels: List[ij.ImagePlus]) = {
+  def examineNucleus(nucleus: Nucleus, channels: List[ij.ImagePlus],masking_images:List[List[List[Int]]]) = {
 
     val image_object_masks_thresholds = channels.map(c => ObjectThresholding.thresholdObjects(nucleus, c))
     val image_object_masks = image_object_masks_thresholds.map(_._1)
     val thresholds = image_object_masks_thresholds.map(_._2)
+    val nucleus_centroids = nucleus.getCentroids
     println("Analyzing subnuclear objects")
-    val object_results_red: Result = Blobs.analyzePixelArrayStack(image_object_masks(0), "Red")
-    val object_results_green: Result = Blobs.analyzePixelArrayStack(image_object_masks(1), "Green")
-    val object_results_blue: Result = Blobs.analyzePixelArrayStack(image_object_masks(2), "Blue")
+    val object_results_red: Result = Blobs.analyzePixelArrayStack(image_object_masks(0), "Red",nucleus_centroids)
+    val object_results_green: Result = Blobs.analyzePixelArrayStack(image_object_masks(1), "Green",nucleus_centroids)
+    val object_results_blue: Result = Blobs.analyzePixelArrayStack(image_object_masks(2), "Blue",nucleus_centroids)
     val object_results = Results.concatenateResults(object_results_red, Results.concatenateResults(object_results_green, object_results_blue))
     val mean_pixel_intensities = channels.map(c => nucleus.getPixels(c).flatten.flatten).map(x => Stats.mean(x))
     val area = nucleus.getPixels(channels(0)).flatten.flatten.length
@@ -53,7 +54,7 @@ object Zisa {
   def processImage(condition:String,imagepath: String): List[List[String]] = {
     val image:ij.ImagePlus = Profiling.timed(Profiling.printTime("Image loaded in")){ImageIO.openImageFile(imagepath)}
     val (nuclei, channels,mask) = NucleiProcessing.processImageToNuclei(image) //also divides the image into separate channels
-    nuclei.map { n => condition +:n.getTotalArea.toString +: examineNucleus(n, channels).makeValueString }
+    nuclei.map { n => condition +:n.getTotalArea.toString +: examineNucleus(n, channels,n.getMaskingImages(mask)).makeValueString }
   }
   
 

@@ -18,11 +18,12 @@ import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
 import org.scalatest.prop.Checkers
+
 class ThresholdChecker extends FunSuite with Checkers{
   
   val rand = new scala.util.Random(123456)
   
-  case class Image(pixels:Array[Array[Float]])
+
   
   def createPixels(x:Int,y:Int):Array[Array[Int]] = {
     val image = Array.fill(y){Array.fill(x){0}}
@@ -67,23 +68,27 @@ class ThresholdChecker extends FunSuite with Checkers{
     new ij.ImagePlus("synthetic image",processor)
   }
   
-  def countMaskBlobs(image:Array[Array[Int]]):Int = {
-    Blobs.analyzePixelArray(image,"Test").getEntries.head.getValue match{
+  def countMaskBlobs(image:Array[Array[Int]],centroid:(Double,Double)):Int = {
+    Blobs.analyzePixelArray(image,"Test",centroid).getEntries.head.getValue match{
       case Some(x) => x.toInt
       case _ => 0
     }
   }
   
+  def countForegroundPixels(image:Array[Array[Int]]):Int = {
+    image.flatten.filter(x=> x!=0).size
+  }
+  
   
   val signalNoiseGen = for {
     b<-Gen.choose(1,50)
-    f<-Gen.choose(b+120,240)
+    f<-Gen.choose(b+110,240)
     n<-Gen.choose(5,20)
   } yield (b,f,n)
   
   
   
-  def checker (base_count:Int,noisy_image:Array[Array[Double]],history:List[(Double,Double)]):Boolean = {
+  def checker (base_blob_count:Int,base_foreground_count:Int,noisy_image:Array[Array[Double]],history:List[(Double,Double)]):Boolean = {
     
     val noisy_pixels = noisy_image.flatten
     val max_coeff = noisy_pixels.max
@@ -96,25 +101,29 @@ class ThresholdChecker extends FunSuite with Checkers{
       else 255
     }}}
     ImageIO.drawPixels(ImageIO.makeImage(thresholded_image))
-    val test_blob_count = countMaskBlobs(thresholded_image)
-    
-    val error_percent:Double = (base_count - test_blob_count).toFloat / base_count
-    println(error_percent)
-    scala.math.abs(error_percent) < 0.05
+    val centroid = (noisy_image.head.length/2d,noisy_image.length/2d)
+    val test_blob_count = countMaskBlobs(thresholded_image,centroid)
+    val test_foreground_count = countForegroundPixels(thresholded_image)
+    val blob_error_rate:Double = (base_blob_count - test_blob_count).toFloat / base_blob_count
+    val foreground_error_rate:Double = (base_foreground_count - test_foreground_count).toFloat / base_foreground_count
+    println(blob_error_rate)
+    println(foreground_error_rate)
+    (scala.math.abs(blob_error_rate) < 0.05 && scala.math.abs(foreground_error_rate) < 0.05)
   }
   
   def thresholdExplorer(b:Int,f:Int,n:Int):Boolean = {
-//    println("b:"+b,"f:"+f,"n"+n)
+
     val test_base = createPixels(300,300)
-    val base_count = countMaskBlobs(test_base.map(r=>r.map(p=>255*p)))
+    val centroid = (test_base.head.length/2d,test_base.length/2d)
+    val base_blob_count = countMaskBlobs(test_base.map(r=>r.map(p=>255*p)),centroid)
+    val base_foreground_count = countForegroundPixels(test_base)
     val noisy_image = noisePixels(test_base,f,b,n)
     val noisy_imageplus = makeImage(noisy_image)
     val noisy_pixels = noisy_image.flatten
 
-    //    ImageIO.drawPixels(ImageIO.makeImage(test_base))
     ImageIO.drawPixels(noisy_imageplus)
-//    println(predicted_dt)
-    checker(base_count,noisy_image,List((0d,1d)))
+
+    checker(base_blob_count,base_foreground_count,noisy_image,List((0d,1d)))
     
     
   }
