@@ -1,16 +1,6 @@
 
 object scratchpad {
-	val test_pixel_array_2 = Array(
-    Array(0,0,0,0,0,0,0,0),
-    Array(0,1,1,1,1,1,0,0),
-    Array(0,1,0,0,0,1,0,0),
-    Array(0,1,0,0,0,1,0,0),
-    Array(0,1,0,0,0,1,0,0),
-    Array(0,1,0,0,0,1,0,0),
-    Array(0,1,1,1,1,1,0,0),
-    Array(0,0,0,0,0,0,0,0)
-    
-  )
-  val label_array:Array[Array[Int]] = Array.ofDim[Int](8,8)
-  Blobs.contourTrace(test_pixel_array_2, label_array,1, 1, 7, 8, 8, 1)
+	val t = List(0f,0f,0f,1f,2f,3f,4f,0f,0f,0f)
+                                                  //> t  : List[Float] = List(0.0, 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 0.0, 0.0, 0.0)
+	5 % 4                                     //> res0: Int(1) = 1
 }

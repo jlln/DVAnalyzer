@@ -12,6 +12,7 @@ class Result(area:Int,entries:List[ResultEntry]) {
     val output_strings = labels.zip(values).map{ case (l,v)=>l+": "+v.toString}
 //    output_strings.foreach(println)
   }
+  def getLabels:List[String] = entries.map(e=>e.getLabel)
   def makeValueString:List[String] = {
    val data = entries.map(e=>e.getValue).map{
      x=> x match{

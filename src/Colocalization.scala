@@ -34,71 +34,90 @@ object Colocalization {
     val bog = new ResultEntry("BlueOverlapGreen",overlapFraction(mask_b,mask_g))
     new Result(mask_r.length,List(gor,rog,rob,bor,gob,bog))
   }
-  
-  def significanceTesting(r:Array[Array[Float]],g:Array[Array[Float]],b:Array[Array[Float]],nuclear_mask:List[List[Float]]):Result = {
-    val x_offset_indices:List[(Int,Int)] = nuclear_mask.map{
-      row => {
-        val start = row.indexWhere( _ > 0)
-        val end = row.slice(start,row.length).indexWhere( _ == 0)
-        (start,end)
-      }
-    }
-    val y_offset_indices:List[(Int,Int)] = nuclear_mask.transpose.map{
-      row => {
-        val start = row.indexWhere( _ > 0)
-        val end = row.slice(start,row.length).indexWhere( _ == 0)
-        (start,end)
+    
+    def offsets1D(pixels:List[List[Int]]):List[(Int,Int)] = {
+      //offsets are the number of zeros preceding and following the non-zero pixel block
+       pixels.map{
+        row =>{
+          val left_side = row.indexWhere(_ > 0)
+          if (left_side == -1) (0,0)
+          else{
+            val remainder = row.slice(left_side,row.length)
+            val right_side = remainder.reverse.indexWhere(_ > 0)
+            if (right_side == -1) (left_side,0)
+            else (left_side,right_side)
+          }
+        }
       }
     }
     
-    def shiftRow(offsets:(Int,Int),row:List[Float],d:Int):List[Float] = {
-      val core_row = row.slice(offsets._1,offsets._2)
-      val shift = core_row.length % d
-      val shifted_core_row:List[Float] = core_row.slice(core_row.length-shift,core_row.length) ++ core_row.slice(0,core_row.length-shift)
-      val new_row:List[Float] = List.fill(offsets._1)(0f) ++ shifted_core_row ++ List.fill(offsets._2)(0f)
-      new_row
-    }
+   def findOffsets(pixels:List[List[Int]]):(List[(Int,Int)],List[(Int,Int)]) = {
+      val x_offsets:List[(Int,Int)] = offsets1D(pixels)
+      val y_offsets:List[(Int,Int)] = offsets1D(pixels.transpose)
+      (x_offsets,y_offsets)
+   }
+   
     
-    def shiftXY(x_offsets:List[(Int,Int)],y_offsets:List[(Int,Int)],image:List[List[Float]],dx:Int,dy:Int):List[List[Float]] = {
-      val x_shifted = image.zip(x_offsets).map{
-        case (r,o) => shiftRow(o,r,dx)
-      }
-      val xy_shifted = x_shifted.transpose.zip(y_offsets).map{
-        case (r,o) => shiftRow(o,r,dy)
-      }.transpose
-      xy_shifted
-    }
-    val rf = r.flatten
-    val gf = g.flatten
-    val bf = b.flatten
-    val rg_pearson = Stats.correlationPearson(rf,gf)
-    val rb_pearson = Stats.correlationPearson(rf,bf)
-    val bg_pearson = Stats.correlationPearson(bf,gf)
-    val rl = r.map(r=>r.toList).toList
-    val gl = g.map(g=>g.toList).toList
-    val shifted_r_rg_rb:List[(Double,Double)] = (1 until 500).par.map{
-      i=>{
-        val dx = rand.nextInt(r.head.length)+1
-        val dy = rand.nextInt(r.length)+1
-        val r_shifted = shiftXY(x_offset_indices,y_offset_indices,rl,dx,dy).flatten
-        val rg_pearson_shifted = Stats.correlationPearson(r_shifted,gf)
-        val rb_pearson_shifted = Stats.correlationPearson(r_shifted,bf)
-        (rg_pearson_shifted,rb_pearson_shifted)
-      }
-      
-    }.toList
-    val shifted_g_gb:List[Double] = (1 until 500).par.map{
-      i=>{
-        val dx = rand.nextInt(r.head.length)+1
-        val dy = rand.nextInt(r.length)+1
-        val g_shifted = shiftXY(x_offset_indices,y_offset_indices,gl,dx,dy).flatten
-        Stats.correlationPearson(g_shifted,bf)
-      }
-    }.toList
-    val rg_below = new ResultEntry("RG Significance",Some(shifted_r_rg_rb.filter(x=>x._1 < rg_pearson).length/499d))
-    val rb_below = new ResultEntry("RB Significance",Some(shifted_r_rg_rb.filter(x=>x._2 < rb_pearson).length/499d))
-    val gb_below = new ResultEntry("GB Significance",Some(shifted_g_gb.filter(x=> x < bg_pearson).length/499d))
-    new Result(rf.length,List(rg_below,rb_below,gb_below))
-  }
-  
+   
+   def shiftRow(row:List[Float],offsets:(Int,Int),d:Int):List[Float] = {
+     val core_row = row.slice(offsets._1,row.length-offsets._2)
+     if (core_row.length == 0) row
+     else{
+       val delta = if (d <= core_row.length) d else d % core_row.length
+       val left_side:List[Float] = List.fill(offsets._1)(0f) ++ core_row.slice(core_row.length-delta,core_row.length)  
+       val right_side:List[Float] = core_row.slice(0,core_row.length-delta) ++ List.fill(offsets._2)(0f)
+       left_side ++ right_side
+     }
+   }
+   
+   def shiftRows(rows:List[List[Float]],offsets:List[(Int,Int)],d:Int):List[List[Float]] = {
+     rows.zip(offsets).map{
+       case (r,o) =>shiftRow(r,o,d)
+     }
+   }
+   
+   def shuffleSlice(slice:List[List[Float]],offsets:(List[(Int,Int)],List[(Int,Int)]),dx:Int,dy:Int):List[List[Float]] = {
+     val x_shifted = shiftRows(slice,offsets._1,dx)
+     shiftRows(x_shifted.transpose,offsets._2,dy).transpose
+   }
+   def shuffleImage(image:List[List[List[Float]]],offsets:List[(List[(Int,Int)],List[(Int,Int)])],dx:Int,dy:Int):List[List[List[Float]]] = {
+       image.zip(offsets).map{
+         
+         case (i,o) => shuffleSlice(i,o,dx,dy)
+       }
+   }
+   def constrainedDisplacementTesting(image_r:List[List[List[Float]]],image_g:List[List[List[Float]]],image_b:List[List[List[Float]]],nucleus_mask:List[List[List[Int]]]):Result = {
+     val flat_r = image_r.flatten.flatten
+     val flat_g = image_g.flatten.flatten
+     val flat_b = image_b.flatten.flatten
+     val original_pr_value_rg = Stats.correlationPearson(flat_r,flat_g)
+     val original_pr_value_rb = Stats.correlationPearson(flat_r,flat_b)
+     val original_pr_value_bg = Stats.correlationPearson(flat_b,flat_g)
+     val offsets = nucleus_mask.map(r=>findOffsets(r))
+     val r_shufflings:List[(Double,Double)] = (1 until 100).par.map{ i=>
+        val dx = rand.nextInt(image_r.head.length)+1
+        val dy = rand.nextInt(image_r.length)+1
+        val shuffled_r:List[Float] = shuffleImage(image_r,offsets,dx,dy).flatten.flatten
+        val new_pr_value_rg = Stats.correlationPearson(shuffled_r,flat_g)
+        val new_pr_value_rb = Stats.correlationPearson(shuffled_r,flat_b)
+        (new_pr_value_rg,new_pr_value_rb)
+     }.toList
+     val g_shufflings:List[Double] = (1 until 100).par.map{i=>
+        val dx = rand.nextInt(image_r.head.length)+1
+        val dy = rand.nextInt(image_r.length)+1
+        val shuffled_g = shuffleImage(image_g,offsets,dx,dy).flatten.flatten
+        val new_pr_value_bg = Stats.correlationPearson(shuffled_g,flat_b)
+        new_pr_value_bg
+     }.toList
+     
+     val rg_below = new ResultEntry("RG_coloc_p_value",Some(r_shufflings.filter(x=>x._1 < original_pr_value_rg).length/100d))
+     val rb_below = new ResultEntry("RB_coloc_p_value",Some(r_shufflings.filter(x=>x._2 < original_pr_value_rb).length/100d))
+     val bg_below = new ResultEntry("BG coloc_p_value",Some(g_shufflings.filter(x=>x < original_pr_value_bg).length/100d))
+     val corr_rg = new ResultEntry("RG_pearsons_r",Some(original_pr_value_rg))
+     val corr_rb = new ResultEntry("RB_pearsons_r",Some(original_pr_value_rb))
+     val corr_bg = new ResultEntry("BG_pearsons_r",Some(original_pr_value_bg))
+     new Result(flat_r.length,List(rg_below,rb_below,bg_below,corr_rg,corr_rb,corr_bg))
+     }
+     
+
 }

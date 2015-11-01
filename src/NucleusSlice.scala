@@ -30,7 +30,7 @@ class NucleusSlice(slice:Int,x_centre:Double,y_centre:Double,roi:ij.gui.Roi,area
   
   def getMaskPixels(mask_image:ij.ImagePlus):List[List[Int]] = {
     mask_image.setSlice(slice)
-    mask_image.setRoi(getRoi)
+    mask_image.setRoi(roi)
     val processor = mask_image.getProcessor.crop()
     processor.getIntArray().map(x=>x.toList).toList    
   }
