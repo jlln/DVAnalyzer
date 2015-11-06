@@ -3,7 +3,8 @@
 /**
  * @author james
  */
-class Result(area:Int,entries:List[ResultEntry]) {
+class Result(condition:String,area:Int,entries:List[ResultEntry]) {
+  val getCondition = condition
   val getEntries = entries
   val getArea = area
   def printResults{
@@ -103,17 +104,29 @@ object Results{
     }
     val test_r = area_scaled_values_and_areas.map(_._1)
     val total_area = results.map{x=>x.getArea}.sum
-    val nr = new Result(total_area,test_r)
+    val nr = new Result(results.head.getCondition,total_area,test_r)
     nr
     
     }
-  def concatenateResults(a:Result,b:Result):Result = {
-    val area = a.getArea
-    if (area != b.getArea) throw new Exception("Results must have equal areas for concatenation")
-    val a_labels:List[String] = a.getEntries.map(e=>e.getLabel)
-    val b_labels:List[String] = b.getEntries.map(e=>e.getLabel)
-    if (a_labels.toSet.intersect(b_labels.toSet).size > 0) throw new Exception("Only different measurement types can be concatenated")
-    val concat_entries:List[ResultEntry] = a.getEntries ++ b.getEntries
-    new Result(area,concat_entries)
+
+  
+  def commonElements(collections:Traversable[Traversable[Any]]):Boolean = {
+    val head = collections.head.toSet
+    collections.tail.map{
+      x=> (x.toSet.intersect(head).size > 0)
+    }.toList.contains(true)
+    
+  }
+  
+  def concatenateResultList(results:List[Result]):Result = {
+    val areas = results.map(r=> r.getArea).distinct
+    val conditions = results.map(r=>r.getCondition).distinct
+    if (areas.length != 1) throw new Exception("Results must have equal areas for concatenation")
+    if (conditions.length !=1) throw new Exception("Results must be of the same experimental condition for concatenation")
+    val result_entries = results.map(_.getEntries)
+    val labels:List[List[String]] = result_entries.map(e=>e.map(_.getLabel)).distinct
+    if (commonElements(labels)) throw new Exception("Only different measurement types can be compared")
+    val combined_entries:List[ResultEntry] = result_entries.flatten
+    new Result(results.head.getCondition,results.head.getArea,combined_entries)
   }
 }

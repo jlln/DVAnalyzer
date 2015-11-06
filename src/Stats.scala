@@ -68,6 +68,25 @@ object Stats {
     val m2 = s2/n_
     val m4 = s4/n_
     m4/scala.math.pow(m2,2) -3
-    
   }
+  
+  def convolveGaussian1D[T](input:Array[T],ratio:Int)(implicit n: Numeric[T]):Array[Double] = {
+    val input_d = input.map( i => n.toDouble(i))
+    (0 until input.length).map{
+      i=> i match {
+        case 0 => (input_d(0) * ratio + input_d(1))/(ratio+1d)
+        case x if x == input_d.length-1 => (input_d(x)*ratio + input_d(x-1))/(ratio+1d)
+        case y => (input_d(y-1) + input_d(y)*ratio + input_d(y+1))/(ratio+2d)
+      }
+    }.toArray
+  }
+  
+  
+  def convolveGaussian2D[T](input:Array[Array[T]])(implicit n: Numeric[T]):Array[Array[Double]] = {
+    val ratio = 6
+    val first_pass = input.map(r=> convolveGaussian1D(r,ratio))
+    val second_pass = first_pass.transpose.map(r=> convolveGaussian1D(r,ratio)).transpose
+    second_pass
+  }
+  
 }

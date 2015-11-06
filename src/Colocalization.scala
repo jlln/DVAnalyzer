@@ -15,26 +15,34 @@ object Colocalization {
     new Result(red.length,List(red_green,green_blue,red_blue))
   }
   
-  def overlapFraction(a:Array[Int],b:Array[Int]):Option[Double] = {
+  def overlapFraction(a:Traversable[Int],b:Traversable[Int]):Option[Double] = {
     val a_size = a.sum
-    val intersection = a.zip(b).filter{
+    val intersection = a.toList.zip(b.toList).filter{
       case (a,b) => a==b
     }.length
     val overlap_fraction = intersection.toDouble/a_size
     if (overlap_fraction.isNaN) None
-    else Some(overlap_fraction)
-    
+    else Some(overlap_fraction) 
   }
-  def threeWayManders(mask_r:Array[Int],mask_g:Array[Int],mask_b:Array[Int]):Result = {
-    val gor = new ResultEntry("GreenOvelapRed",overlapFraction(mask_r,mask_g))
-    val rog = new ResultEntry("RedOverlapGreen",overlapFraction(mask_g,mask_r))
-    val rob = new ResultEntry("RedOverlapBlue",overlapFraction(mask_b,mask_r))
-    val bor = new ResultEntry("BlueOverlapRed",overlapFraction(mask_b,mask_r))
-    val gob = new ResultEntry("GreenOverlapBlue",overlapFraction(mask_g,mask_b))
-    val bog = new ResultEntry("BlueOverlapGreen",overlapFraction(mask_b,mask_g))
-    new Result(mask_r.length,List(gor,rog,rob,bor,gob,bog))
-  }
+  
     
+  def manders(condition:String,channels:List[List[Int]],n:Int):Result = {
+    val current_channel = channels.head
+    val remainder = channels.tail
+    val entries = remainder.zipWithIndex.map{
+      case (c,i) => {
+        val current_number = n+1
+        val tail_number = n+i
+        val forward_overlap = new ResultEntry(f"Channel$current_number%sChannel$tail_number%sOverlap",overlapFraction(current_channel,c))
+        val reverse_overlap = new ResultEntry(f"Channel$tail_number%sChannel$current_number%sOverlap",overlapFraction(c,current_channel))
+        List(forward_overlap,reverse_overlap)
+      }
+    }.flatten
+    new Result(condition,channels.head.length,entries)
+  }
+  
+  
+  
     def offsets1D(pixels:List[List[Int]]):List[(Int,Int)] = {
       //offsets are the number of zeros preceding and following the non-zero pixel block
        pixels.map{
@@ -86,6 +94,7 @@ object Colocalization {
          case (i,o) => shuffleSlice(i,o,dx,dy)
        }
    }
+   
    def constrainedDisplacementTesting(image_r:List[List[List[Float]]],image_g:List[List[List[Float]]],image_b:List[List[List[Float]]],nucleus_mask:List[List[List[Int]]]):Result = {
      val flat_r = image_r.flatten.flatten
      val flat_g = image_g.flatten.flatten
