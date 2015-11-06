@@ -72,7 +72,7 @@ class ThresholdMethodsComparison extends FunSuite with Checkers{
   }
   
   def countMaskBlobs(image:Array[Array[Int]],centroid:(Double,Double)):Int = {
-    Blobs.analyzePixelArray(image,"Test",centroid).getEntries.head.getValue match{
+    Blobs.analyzePixelArray("test",image,"Test",centroid).getEntries.head.getValue match{
       case Some(x) => x.toInt
       case _ => 0
     }

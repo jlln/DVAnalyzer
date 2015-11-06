@@ -14,15 +14,15 @@ class Result(condition:String,area:Int,entries:List[ResultEntry]) {
 //    output_strings.foreach(println)
   }
   def getLabels:List[String] = entries.map(e=>e.getLabel)
+  def makeHeadings = List("ExperimentalCondition","NucleusArea") ++ getLabels
   def makeValueString:List[String] = {
-   val data = entries.map(e=>e.getValue).map{
+   val data = List(condition,area.toString) ++ entries.map(e=>e.getValue).map{
      x=> x match{
        case None => "NA"
        case Some(x) => x.toString
        }
      }
    data
-   
   }
   override def hashCode = 31*area + entries.map(e=>e.hashCode).sum
   override def equals(other:Any) = other match {
@@ -125,7 +125,7 @@ object Results{
     if (conditions.length !=1) throw new Exception("Results must be of the same experimental condition for concatenation")
     val result_entries = results.map(_.getEntries)
     val labels:List[List[String]] = result_entries.map(e=>e.map(_.getLabel)).distinct
-    if (commonElements(labels)) throw new Exception("Only different measurement types can be compared")
+    if (commonElements(labels)) throw new Exception("Only different measurement types can be concatenated")
     val combined_entries:List[ResultEntry] = result_entries.flatten
     new Result(results.head.getCondition,results.head.getArea,combined_entries)
   }

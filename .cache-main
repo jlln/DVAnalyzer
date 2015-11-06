@@ -27,7 +27,7 @@ name hashing:
 1 items
 0 -> false
 products:
-188 items
+186 items
 /home/james/workspace/Zisa/src/Blobs.scala -> /home/james/workspace/Zisa/bin/Blobs$$anonfun$3.class
 /home/james/workspace/Zisa/src/Blobs.scala -> /home/james/workspace/Zisa/bin/Blobs$$anonfun$4.class
 /home/james/workspace/Zisa/src/Blobs.scala -> /home/james/workspace/Zisa/bin/Blobs$$anonfun$5.class
@@ -40,15 +40,13 @@ products:
 /home/james/workspace/Zisa/src/Blobs.scala -> /home/james/workspace/Zisa/bin/Blobs$$anonfun$nearestNeighbours$1.class
 /home/james/workspace/Zisa/src/Blobs.scala -> /home/james/workspace/Zisa/bin/Blobs$.class
 /home/james/workspace/Zisa/src/Blobs.scala -> /home/james/workspace/Zisa/bin/Blobs.class
-/home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$10.class
-/home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$11.class
 /home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$3.class
 /home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$4.class
 /home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$5.class
-/home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$6.class
-/home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$7.class
-/home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$8.class
-/home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$9.class
+/home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$correlationPearsonEntries$1.class
+/home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$correlationPearsonEntries$2.class
+/home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$mandersEntries$1.class
+/home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$mandersEntries$2.class
 /home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$offsets1D$1$$anonfun$1.class
 /home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$offsets1D$1$$anonfun$2.class
 /home/james/workspace/Zisa/src/Colocalization.scala -> /home/james/workspace/Zisa/bin/Colocalization$$anonfun$offsets1D$1.class
@@ -140,6 +138,9 @@ products:
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$12.class
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$13.class
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$14.class
+/home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$15.class
+/home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$16$$anonfun$apply$5.class
+/home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$16.class
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$6$$anonfun$apply$1.class
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$6.class
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$7$$anonfun$apply$2.class
@@ -148,6 +149,7 @@ products:
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$8.class
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$9$$anonfun$apply$4.class
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$9.class
+/home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$$anonfun$commonElements$1.class
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results$.class
 /home/james/workspace/Zisa/src/Result.scala -> /home/james/workspace/Zisa/bin/Results.class
 /home/james/workspace/Zisa/src/Stats.scala -> /home/james/workspace/Zisa/bin/Stats$$anonfun$1.class
@@ -183,35 +185,31 @@ products:
 /home/james/workspace/Zisa/src/Synthetics.scala -> /home/james/workspace/Zisa/bin/Synthetics$.class
 /home/james/workspace/Zisa/src/Synthetics.scala -> /home/james/workspace/Zisa/bin/Synthetics.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$1.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$10$$anonfun$apply$4.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$10.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$11$$anonfun$apply$5.class
+/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$11$$anonfun$apply$3.class
+/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$11$$anonfun$apply$4.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$11.class
+/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$12$$anonfun$apply$5.class
+/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$12$$anonfun$apply$6.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$12.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$13.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$14.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$15.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$16.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$17.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$18.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$19.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$2.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$3.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$4$$anonfun$apply$1.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$4$$anonfun$apply$2.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$4.class
+/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$5$$anonfun$apply$1.class
+/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$5$$anonfun$apply$2.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$5.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$6.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$7.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$8.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$9$$anonfun$apply$3.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$9.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfFilesInSubDirectory$1.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfFilesInSubDirectory$2.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfSubDirectories$1.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfSubDirectories$2.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1$$anonfun$apply$6$$anonfun$apply$7.class
-/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1$$anonfun$apply$6.class
+/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1$$anonfun$apply$7$$anonfun$apply$8.class
+/home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1$$anonfun$apply$7.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$$anonfun$processImage$1.class
 /home/james/workspace/Zisa/src/Zisa.scala -> /home/james/workspace/Zisa/bin/Zisa$.class
@@ -297,7 +295,7 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-188 items
+186 items
 /home/james/workspace/Zisa/src/Blobs.scala -> Blobs
 /home/james/workspace/Zisa/src/Blobs.scala -> Blobs$
 /home/james/workspace/Zisa/src/Blobs.scala -> Blobs$$anonfun$3
@@ -312,15 +310,13 @@ class names:
 /home/james/workspace/Zisa/src/Blobs.scala -> Blobs$$anonfun$nearestNeighbours$1$$anonfun$2
 /home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization
 /home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$
-/home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$10
-/home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$11
 /home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$3
 /home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$4
 /home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$5
-/home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$6
-/home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$7
-/home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$8
-/home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$9
+/home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$correlationPearsonEntries$1
+/home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$correlationPearsonEntries$2
+/home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$mandersEntries$1
+/home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$mandersEntries$2
 /home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$offsets1D$1
 /home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$offsets1D$1$$anonfun$1
 /home/james/workspace/Zisa/src/Colocalization.scala -> Colocalization$$anonfun$offsets1D$1$$anonfun$2
@@ -412,6 +408,9 @@ class names:
 /home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$12
 /home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$13
 /home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$14
+/home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$15
+/home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$16
+/home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$16$$anonfun$apply$5
 /home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$6
 /home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$6$$anonfun$apply$1
 /home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$7
@@ -420,6 +419,7 @@ class names:
 /home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$8$$anonfun$apply$3
 /home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$9
 /home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$9$$anonfun$apply$4
+/home/james/workspace/Zisa/src/Result.scala -> Results$$anonfun$commonElements$1
 /home/james/workspace/Zisa/src/Stats.scala -> Stats
 /home/james/workspace/Zisa/src/Stats.scala -> Stats$
 /home/james/workspace/Zisa/src/Stats.scala -> Stats$$anonfun$1
@@ -456,68 +456,62 @@ class names:
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$1
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$10
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$10$$anonfun$apply$4
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$11
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$11$$anonfun$apply$5
+/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$11$$anonfun$apply$3
+/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$11$$anonfun$apply$4
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$12
+/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$12$$anonfun$apply$5
+/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$12$$anonfun$apply$6
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$13
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$14
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$15
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$16
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$17
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$18
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$19
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$2
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$3
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$4
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$4$$anonfun$apply$1
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$4$$anonfun$apply$2
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$5
+/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$5$$anonfun$apply$1
+/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$5$$anonfun$apply$2
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$6
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$7
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$8
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$9
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$9$$anonfun$apply$3
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$getListOfFilesInSubDirectory$1
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$getListOfFilesInSubDirectory$2
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$getListOfSubDirectories$1
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$getListOfSubDirectories$2
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$main$1
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$main$1$$anonfun$apply$6
-/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$main$1$$anonfun$apply$6$$anonfun$apply$7
+/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$main$1$$anonfun$apply$7
+/home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$main$1$$anonfun$apply$7$$anonfun$apply$8
 /home/james/workspace/Zisa/src/Zisa.scala -> Zisa$$anonfun$processImage$1
 used names:
 0 items
 product stamps:
-188 items
-/home/james/workspace/Zisa/bin/Blobs$$anonfun$3.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs$$anonfun$4.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs$$anonfun$5.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs$$anonfun$6.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs$$anonfun$analyzePixelArrayStack$1$$anonfun$7.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs$$anonfun$analyzePixelArrayStack$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs$$anonfun$measurementStats$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs$$anonfun$nearestNeighbours$1$$anonfun$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs$$anonfun$nearestNeighbours$1$$anonfun$2.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs$$anonfun$nearestNeighbours$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs$.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Blobs.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$10.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$11.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$3.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$4.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$5.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$6.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$7.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$8.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$9.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$offsets1D$1$$anonfun$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$offsets1D$1$$anonfun$2.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$offsets1D$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$shiftRows$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$$anonfun$shuffleImage$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization$.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Colocalization.class -> lastModified(1446524871000)
+186 items
+/home/james/workspace/Zisa/bin/Blobs$$anonfun$3.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs$$anonfun$4.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs$$anonfun$5.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs$$anonfun$6.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs$$anonfun$analyzePixelArrayStack$1$$anonfun$7.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs$$anonfun$analyzePixelArrayStack$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs$$anonfun$measurementStats$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs$$anonfun$nearestNeighbours$1$$anonfun$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs$$anonfun$nearestNeighbours$1$$anonfun$2.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs$$anonfun$nearestNeighbours$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs$.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Blobs.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$3.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$4.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$5.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$correlationPearsonEntries$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$correlationPearsonEntries$2.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$mandersEntries$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$mandersEntries$2.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$offsets1D$1$$anonfun$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$offsets1D$1$$anonfun$2.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$offsets1D$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$shiftRows$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$$anonfun$shuffleImage$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization$.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Colocalization.class -> lastModified(1446795315000)
 /home/james/workspace/Zisa/bin/ImageIO$.class -> lastModified(1446524871000)
 /home/james/workspace/Zisa/bin/ImageIO.class -> lastModified(1446524871000)
 /home/james/workspace/Zisa/bin/NucleiProcessing$$anonfun$1.class -> lastModified(1446524871000)
@@ -588,30 +582,34 @@ product stamps:
 /home/james/workspace/Zisa/bin/Profiling$$anonfun$printTime$1.class -> lastModified(1446524871000)
 /home/james/workspace/Zisa/bin/Profiling$.class -> lastModified(1446524871000)
 /home/james/workspace/Zisa/bin/Profiling.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Result$$anonfun$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Result$$anonfun$2.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Result$$anonfun$3.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Result$$anonfun$4.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Result$$anonfun$5.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Result$$anonfun$getLabels$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Result$$anonfun$hashCode$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Result.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/ResultEntry.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$10.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$11.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$12.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$13.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$14.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$6$$anonfun$apply$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$6.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$7$$anonfun$apply$2.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$7.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$8$$anonfun$apply$3.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$8.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$9$$anonfun$apply$4.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$$anonfun$9.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results$.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Results.class -> lastModified(1446524871000)
+/home/james/workspace/Zisa/bin/Result$$anonfun$1.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Result$$anonfun$2.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Result$$anonfun$3.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Result$$anonfun$4.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Result$$anonfun$5.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Result$$anonfun$getLabels$1.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Result$$anonfun$hashCode$1.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Result.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/ResultEntry.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$10.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$11.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$12.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$13.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$14.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$15.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$16$$anonfun$apply$5.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$16.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$6$$anonfun$apply$1.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$6.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$7$$anonfun$apply$2.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$7.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$8$$anonfun$apply$3.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$8.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$9$$anonfun$apply$4.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$9.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$$anonfun$commonElements$1.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results$.class -> lastModified(1446795311000)
+/home/james/workspace/Zisa/bin/Results.class -> lastModified(1446795311000)
 /home/james/workspace/Zisa/bin/Stats$$anonfun$1.class -> lastModified(1446538537000)
 /home/james/workspace/Zisa/bin/Stats$$anonfun$2.class -> lastModified(1446538537000)
 /home/james/workspace/Zisa/bin/Stats$$anonfun$3.class -> lastModified(1446538537000)
@@ -623,75 +621,71 @@ product stamps:
 /home/james/workspace/Zisa/bin/Stats$$anonfun$sumOfPower$1.class -> lastModified(1446538537000)
 /home/james/workspace/Zisa/bin/Stats$.class -> lastModified(1446538537000)
 /home/james/workspace/Zisa/bin/Stats.class -> lastModified(1446538537000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$2.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$3.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$4.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$5$$anonfun$apply$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$5.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$6$$anonfun$apply$4.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$6.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$7.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$8$$anonfun$apply$2.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$8.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$9$$anonfun$apply$5$$anonfun$apply$6.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$9$$anonfun$apply$5.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$9.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$countForegroundPixels$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$countForegroundPixels$2.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$createPixels$1$$anonfun$apply$3.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$createPixels$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$$anonfun$getNeighbourValues$1.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics$.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Synthetics.class -> lastModified(1446524871000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$1.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$10$$anonfun$apply$4.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$10.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$11$$anonfun$apply$5.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$11.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$12.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$13.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$14.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$15.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$16.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$17.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$18.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$19.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$2.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$3.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$4$$anonfun$apply$1.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$4$$anonfun$apply$2.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$4.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$5.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$6.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$7.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$8.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$9$$anonfun$apply$3.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$9.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfFilesInSubDirectory$1.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfFilesInSubDirectory$2.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfSubDirectories$1.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfSubDirectories$2.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1$$anonfun$apply$6$$anonfun$apply$7.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1$$anonfun$apply$6.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$$anonfun$processImage$1.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa$.class -> lastModified(1446780280000)
-/home/james/workspace/Zisa/bin/Zisa.class -> lastModified(1446780280000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$2.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$3.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$4.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$5$$anonfun$apply$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$5.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$6$$anonfun$apply$4.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$6.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$7.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$8$$anonfun$apply$2.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$8.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$9$$anonfun$apply$5$$anonfun$apply$6.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$9$$anonfun$apply$5.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$9.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$countForegroundPixels$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$countForegroundPixels$2.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$createPixels$1$$anonfun$apply$3.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$createPixels$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$$anonfun$getNeighbourValues$1.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics$.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Synthetics.class -> lastModified(1446795315000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$1.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$10.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$11$$anonfun$apply$3.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$11$$anonfun$apply$4.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$11.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$12$$anonfun$apply$5.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$12$$anonfun$apply$6.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$12.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$13.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$14.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$2.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$3.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$4.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$5$$anonfun$apply$1.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$5$$anonfun$apply$2.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$5.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$6.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$7.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$8.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$9.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfFilesInSubDirectory$1.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfFilesInSubDirectory$2.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfSubDirectories$1.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$getListOfSubDirectories$2.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1$$anonfun$apply$7$$anonfun$apply$8.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1$$anonfun$apply$7.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$main$1.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$$anonfun$processImage$1.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa$.class -> lastModified(1446795634000)
+/home/james/workspace/Zisa/bin/Zisa.class -> lastModified(1446795633000)
 source stamps:
 12 items
-/home/james/workspace/Zisa/src/Blobs.scala -> hash(e8a13bc1b104375df4d5156b50d46d465d6f17f7)
-/home/james/workspace/Zisa/src/Colocalization.scala -> hash(33750db929e2e645e7082eace895e71dc12370fa)
+/home/james/workspace/Zisa/src/Blobs.scala -> hash(b2ae7d753bc047979cc1d1bbff8416aab0374445)
+/home/james/workspace/Zisa/src/Colocalization.scala -> hash(9736242ce83559a28032e9102b3127e4561fa4f0)
 /home/james/workspace/Zisa/src/ImageIO.scala -> hash(8feef4ca7c00ff509225b36eedec037495479726)
 /home/james/workspace/Zisa/src/NucleiProcessing.scala -> hash(79cec4440d2fdcc7153e85d0dc8cb2857a8279a5)
 /home/james/workspace/Zisa/src/Nucleus.scala -> hash(e3abfebbe9887d4d0cc7bed5d88a40377ed08d1f)
 /home/james/workspace/Zisa/src/NucleusSlice.scala -> hash(25a91a24d388dfb6d1bba2a8c03710e7f91d6db1)
 /home/james/workspace/Zisa/src/ObjectThresholding.scala -> hash(c408e2e6aca2742c7b39dbae97264576ad9f2651)
 /home/james/workspace/Zisa/src/Profiling.scala -> hash(c1c687387484a64989516d14d4520ce17fc48259)
-/home/james/workspace/Zisa/src/Result.scala -> hash(3b92e5cec70d763ece9b27fb95a33ca9a0fe008c)
+/home/james/workspace/Zisa/src/Result.scala -> hash(a16582bd28c8a9e607080c2902a8aa2a831befce)
 /home/james/workspace/Zisa/src/Stats.scala -> hash(bceec598c59a2f5a1c82f27538ff817c3fee5b45)
-/home/james/workspace/Zisa/src/Synthetics.scala -> hash(3ccbea3188b0c98e26aed5973d3e5a3ac292736b)
-/home/james/workspace/Zisa/src/Zisa.scala -> hash(a12f66617b8414a8bb304ba0c36aba1af8c8c8b8)
+/home/james/workspace/Zisa/src/Synthetics.scala -> hash(17cae6ea78b745a67185a7be002ff925a683084b)
+/home/james/workspace/Zisa/src/Zisa.scala -> hash(880b503aa4b0343450dd8144fc6399ac0c3bb85a)
 binary stamps:
 5 items
 /home/james/.ivy2/cache/com.github.tototoshi/scala-csv_2.11/jars/scala-csv_2.11-1.0.0.jar -> lastModified(1400343420000)
@@ -702,16 +696,16 @@ binary stamps:
 class names:
 5 items
 /home/james/.ivy2/cache/com.github.tototoshi/scala-csv_2.11/jars/scala-csv_2.11-1.0.0.jar -> com.github.tototoshi.csv.CSVWriter
-/home/james/eclipse/plugins/org.scala-lang.scala-library_2.11.7.v20150622-112736-1fbce4612c.jar -> scala.LowPriorityImplicits
-/home/james/workspace/Zisa/lib/ij-1.47u.jar -> ij.io.DirectoryChooser
+/home/james/eclipse/plugins/org.scala-lang.scala-library_2.11.7.v20150622-112736-1fbce4612c.jar -> scala.collection.IndexedSeqOptimized
+/home/james/workspace/Zisa/lib/ij-1.47u.jar -> ij.ImagePlus
 /home/james/workspace/Zisa/lib/scalacheck_2.11-1.12.5.jar -> org.scalacheck.Gen
 /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar -> java.lang.Object
 internal apis:
 12 items
 /home/james/workspace/Zisa/src/Blobs.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBjR0MSAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAFQmxvYnN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AE10AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AE5zcQB+AEF0AANBbnlzcQB+AEVzcQB+AEh1cQB+AEsAAAACc3EAfgBNdAAFc2NhbGFxAH4AVHBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVDLmditdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU6KE7wbEEN1301RVrUNRtRl1vF/c=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHChCXpBAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAFQmxvYnN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AE10AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AE5zcQB+AEF0AANBbnlzcQB+AEVzcQB+AEh1cQB+AEsAAAACc3EAfgBNdAAFc2NhbGFxAH4AVHBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVDbuHildXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUsq59dTvAR5ecwdG7/4QWqrA3REU=
 /home/james/workspace/Zisa/src/Colocalization.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDKxpIDAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAOQ29sb2NhbGl6YXRpb251cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AE10AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AE5zcQB+AEF0AANBbnlzcQB+AEVzcQB+AEh1cQB+AEsAAAACc3EAfgBNdAAFc2NhbGFxAH4AVHBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVDLmditdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUM3UNuSni5kXnCC6s6JXnHcEjcPo=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBRLLLXAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAOQ29sb2NhbGl6YXRpb251cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AE10AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AE5zcQB+AEF0AANBbnlzcQB+AEVzcQB+AEh1cQB+AEsAAAACc3EAfgBNdAAFc2NhbGFxAH4AVHBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVDbuHildXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUlzYkLOg1WaKAMukQKzEn5FYfpPA=
 /home/james/workspace/Zisa/src/ImageIO.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBd+PqCAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAHSW1hZ2VJT3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4ALgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA1c3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4ATXQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4ATnNxAH4AQXQAA0FueXNxAH4ARXNxAH4ASHVxAH4ASwAAAAJzcQB+AE10AAVzY2FsYXEAfgBUcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUMuZ2K11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAeL2hvbWUvamFtZXMvd29ya3NwYWNlL1ppc2EvYmludAAeL2hvbWUvamFtZXMvd29ya3NwYWNlL1ppc2Evc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABSP7vTKfAD/UJIls27t7AN0lUeXJg==
 /home/james/workspace/Zisa/src/NucleiProcessing.scala -> 
@@ -725,13 +719,13 @@ rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhf
 /home/james/workspace/Zisa/src/Profiling.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHA0K2sjAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAJUHJvZmlsaW5ndXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA0dAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA0c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgBNdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBOc3EAfgBBdAADQW55c3EAfgBFc3EAfgBIdXEAfgBLAAAAAnNxAH4ATXQABXNjYWxhcQB+AFRwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFQy5nYrXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AB4vaG9tZS9qYW1lcy93b3Jrc3BhY2UvWmlzYS9iaW50AB4vaG9tZS9qYW1lcy93b3Jrc3BhY2UvWmlzYS9zcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFMHGhzh0hKZJiVFtFNRSDOF/xIJZ
 /home/james/workspace/Zisa/src/Result.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAnwBPcAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAANzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAGUmVzdWx0dXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AE10AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AE5zcQB+AEF0AANBbnlzcQB+AEVzcQB+AEh1cQB+AEsAAAACc3EAfgBNdAAFc2NhbGFxAH4AVHBwc3EAfgAScQB+ACB1cQB+ACEAAAAAc3EAfgAjAHQAC1Jlc3VsdEVudHJ5dXEAfgAmAAAAAHEAfgAqdXEAfgAsAAAAAHNxAH4ALgFxAH4ANnBzcQB+AC4Bc3EAfgA4c3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4APwAAAAJzcQB+AEFxAH4ARHNxAH4ARXNxAH4ASHVxAH4ASwAAAANzcQB+AE1xAH4AUHNxAH4ATXEAfgBScQB+AFRzcQB+AEFxAH4AVnNxAH4ARXNxAH4ASHVxAH4ASwAAAAJzcQB+AE1xAH4AW3EAfgBUcHBzcQB+ABJxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAHUmVzdWx0c3VxAH4AJgAAAAB+cQB+ACh0AAZNb2R1bGV1cQB+ACwAAAAAc3EAfgAuAXEAfgA2cHNxAH4ALgFzcQB+ADhzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgA/AAAAAnNxAH4AQXEAfgBEc3EAfgBFc3EAfgBIdXEAfgBLAAAAA3NxAH4ATXEAfgBQc3EAfgBNcQB+AFJxAH4AVHNxAH4AQXEAfgBWc3EAfgBFc3EAfgBIdXEAfgBLAAAAAnNxAH4ATXEAfgBbcQB+AFRwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFQy5nYrXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AB4vaG9tZS9qYW1lcy93b3Jrc3BhY2UvWmlzYS9iaW50AB4vaG9tZS9qYW1lcy93b3Jrc3BhY2UvWmlzYS9zcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFDuS5c7HDXY+zpsn+5WjPKmg/gCM
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCQex41AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAANzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAGUmVzdWx0dXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgAveHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgAuAHBzcQB+ADNzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA3c3EAfgAuAHBzcQB+ADN1cQB+ABAAAAAAc3EAfgAuAHBzcQB+ADN1cQB+ABAAAAAAc3EAfgAuAHBzcQB+ADN1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADZ0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADZzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AFN0AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AFRzcQB+AEd0AANBbnlzcQB+AEtzcQB+AE51cQB+AFEAAAACc3EAfgBTdAAFc2NhbGFxAH4AWnNxAH4AEnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AAtSZXN1bHRFbnRyeXVxAH4AJgAAAABxAH4AKnVxAH4ALAAAAABzcQB+AC4AcHNxAH4AM3EAfgA4c3EAfgAuAHBzcQB+ADNzcQB+ADtzcQB+AC4AcHNxAH4AM3VxAH4AEAAAAABzcQB+AC4AcHNxAH4AM3VxAH4AEAAAAABzcQB+AC4AcHNxAH4AM3VxAH4ARQAAAAJzcQB+AEdxAH4ASnNxAH4AS3NxAH4ATnVxAH4AUQAAAANzcQB+AFNxAH4AVnNxAH4AU3EAfgBYcQB+AFpzcQB+AEdxAH4AXHNxAH4AS3NxAH4ATnVxAH4AUQAAAAJzcQB+AFNxAH4AYXEAfgBac3EAfgAScQB+ACB1cQB+ACEAAAAAc3EAfgAjAHQAB1Jlc3VsdHN1cQB+ACYAAAAAfnEAfgAodAAGTW9kdWxldXEAfgAsAAAAAHNxAH4ALgBwc3EAfgAzcQB+ADhzcQB+AC4AcHNxAH4AM3NxAH4AO3NxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXEAfgBFAAAAAnNxAH4AR3EAfgBKc3EAfgBLc3EAfgBOdXEAfgBRAAAAA3NxAH4AU3EAfgBWc3EAfgBTcQB+AFhxAH4AWnNxAH4AR3EAfgBcc3EAfgBLc3EAfgBOdXEAfgBRAAAAAnNxAH4AU3EAfgBhcQB+AFp1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu4Ykx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAeL2hvbWUvamFtZXMvd29ya3NwYWNlL1ppc2EvYmludAAeL2hvbWUvamFtZXMvd29ya3NwYWNlL1ppc2Evc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABShZYK9KMip5gcIDCkCqKoqgxvvzg==
 /home/james/workspace/Zisa/src/Stats.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAj+FxSAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAFU3RhdHN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AE10AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AE5zcQB+AEF0AANBbnlzcQB+AEVzcQB+AEh1cQB+AEsAAAACc3EAfgBNdAAFc2NhbGFxAH4AVHBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVDMamNPdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUvO7FmMWaL1ocgvJ1OP+BfD/uW0U=
 /home/james/workspace/Zisa/src/Synthetics.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCPQFfAAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAKU3ludGhldGljc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4ALgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA1c3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4ATXQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4ATnNxAH4AQXQAA0FueXNxAH4ARXNxAH4ASHVxAH4ASwAAAAJzcQB+AE10AAVzY2FsYXEAfgBUcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUMuZ2K11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAeL2hvbWUvamFtZXMvd29ya3NwYWNlL1ppc2EvYmludAAeL2hvbWUvamFtZXMvd29ya3NwYWNlL1ppc2Evc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABQ8y+oxiLDJjiau1Zc9Plo6wpJzaw==
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCPQFfAAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAKU3ludGhldGljc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4ALgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA1c3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4ATXQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4ATnNxAH4AQXQAA0FueXNxAH4ARXNxAH4ASHVxAH4ASwAAAAJzcQB+AE10AAVzY2FsYXEAfgBUcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu4eKV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAeL2hvbWUvamFtZXMvd29ya3NwYWNlL1ppc2EvYmludAAeL2hvbWUvamFtZXMvd29ya3NwYWNlL1ppc2Evc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABQXyubqeLdFpnGFp74AL/klpoMISw==
 /home/james/workspace/Zisa/src/Zisa.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDvRHfjAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAEWmlzYXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4ALgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA1c3EAfgAuAXVxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA0c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBRdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+ABxMAAN0cGVxAH4APXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AKXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ARVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANHNxAH4ARHQABUFycmF5cQB+AEp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4ARHQABlN0cmluZ3NxAH4ASHNxAH4AS3VxAH4ATgAAAANzcQB+AFB0AARqYXZhc3EAfgBQdAAEbGFuZ3EAfgBVcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+AGkAAAACc3EAfgBEdAAGT2JqZWN0cQB+AG1zcQB+AER0AANBbnlxAH4ASnBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVDa0xmjdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUoS9mYXuEFKi7MEugw2q6GvjIyLg=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB4JMc0AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAEWmlzYXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4ALgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA1c3EAfgAuAXVxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA0c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBRdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+ABxMAAN0cGVxAH4APXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AKXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ARVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANHNxAH4ARHQABUFycmF5cQB+AEp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4ARHQABlN0cmluZ3NxAH4ASHNxAH4AS3VxAH4ATgAAAANzcQB+AFB0AARqYXZhc3EAfgBQdAAEbGFuZ3EAfgBVcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+AGkAAAACc3EAfgBEdAAGT2JqZWN0cQB+AG1zcQB+AER0AANBbnlxAH4ASnBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVDbvV0wdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUiAtQOqSwNDRQ3YFE/GOZrAw7uFo=
 external apis:
 0 items
 source infos:
@@ -761,7 +755,7 @@ AAAAAAAAAAA=
 /home/james/workspace/Zisa/src/Zisa.scala -> 
 AAAAAAAAAAA=
 compilations:
-148 items
+170 items
 000 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUKwpinF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
 001 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUKwrEhV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
 002 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUKxHAKZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
@@ -910,3 +904,25 @@ compilations:
 145 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNq5oBp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
 146 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNrR8Xl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
 147 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNrTGaN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+148 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNuCfIN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+149 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNuE/rJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+150 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNuFqNV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+151 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNuF8xh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+152 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNuGDh91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+153 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNuGWb51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+154 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNuwxw91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+155 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNux/Ax1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+156 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNuzx1l1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+157 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu0NwJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+158 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu0QBR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+159 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu0a3Z1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+160 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu0cU51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+161 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu2z/51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+162 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu3CvJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+163 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu3yOR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+164 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu4Ykx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+165 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu4eKV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+166 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu5e+51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+167 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu8rNN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+168 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu808J1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==
+169 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUNu9XTB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL2JpbnQAHi9ob21lL2phbWVzL3dvcmtzcGFjZS9aaXNhL3NyYw==

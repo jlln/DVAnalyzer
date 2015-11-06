@@ -8,11 +8,36 @@ import ij._
 object Colocalization {
   val rand = new scala.util.Random(123456)
 
-  def threeWayPearson(red:Array[Float],green:Array[Float],blue:Array[Float]):Result = {
-    val red_green = new ResultEntry("RedGreenPearson",(Some(Stats.correlationPearson(red,green))))
-    val green_blue = new ResultEntry("GreenBluePearson",(Some(Stats.correlationPearson(green,blue))))
-    val red_blue = new ResultEntry("RedBluePearson",(Some(Stats.correlationPearson(red,blue))))
-    new Result(red.length,List(red_green,green_blue,red_blue))
+  def correlationPearsonEntries(channels:List[List[Float]],n:Int):List[ResultEntry] = {
+    val current_channel = channels.head
+    val remainder = channels.tail
+    if (remainder.length > 1){
+      remainder.zipWithIndex.map{
+        case (c,i) => {
+          val current_number = n+1
+          val tail_number = current_number+i
+          val forward_overlap = new ResultEntry(f"Channel$current_number%sChannel$tail_number%sPearson",Some(Stats.correlationPearson(current_channel,c)))
+          val reverse_overlap = new ResultEntry(f"Channel$tail_number%sChannel$current_number%sPearson",Some(Stats.correlationPearson(c,current_channel)))
+          List(forward_overlap,reverse_overlap)
+        }
+      }.flatten
+    }
+    else{
+      remainder.zipWithIndex.map{
+        case (c,i) => {
+          val current_number = n+1
+          val tail_number = n+i
+          val forward_overlap = new ResultEntry(f"Channel$current_number%sChannel$tail_number%sPearson",Some(Stats.correlationPearson(current_channel,c)))
+          val reverse_overlap = new ResultEntry(f"Channel$tail_number%sChannel$current_number%sPearson",Some(Stats.correlationPearson(c,current_channel)))
+          List(forward_overlap,reverse_overlap)
+        }
+      }.flatten ++ correlationPearsonEntries(remainder,n+1)
+    }
+  }
+  
+  def correlationPearson(condition:String,channels:List[List[Float]]):Result = {
+    val entries = correlationPearsonEntries(channels,0)
+    new Result(condition,channels.head.length,entries)
   }
   
   def overlapFraction(a:Traversable[Int],b:Traversable[Int]):Option[Double] = {
@@ -26,38 +51,56 @@ object Colocalization {
   }
   
     
-  def manders(condition:String,channels:List[List[Int]],n:Int):Result = {
+  def mandersEntries(channels:List[List[Int]],n:Int):List[ResultEntry] = {
     val current_channel = channels.head
     val remainder = channels.tail
-    val entries = remainder.zipWithIndex.map{
-      case (c,i) => {
-        val current_number = n+1
-        val tail_number = n+i
-        val forward_overlap = new ResultEntry(f"Channel$current_number%sChannel$tail_number%sOverlap",overlapFraction(current_channel,c))
-        val reverse_overlap = new ResultEntry(f"Channel$tail_number%sChannel$current_number%sOverlap",overlapFraction(c,current_channel))
-        List(forward_overlap,reverse_overlap)
-      }
-    }.flatten
-    new Result(condition,channels.head.length,entries)
+    if (remainder.length > 1){
+      remainder.zipWithIndex.map{
+        case (c,i) => {
+          val current_number = n+1
+          val tail_number = current_number+i
+          val forward_overlap = new ResultEntry(f"Channel$current_number%sChannel$tail_number%sOverlap",overlapFraction(current_channel,c))
+          val reverse_overlap = new ResultEntry(f"Channel$tail_number%sChannel$current_number%sOverlap",overlapFraction(c,current_channel))
+          List(forward_overlap,reverse_overlap)
+        }
+      }.flatten ++ mandersEntries(remainder,n+1)
+    }
+    else{
+      remainder.zipWithIndex.map{
+        case (c,i) => {
+          val current_number = n+1
+          val tail_number = n+i
+          val forward_overlap = new ResultEntry(f"Channel$current_number%sChannel$tail_number%sOverlap",overlapFraction(current_channel,c))
+          val reverse_overlap = new ResultEntry(f"Channel$tail_number%sChannel$current_number%sOverlap",overlapFraction(c,current_channel))
+          List(forward_overlap,reverse_overlap)
+        }
+      }.flatten 
+    }
+    
+  }
+  
+  def manders(condition:String,channels:List[List[Int]]):Result = {
+    val area = channels.head.size
+    val entries = mandersEntries(channels,0)
+    new Result(condition,area,entries)
   }
   
   
-  
-    def offsets1D(pixels:List[List[Int]]):List[(Int,Int)] = {
-      //offsets are the number of zeros preceding and following the non-zero pixel block
-       pixels.map{
-        row =>{
-          val left_side = row.indexWhere(_ > 0)
-          if (left_side == -1) (0,0)
-          else{
-            val remainder = row.slice(left_side,row.length)
-            val right_side = remainder.reverse.indexWhere(_ > 0)
-            if (right_side == -1) (left_side,0)
-            else (left_side,right_side)
-          }
+  def offsets1D(pixels:List[List[Int]]):List[(Int,Int)] = {
+    //offsets are the number of zeros preceding and following the non-zero pixel block
+     pixels.map{
+      row =>{
+        val left_side = row.indexWhere(_ > 0)
+        if (left_side == -1) (0,0)
+        else{
+          val remainder = row.slice(left_side,row.length)
+          val right_side = remainder.reverse.indexWhere(_ > 0)
+          if (right_side == -1) (left_side,0)
+          else (left_side,right_side)
         }
       }
     }
+  }
     
    def findOffsets(pixels:List[List[Int]]):(List[(Int,Int)],List[(Int,Int)]) = {
       val x_offsets:List[(Int,Int)] = offsets1D(pixels)
@@ -95,38 +138,65 @@ object Colocalization {
        }
    }
    
-   def constrainedDisplacementTesting(image_r:List[List[List[Float]]],image_g:List[List[List[Float]]],image_b:List[List[List[Float]]],nucleus_mask:List[List[List[Int]]]):Result = {
-     val flat_r = image_r.flatten.flatten
-     val flat_g = image_g.flatten.flatten
-     val flat_b = image_b.flatten.flatten
-     val original_pr_value_rg = Stats.correlationPearson(flat_r,flat_g)
-     val original_pr_value_rb = Stats.correlationPearson(flat_r,flat_b)
-     val original_pr_value_bg = Stats.correlationPearson(flat_b,flat_g)
-     val offsets = nucleus_mask.map(r=>findOffsets(r))
-     val r_shufflings:List[(Double,Double)] = (1 until 100).par.map{ i=>
-        val dx = rand.nextInt(image_r.head.length)+1
-        val dy = rand.nextInt(image_r.length)+1
-        val shuffled_r:List[Float] = shuffleImage(image_r,offsets,dx,dy).flatten.flatten
-        val new_pr_value_rg = Stats.correlationPearson(shuffled_r,flat_g)
-        val new_pr_value_rb = Stats.correlationPearson(shuffled_r,flat_b)
-        (new_pr_value_rg,new_pr_value_rb)
-     }.toList
-     val g_shufflings:List[Double] = (1 until 100).par.map{i=>
-        val dx = rand.nextInt(image_r.head.length)+1
-        val dy = rand.nextInt(image_r.length)+1
-        val shuffled_g = shuffleImage(image_g,offsets,dx,dy).flatten.flatten
-        val new_pr_value_bg = Stats.correlationPearson(shuffled_g,flat_b)
-        new_pr_value_bg
-     }.toList
-     
-     val rg_below = new ResultEntry("RG_coloc_p_value",Some(r_shufflings.filter(x=>x._1 < original_pr_value_rg).length/100d))
-     val rb_below = new ResultEntry("RB_coloc_p_value",Some(r_shufflings.filter(x=>x._2 < original_pr_value_rb).length/100d))
-     val bg_below = new ResultEntry("BG coloc_p_value",Some(g_shufflings.filter(x=>x < original_pr_value_bg).length/100d))
-     val corr_rg = new ResultEntry("RG_pearsons_r",Some(original_pr_value_rg))
-     val corr_rb = new ResultEntry("RB_pearsons_r",Some(original_pr_value_rb))
-     val corr_bg = new ResultEntry("BG_pearsons_r",Some(original_pr_value_bg))
-     new Result(flat_r.length,List(rg_below,rb_below,bg_below,corr_rg,corr_rb,corr_bg))
-     }
+//   def constrainedDisplacementEntries(dx:Int,dy:Int,channels:List[List[List[List[Float]]]],offsets:List[(List[(Int,Int)],List[(Int,Int)])],n:Int):List[ResultEntry] = {
+//      val current_channel = channels.head
+//      val shuffled_image = shuffleImage(current_channel,offsets,dx,dy)
+//      val remainder = channels.tail
+//      if (remainder.length > 1){
+//        remainder.zipWithIndex.map{
+//          case (c,i) => {
+//            val current_number = n+1
+//            val tail_number = current_number+i
+//            
+//            
+//          }
+//        }
+//      }
+//      else{
+//        remainder.zipWithIndex.map{
+//          case (c,i) => {
+//            val current_number = n+1
+//            val tail_number = n+i
+//            
+//          }
+//        }.flatten 
+//    }
+//  }
+//   }
+//   
+//   
+//   def constrainedDisplacementTesting(image_r:List[List[List[Float]]],image_g:List[List[List[Float]]],image_b:List[List[List[Float]]],nucleus_mask:List[List[List[Int]]]):Result = {
+//     val flat_r = image_r.flatten.flatten
+//     val flat_g = image_g.flatten.flatten
+//     val flat_b = image_b.flatten.flatten
+//     val original_pr_value_rg = Stats.correlationPearson(flat_r,flat_g)
+//     val original_pr_value_rb = Stats.correlationPearson(flat_r,flat_b)
+//     val original_pr_value_bg = Stats.correlationPearson(flat_b,flat_g)
+//     val offsets = nucleus_mask.map(r=>findOffsets(r))
+//     val r_shufflings:List[(Double,Double)] = (1 until 100).par.map{ i=>
+//        val dx = rand.nextInt(image_r.head.length)+1
+//        val dy = rand.nextInt(image_r.length)+1
+//        val shuffled_r:List[Float] = shuffleImage(image_r,offsets,dx,dy).flatten.flatten
+//        val new_pr_value_rg = Stats.correlationPearson(shuffled_r,flat_g)
+//        val new_pr_value_rb = Stats.correlationPearson(shuffled_r,flat_b)
+//        (new_pr_value_rg,new_pr_value_rb)
+//     }.toList
+//     val g_shufflings:List[Double] = (1 until 100).par.map{i=>
+//        val dx = rand.nextInt(image_r.head.length)+1
+//        val dy = rand.nextInt(image_r.length)+1
+//        val shuffled_g = shuffleImage(image_g,offsets,dx,dy).flatten.flatten
+//        val new_pr_value_bg = Stats.correlationPearson(shuffled_g,flat_b)
+//        new_pr_value_bg
+//     }.toList
+//     
+//     val rg_below = new ResultEntry("RG_coloc_p_value",Some(r_shufflings.filter(x=>x._1 < original_pr_value_rg).length/100d))
+//     val rb_below = new ResultEntry("RB_coloc_p_value",Some(r_shufflings.filter(x=>x._2 < original_pr_value_rb).length/100d))
+//     val bg_below = new ResultEntry("BG coloc_p_value",Some(g_shufflings.filter(x=>x < original_pr_value_bg).length/100d))
+//     val corr_rg = new ResultEntry("RG_pearsons_r",Some(original_pr_value_rg))
+//     val corr_rb = new ResultEntry("RB_pearsons_r",Some(original_pr_value_rb))
+//     val corr_bg = new ResultEntry("BG_pearsons_r",Some(original_pr_value_bg))
+//     new Result(flat_r.length,List(rg_below,rb_below,bg_below,corr_rg,corr_rb,corr_bg))
+//     }
      
 
 }
