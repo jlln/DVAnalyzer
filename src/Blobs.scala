@@ -37,7 +37,7 @@ object Blobs{
   def analyzePixelArray(condition:String,pixels:Array[Array[Int]],colour:String,nuclear_slice_centroid:(Double,Double)):Result = {
 
     val image = ImageIO.makeImage(pixels)
-
+    
     ij.IJ.run(image,"Make Binary", "method=Default background=Dark stack ")
     val image_width = pixels.head.length
     val image_height = pixels.length
@@ -84,7 +84,7 @@ object Blobs{
       new Result(condition,image_area,result_entries)
     }
   }
-  def analyzePixelArrayStack(condition:String,pixels:Array[Array[Array[Int]]],colour:String,centroids:List[(Double,Double)]):Result = Profiling.timed(Profiling.printTime("Pixel blob array stack analysis completed in")){
+  def analyzePixelArrayStack(condition:String,pixels:Array[Array[Array[Int]]],colour:String,centroids:List[(Double,Double)]):Result = {
     val r = Results.mergeResults(pixels.toList.zip(centroids).map{
       case (s,c)=>analyzePixelArray(condition,s,colour,c)
       })

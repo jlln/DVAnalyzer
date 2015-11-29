@@ -15,18 +15,37 @@ import ij.plugin.filter.Analyzer
 
 object NucleiProcessing {
   def processImageToNuclei(image:ij.ImagePlus):(List[Nucleus],List[ImagePlus],ImagePlus)={
+    /*
+     * A function to facilitate the processing of an image into a 
+     * list of nuclei and separate channels.
+     * It also aims to remove debris and poorly focussed nuclei by comparing nuclear pixel intensity
+     * variances across the entire image.
+     */
     val channels:List[ImagePlus]=ChannelSplitter.split(image).toList
-    val (red,green,blue) = (channels(0),channels(1),channels(2))
-    val (nuclei,nuclei_mask) = Profiling.timed(Profiling.printTime("maskedNuclei completed in")){maskNuclei(blue)}
+    val blue = channels.last
+    val (nuclei,nuclei_mask) = {maskNuclei(blue)}
     // val focussed_nuclei = threeChannelNucleiFocusser(red,green,blue,nuclei)
     val edge_mask = blue.duplicate
     IJ.run(edge_mask, "Find Edges","stack")
-    val focussed_nuclei = Profiling.timed(Profiling.printTime("focussing nuclei completed in")){nuclei.toList.map{n=>nucleiFocusser(n,edge_mask)}.filter{n=> n.getSlices.length > 0}}
-    (focussed_nuclei,channels,nuclei_mask)
+    val focussed_nuclei_and_variances = {nuclei.toList.map{n=>nucleiFocusser(n,edge_mask)}}
+    val nuclear_variances = focussed_nuclei_and_variances.map(_._2)
+    val image_nuclear_variance_mean = Stats.mean(nuclear_variances)
+    val image_nuclear_variance_z_scores = Stats.standardScores(nuclear_variances)
+    val retained_indices:List[Int] = nuclear_variances.zipWithIndex.filter{
+      case (v,i) => {
+        (v > -0.5) 
+      }
+    }.map(_._2)
+    val focussed_nuclei = focussed_nuclei_and_variances.map(_._1)
+    val retained_nuclei = retained_indices.map(i=>focussed_nuclei(i)).filter(n=> n.getSlices.length > 0)
+    (retained_nuclei,channels,nuclei_mask)
   }
 
   def maskNuclei(blue:ImagePlus):(List[Nucleus],ImagePlus)={
-
+    /*
+     * Identifies the nuclei in the image using the DNA stained channel.
+     * 
+     */
     WindowManager.closeAllWindows()
     val nuclei_mask=blue.duplicate()
     nuclei_mask.getChannelProcessor().resetMinAndMax()
@@ -75,11 +94,12 @@ object NucleiProcessing {
   
   def mergeNuclei(nuclei:List[Nucleus],ro_i:NucleusSlice):List[Nucleus]={
     
-//  If a slice is found to be from an existing nucleus, merge it into that nucleus, else create a new nucleus.
-//    How to discern if a slice belongs to a given nucleus? 
-//    First find nuclei that are within the radius,
-//    then from this set of nuclei (if there are more than one) choose the closest.
-//    Only the previous slice is considered.
+  /**  If a slice is found to be from an existing nucleus, merge it into that nucleus, else create a new nucleus.
+	*    How to discern if a slice belongs to a given nucleus? 
+	*    First find other nuclei that are within the radius of the given nucleus,
+	*    then from this set of nuclei (if there are more than one) choose the closest.
+	*   Only the previous slice is considered.  
+	*/
     val slice = ro_i.getSlice
     val area = ro_i.getArea
     val radius = scala.math.sqrt(area)/3.14156
@@ -99,7 +119,12 @@ object NucleiProcessing {
     }    
   }
   
-  def nucleiFocusser(nucleus:Nucleus,edge_mask:ij.ImagePlus):Nucleus = {
+  def nucleiFocusser(nucleus:Nucleus,edge_mask:ij.ImagePlus):(Nucleus,Double) = {
+    /*Identifies which slices are in focus for each nucleus
+     * Measures the variance of the pixel intensity within each slice of an
+     * edge-enhanced version of the DNA staining image for the nucleus.
+     * Slices within 80% of the maximum variance value for the nucleus stack are retained.
+     */
     var variance_results = new ResultsTable()
     val measurements = ij.measure.Measurements.MEAN+ij.measure.Measurements.AREA
     val analyzer= new Analyzer(edge_mask,measurements,variance_results)
@@ -114,13 +139,17 @@ object NucleiProcessing {
     val area_values = variance_results.getColumn(variance_results.getColumnIndex("Area"))
     val mean_area = Stats.mean(area_values)
     val variance_threshold = 0.8*variance_values.max        
-    val retained_slices = for ((s,i)<-nucleus.getSlices.zipWithIndex 
+    val retained_slice_indices = for ((s,i)<-nucleus.getSlices.zipWithIndex 
       if (variance_values(i)>variance_threshold & area_values(i)>mean_area*0.5)) yield{
-        slices(i)
+        i
     }
-    new Nucleus(retained_slices)
+    val retained_slices = retained_slice_indices.map(i=> slices(i))
+    val retained_slice_variances = retained_slice_indices.map(i=>variance_values(i))
+    val mean_variance = Stats.mean(retained_slice_variances)
+    (new Nucleus(retained_slices),mean_variance)
   }
-    def nucleusSliceEucledian(n1:NucleusSlice,n2:NucleusSlice):Double = {
+ 
+  def nucleusSliceEucledian(n1:NucleusSlice,n2:NucleusSlice):Double = {
     Stats.eucledian(n1.getXCentre,n1.getYCentre,n2.getXCentre,n2.getYCentre)
   }
     

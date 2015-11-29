@@ -37,15 +37,12 @@ class Nucleus(slices:List[NucleusSlice]){
     }
   }
   
-  def getPixels(image:ij.ImagePlus):Array[Array[Array[Float]]] = {
-    val boundaries = getBoundingBox
-    val processors:Array[ij.process.ImageProcessor] = getSlices.toArray.map{ s=>
-      s.makeCroppedProcessor(image,boundaries)
-    }
-    processors.map{ p=>
-      p.getFloatArray().flatten.grouped(boundaries.getBounds().width).toArray
+  def getPixels(image:ij.ImagePlus,mask:List[List[List[Int]]]):Array[Array[Array[Float]]] = {
+    getSlices.toArray.zip(mask).map{
+      case (s,m)=>s.getPixels(image,m)
     }
   }
+  
 
   def getMaskingImages(mask_image:ij.ImagePlus):List[List[List[Int]]] = {
     getSlices.map(s=>s.getMaskPixels(mask_image))

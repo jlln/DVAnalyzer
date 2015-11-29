@@ -17,20 +17,20 @@ object Zisa {
        
   def examineNucleus(condition:String,nucleus: Nucleus, channels: List[ij.ImagePlus],masking_images:List[List[List[Int]]]) = {
 
-    val image_object_masks_thresholds = channels.map(c => ObjectThresholding.thresholdObjects(nucleus, c))
+    val image_object_masks_thresholds = channels.map(c => ObjectThresholding.thresholdObjects(nucleus, c,masking_images))
     val image_object_masks = image_object_masks_thresholds.map(_._1)
     val thresholds = image_object_masks_thresholds.map(_._2)
     val nucleus_centroids = nucleus.getCentroids
     println("Analyzing subnuclear objects")
     val object_results = image_object_masks.zipWithIndex.map{
-      case (c,i) => Blobs.analyzePixelArrayStack(condition,c, s"Channel$i", nucleus_centroids)
+      case (c,i) => Blobs.analyzePixelArrayStack(condition,c, s"Channel${i+1}", nucleus_centroids)
     }
     
     val combined_object_results = Results.concatenateResultList(object_results)
-    val mean_pixel_intensities = channels.map(c => nucleus.getPixels(c).flatten.flatten).map(x => Stats.mean(x))
-    val area = nucleus.getPixels(channels(0)).flatten.flatten.length
+    val mean_pixel_intensities = channels.map(c => nucleus.getPixels(c,masking_images).flatten.flatten).map(x => Stats.mean(x))
+    val area = nucleus.getPixels(channels(0),masking_images).flatten.flatten.length
     val pixel_intensity_labels = channels.zipWithIndex.map{
-      case (c,i) => s"MeanIntensityChannel$i"
+      case (c,i) => s"MeanIntensityChannel${i+1}"
     }
     val pixel_intensity_result_entries = pixel_intensity_labels.zip(mean_pixel_intensities).map {
       case (l, m) => new ResultEntry(l, Some(m))
@@ -39,14 +39,16 @@ object Zisa {
    
     
     val channel_data = channels.map{
-      c=> nucleus.getPixels(c).flatten.flatten.toList
+      c=> nucleus.getPixels(c,masking_images).flatten.flatten.toList
     }.toList
     val object_masks = image_object_masks.map{
       c=> c.flatten.flatten.toList
     }
+    println(channel_data.head.length,object_masks.head.length)
+    
     val pearson_result = Colocalization.correlationPearson(condition,channel_data)
     val manders_result =Colocalization.manders(condition,object_masks) 
-    Results.concatenateResultList(List(pearson_result,manders_result))
+    Results.concatenateResultList(List(intensity_result,pearson_result,manders_result,combined_object_results))
   }
   
  

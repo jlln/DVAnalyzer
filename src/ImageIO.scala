@@ -20,6 +20,7 @@ object ImageIO {
     new ij.ImagePlus("thresholded_image",processor)
   }
   
+  
   def drawPixels(image:ij.ImagePlus){
     image.show()
     ij.IJ.run("Tile")

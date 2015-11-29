@@ -22,10 +22,14 @@ class NucleusSlice(slice:Int,x_centre:Double,y_centre:Double,roi:ij.gui.Roi,area
     image.setSlice(getSlice)
     image.getProcessor.crop()
   }
-  def getPixels(image:ij.ImagePlus):Array[Array[Float]] = {
+  def getPixels(image:ij.ImagePlus,mask:List[List[Int]]):Array[Array[Float]] = {
     val cropped_image = makeCroppedProcessor(image,getBoundingBox)
-    val pixel_array:Array[Float] = cropped_image.getFloatArray().flatten
-    pixel_array.grouped(getRoi.getBounds().width).toArray
+    cropped_image.resetMinAndMax()
+    val pixel_array:Array[Array[Float]] = cropped_image.getFloatArray()
+    val corrected_array = pixel_array.flatten.zip(mask.flatten).map{
+      case (p,m) => if (m > 0) p else 0
+    }.grouped(mask.head.length)
+    corrected_array.toArray
   }
   
   def getMaskPixels(mask_image:ij.ImagePlus):List[List[Int]] = {

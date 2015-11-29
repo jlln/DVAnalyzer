@@ -28,30 +28,7 @@ class ThresholdMethodsComparison extends FunSuite with Checkers{
   val pw = new PrintWriter(new File("segmentation_comparison.txt" ))
 
   
-  def createPixels(x:Int,y:Int):Array[Array[Int]] = {
-    val image = Array.fill(y){Array.fill(x){0}}
-    def pixelIter(ix:Int,iy:Int,image:Array[Array[Int]]):Array[Array[Int]] = {
-      val neighbours = (ix,iy) match {
-        case (0,0) => List()
-        case (0,iiy) => List(image(iiy-1)(0))
-        case (iix,0) => List(image(0)(iix-1))
-        case (iix,iiy) if iix < x-1 && iiy < y-1 => List(image(iiy)(iix-1),image(iiy-1)(ix),image(iiy-1)(ix+1))
-        case (_,_) => List()
-      }
-      val cutoff = 0.008+neighbours.sum * 0.44
-      val pixel = if (rand.nextFloat < cutoff) 1 else 0
-      image(iy).update(ix,pixel)
-      image
-    }
-    (0 until x).map{
-      xx=>{
-        (0 until y).map{
-          yy=> pixelIter(xx,yy,image)
-        }
-      }
-    }
-    image
-  }
+  
   
   def noisePixels(template:Array[Array[Int]],foreground_mean:Int,background_mean:Int,noise:Int):Array[Array[Double]] = {
     val image_width = template.head.length
@@ -84,10 +61,12 @@ class ThresholdMethodsComparison extends FunSuite with Checkers{
   
   
   val signalNoiseGen = for {
+    bc<-(rand.nextGaussian()+1)/15000
+    ep<-(rand.nextGaussian()+1)/10
     b<-Gen.choose(1,50)
     f<-Gen.choose(b+50,240)
     n<-Gen.choose(5,25)
-  } yield (b,f,n)
+  } yield (b,f,n,bc,ep)
   
   def scoreThreshold(threshold:Double,image:Array[Array[Double]],base_blob_count:Int,base_foreground_count:Int):String = {
     val thresholded_image = image.map{row=>row.map{pixel=>{
@@ -102,16 +81,17 @@ class ThresholdMethodsComparison extends FunSuite with Checkers{
     count_error.toString + "," + foreground_error.toString
   } 
   
+
   
-  def methodTester(b:Int,f:Int,n:Int):Boolean = {
-    val test_base = Synthetics.createPixels(300,300)
+  def methodTester(b:Int,f:Int,n:Int,bc:Double,ec:Double):Boolean = {
+    val test_base = Synthetics.createPixels(300,300,bc,ec)
     val centroid = (test_base.head.length/2d,test_base.length/2d)
     val base_blob_count = Synthetics.countMaskBlobs(test_base.map(r=>r.map(p=>255*p)),centroid)
     val base_foreground_count = Synthetics.countForegroundPixels(test_base)
     val noisy_image = Synthetics.noisePixels(test_base,f,b,n)
     val noisy_imageplus = Synthetics.makeImage(noisy_image)
     val noisy_pixels = noisy_image.flatten
-//    ImageIO.drawPixels(noisy_imageplus)
+    ImageIO.drawPixels(noisy_imageplus)
     
     val norm_pixels = Stats.standardScores(noisy_pixels).toList
     val five_means_threshold = ObjectThresholding.fiveMeans(norm_pixels,List(norm_pixels.min),List(Stats.mean(norm_pixels)/4),List(Stats.mean(norm_pixels)/2),List(Stats.mean(norm_pixels)),List(norm_pixels.max)) * Stats.standardDeviation(noisy_pixels)+Stats.mean(noisy_pixels)
@@ -124,14 +104,14 @@ class ThresholdMethodsComparison extends FunSuite with Checkers{
     val two_means_scores = scoreThreshold(two_means_threshold,noisy_image,base_blob_count,base_foreground_count)
     val sct_threshold = ObjectThresholding.SCTWrapper(norm_pixels.toArray)* Stats.standardDeviation(noisy_pixels)+Stats.mean(noisy_pixels)
     val sct_scores = scoreThreshold(sct_threshold,noisy_image,base_blob_count,base_foreground_count)
-    val output_string = List(b.toString ,f.toString , n.toString,five_means_scores,four_means_scores , three_means_scores,two_means_scores,sct_scores).mkString(",")
+    val output_string = List(base_blob_count.toString,b.toString ,f.toString , n.toString,five_means_scores,four_means_scores , three_means_scores,two_means_scores,sct_scores).mkString(",")
     println(output_string)
     pw.write(output_string)
     true
   }
   
   val checkthem = forAllNoShrink(signalNoiseGen){
-    case (b,f,n) => methodTester(b,f,n)
+    case (b,f,n,bc,ep) => methodTester(b,f,n,bc,ep)
   }
   
   checkthem.check

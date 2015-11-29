@@ -9,6 +9,32 @@ import ij.WindowManager
 object ObjectThresholding {
 
  
+  def kMeansIter(items:List[Double],groups:List[List[Double]]):Double = {
+    val group_means:List[Double] = groups.map(g=>Stats.mean(g))
+    val group_boundaries = group_means.sliding(2).map{
+      p=>Stats.mean(p)
+    }.toList
+    println(group_boundaries)
+    val new_groups = (0 until group_boundaries.length).map{
+      i=> i match{
+        case 0 => items.filter(x=> x <= group_boundaries(i))
+        case z => items.filter(x=> x <= group_boundaries(i) && x > group_boundaries(i-1))
+      }
+    }.toList
+   println(new_groups)
+   if (new_groups == groups) group_boundaries.last
+   else kMeansIter(items,new_groups)
+  }
+  
+  def kMeans[T](k:Int,items:Traversable[T])(implicit n: Numeric[T]):Double = {
+    val ditems = items.toList.map(x=> n.toDouble(x))
+    val interval = 2 * 1d/(k-1)
+    val starting_groups:List[List[Double]] = (-1d until 1+interval by interval).toList.map(v => List(v))
+    kMeansIter(ditems,starting_groups)
+  }
+  
+  
+  
   def fiveMeans[T](pixels:Traversable[T],group_one:Traversable[T],group_two:Traversable[T],group_three:Traversable[T],group_four:Traversable[T],group_five:Traversable[T])(implicit n:Numeric[T]):Double = {
     val mean_one = Stats.mean(group_one)
     val mean_two = Stats.mean(group_two)
@@ -92,38 +118,33 @@ object ObjectThresholding {
   
   
   
-   def thresholdObjects(nucleus:Nucleus,image:ij.ImagePlus):(Array[Array[Array[Int]]],Double) = {
+   def thresholdObjects(nucleus:Nucleus,image:ij.ImagePlus,mask:List[List[List[Int]]]):(Array[Array[Array[Int]]],Double) = {
     val outer_bounds = nucleus.getBoundingBox
     val image_processors = for (s<-nucleus.getSlices.toArray) yield {
       image.setSlice(s.getSlice)
       image.setRoi(outer_bounds)
       val processor = image.getProcessor().crop()
+      processor.resetMinAndMax()
       processor
     }
-    val pixel_array:Array[Array[Array[Float]]] = image_processors.map{ip=>
-      ip.resetMinAndMax()
-      ip.convertToFloat()
-      ip.getFloatArray()
-    }
+    val pixel_array:Array[Array[Array[Float]]] = nucleus.getPixels(image,mask)
+    
      
     val pixels:List[Float] = pixel_array.flatten.flatten.toList
     val norm_pixels = Stats.standardScores(pixels).toList
     val increment = (pixels.max - pixels.min)/500
-    val threshold = fourMeans(norm_pixels,List(norm_pixels.min),List(0.25),List(0.75),List(norm_pixels.max)) * Stats.standardDeviation(pixels)+Stats.mean(pixels)
-    val width = image_processors.head.getWidth
-    val height = image_processors.head.getHeight
+//    val threshold = fourMeans(norm_pixels,List(norm_pixels.min),List(0.25),List(0.75),List(norm_pixels.max)) * Stats.standardDeviation(pixels)+Stats.mean(pixels)
+    
+    val threshold = fiveMeans(norm_pixels,List(-0.5d),List(0d),List(0.5d),List(1.5d),List(2d)) * Stats.standardDeviation(pixels)+Stats.mean(pixels)
+    val width = pixel_array.head.head.length
+    val height = pixel_array.head.length
     val output_stack = new ij.ImageStack(width,height)
-    val output_array:Array[Array[Array[Int]]] = image_processors.map{p=>
+    val output_array:Array[Array[Array[Int]]] = image_processors.zip(pixel_array).map{case(p,pa)=>
       val original = new ij.ImagePlus("original",p)
       original.show()
-      val ft = p.convertToFloat()
-      val bp = p.convertToByte(false)
-      val fta:Array[Array[Int]] = ft.getFloatArray().map{x=>
-        x.map{y=>
-          if (y>threshold) 0
-          else 255
-        }
-      } 
+      val fta:Array[Array[Int]] = pa.flatten.map{
+        p => if ( p > threshold) 255 else 0
+      }.grouped(pa.head.length).toArray
       val thresholded = ImageIO.makeImage(fta)
       thresholded.show()
 

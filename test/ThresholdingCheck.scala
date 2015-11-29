@@ -23,6 +23,8 @@ class ThresholdChecker extends FunSuite with Checkers{
   
   val rand = new scala.util.Random(123456)
 
+  
+  
   def checker (base_blob_count:Int,base_foreground_count:Int,noisy_image:Array[Array[Double]],history:List[(Double,Double)]):Boolean = {
     
     val noisy_pixels = noisy_image.flatten
@@ -48,7 +50,7 @@ class ThresholdChecker extends FunSuite with Checkers{
   
   def thresholdExplorer(b:Int,f:Int,n:Int):Boolean = {
 
-    val test_base = Synthetics.createPixels(300,300)
+    val test_base = Synthetics.createPixels(300,300,0.01,0.4)
     val centroid = (test_base.head.length/2d,test_base.length/2d)
     val base_blob_count = Synthetics.countMaskBlobs(test_base.map(r=>r.map(p=>255*p)),centroid)
     val base_foreground_count = Synthetics.countForegroundPixels(test_base)
