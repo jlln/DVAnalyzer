@@ -12,7 +12,8 @@ The total area of each nucleus is calculated as the sum of the areas of its cons
 The output is written to a csv file in the working directory, with each row corresponding to a single cell.
 
 Requires Java 8.
-Download the .Jar file from https://github.com/jlln/Zisa/archive/v1.0.zip
+Download the .Jar file from https://github.com/jlln/Zisa/releases/download/v1.0/Zisa_1.0.jar
+There is a slight delay between launching the jar and the program beginning.
 
 
 
