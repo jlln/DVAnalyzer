@@ -5,31 +5,31 @@ This application performs automatic quantification of nuclear features in three-
 
 An example might be a dose-response experiment, with subfolders corresponding to dosages:
 
--Experiment04072015
+     -Experiment04072015
 
-     - 0
+          - 0
 
-          -image1.tif
+               -image1.tif
           
-          -image2.tif
+               -image2.tif
           
-          -image3.tif
+               -image3.tif
           
-     -10
+          -10
           
-          -image4.tif
+               -image4.tif
           
-          -image5.tif
+               -image5.tif
           
-          -image6.tif
+               -image6.tif
      
-     -15
+          -15
      
-          -image7.tif
+               -image7.tif
           
-          -image8.tif
+               -image8.tif
           
-          -image9.tif
+               -image9.tif
 
 
 The tiff files should be in red,green,blue channel order. The blue channel is used to prepare masks of the nuclei, which are then traced through the stack to produce three-dimensional representations of the nuclei. Because the nuclei can potentially lie in different focal planes, the focussed slices of each nuclei are then identified, and the unfocussed slices of each nucleus are discarded.
