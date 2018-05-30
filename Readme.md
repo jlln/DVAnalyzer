@@ -32,8 +32,9 @@ INSTRUCTIONS:
 Requires Java 8+ to be installed.
 Download the .Jar file from https://github.com/jlln/Zisa/releases/download/v1.0/Zisa_1.0.jar
 There is a slight delay between launching the jar and the program beginning.
-You will be prompted to choose a directory. Choose the directory that contains the subfolders for the experimental conditions. 
+
+You will be prompted to choose a directory. Choose the directory that contains the subdirectories for the experimental conditions (in the example above you would choose the folder 'Experiment04072015').
+
 The program will then begin. You will see it working through each image. Do not touch anything while the program is running.
-
-
+You will know the program has finished when the images have stopped appearing.
 
