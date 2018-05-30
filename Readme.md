@@ -5,7 +5,7 @@ This application performs automatic quantification of nuclear features in three-
 
 An example might be a dose-response experiment, with subfolders corresponding to dosages:
 
-Experiment04072015
+-Experiment04072015
 
      - 0
 
